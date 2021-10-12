@@ -1,0 +1,10 @@
+# ssh
+
+## OpenSSH 4.3p2
+
+Debian OpenSSL - Predictable PRNG Bruteforce SSH Exploit
+
+```
+# bruteforeable keys
+https://github.com/g0tmi1k/debian-ssh
+```

