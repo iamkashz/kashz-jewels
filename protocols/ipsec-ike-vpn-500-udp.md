@@ -25,10 +25,9 @@ sudo ipsec [up | down] CONFIG-NAME
 
 ### /etc/ipsec.secrets
 
-```bash
-/etc/ipsec.secrets
-| this file hold shared secrets or RSA private keys for authentication
+This file hold shared secrets or RSA private keys for authentication
 
+```bash
 # add line
 TARGET-IP %any : PSK "PASSWORD"
 ```
@@ -36,13 +35,12 @@ TARGET-IP %any : PSK "PASSWORD"
 ### /etc/ipsec.conf
 
 ```bash
-/etc/ipsec.conf
-| setup to enable verbose debugging
-| conn profile to connect
+# setup to enable verbose debugging
+# conn profile to connect
 config setup
     charondebug="all"
 
-config CONFIG-NAME
+conn CONFIG-NAME
     # basic config
     auto=start [ | add]
     authby=secret [ | psk]
@@ -68,7 +66,13 @@ config CONFIG-NAME
 ## Install Strongswan
 
 ```bash
-sudo apt install strongswan libstrongswan-standard-plugins libstrongswan-extra-plugins
+sudo apt install strongswan
+```
+
+## ERROR Fix
+
+```bash
+sudo apt install libstrongswan-standard-plugins libstrongswan-extra-plugins
 ```
 
 ##

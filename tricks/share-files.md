@@ -25,13 +25,15 @@ PS> New-PSDrive -Name "winDrive" -PSProvider "FileSystem" -Root "\\IP\drive"
 Navigating to "winDrive" shows us all files
 
 # upload dir (with all in it)
-roboycopy dir \\IP\drive\ /E
+robocopy dir \\IP\drive\ /E
 [OR]
 net use Z: \\IP\drive /u:<username> <pass>
 copy file Z:\
 ```
 
 ## HTTP Server
+
+Alternative: [https://github.com/sc0tfree/updog](https://github.com/sc0tfree/updog)
 
 ```bash
 python3 -m http.server 80
@@ -73,9 +75,9 @@ mkdir /tmp/kashz; wsgidav --host=IP --port=80 --root=/tmp/kashz
 net use * http://IP/
 ```
 
-## Curl function
+## Curl function (linux only)
 
-NOTE: works for binary files too. Fails for `https://` with self signed certificates.
+Use when system does not have `wget, curl.`NOTE: works for binary files too. Fails for `https://` with self signed certificates.
 
 ```bash
 function __curl() {

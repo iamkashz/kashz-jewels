@@ -4,7 +4,7 @@ description: a welcome README page
 
 # OSCP Jewels
 
-## <mark style="color:green;">About this book</mark>
+## <mark style="color:blue;">About this book</mark>
 
 This book is an organized collection of notes that I prefer not keep searching on Google every time I come across something from the past. I started this mainly to have a wholesome documentation for my OSCP exam.
 
@@ -12,24 +12,24 @@ I will outrightly say **all of the content available is present on the internet*
 
 Special mention to [HackTricks](https://book.hacktricks.xyz) as some of my pages directly link there for guide which explains way better.
 
-## <mark style="color:green;">Sections</mark> 
+## <mark style="color:blue;">Sections</mark> <mark style="color:green;"></mark>
 
 1. **OS Linux  | **Linux based enumeration, privilege escalation, tools etc.
-2. **OS Windows** **|** Windows based enumeration, privilege escalation, tools etc.
+2. **OS Windows** **| **Windows based enumeration, privilege escalation, tools etc.
 3. <mark style="color:red;">**Shellcodes | **</mark><mark style="color:red;">shells galore!</mark> :partying_face:
-4. **Hash | **hash identification and cracking tools guide.
-5. **Shortcuts | **quick reference for stuff, tricks etc.
-6. **Protocols | **protocol enumeration, commands etc.
-7. **Cheatsheet | **as the name says! :smile:
-8. **Attacks | **stuff that I couldn't categorize under protocols, services or cheatsheet
-9. **Services | **service specific guides on credentials, config file paths, exploits etc.
-10. Buffer Overflow Guide | OSCP walkthrough.
+4. **Buffer Overflow Guide | **OSCP style walkthrough.
+5. **Hash | **hash identification and cracking tools guide.
+6. **Tricks | **quick reference for stuff, tricks etc.
+7. **Protocols | **protocol enumeration, commands etc.
+8. **Cheatsheet | **as the name says! :smile:
+9. **Attacks | **stuff that I couldn't categorize under protocols, services or cheatsheet
+10. **Services | **service specific guides on credentials, config file paths, exploits etc.
 
-## <mark style="color:green;">About me</mark>
+## <mark style="color:blue;">About me</mark>
 
-I'm Kashz, a gamer and security enthusiast. 
+Hi, I'm Kashz, a gamer and security enthusiast. 
 
-## <mark style="color:red;">DISCLAIMER</mark>
+## <mark style="color:red;"></mark>:warning: <mark style="color:red;">DISCLAIMER</mark> :warning:<mark style="color:red;"></mark>
 
 My notes reflect **my understanding** and how I have used the commands/tools. I may be wrong or misunderstood something.
 

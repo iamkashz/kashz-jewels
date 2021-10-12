@@ -1,6 +1,6 @@
 # ffuf wfuzz feroxbuster gobuster
 
-## gobuster (my top choice)
+## gobuster
 
 ```bash
 # directory mode
@@ -10,7 +10,7 @@ gobuster dir -u IP -w WORDLIST -x EXTENSION -t 70
 gobuster vhost -u DOMAIN|IP -w WORDLIST -t 100
 ```
 
-## wfuzz (migrating to this)
+## wfuzz
 
 ```bash
 # directory mode
@@ -24,7 +24,7 @@ wfuzz -c -w WORDLIST -u DOMAIN -H "HOST: FUZZ.DOMAIN" [--hh ignore-errors-chars]
 --hw: word length to ignore
 --hh: char length to ignore
 --hl: line length to ignore
--z: alias for -z file,WORDLIST; can do range,1-100
+-z: alias for -z file,WORDLIST; can do -z range,1-100
 ```
 
 ## ffuf

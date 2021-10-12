@@ -3,7 +3,7 @@
 ## Path fix
 
 ```bash
-export PATH=/bin:/usr/bin:$PATH
+export PATH=/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:$PATH
 ```
 
 ## Basic checks

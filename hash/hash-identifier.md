@@ -7,3 +7,9 @@
 ## Hashcat Wiki
 
 {% embed url="https://hashcat.net/wiki/doku.php?id=example:hashes" %}
+
+## Other Links
+
+* https://pypi.org/project/hashID
+* https://hashes.com/en/tools/hash_identifier
+* https://gitlab.com/kalilinux/packages/hash-identifier/-/tree/kali/master

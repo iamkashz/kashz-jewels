@@ -27,6 +27,7 @@
 <!DOCTYPE foo [<!ENTITY xxe SYSTEM "expect://id"> ]>
 ```
 
-{% embed url="https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity" %}
+## Additional Materal
 
-{% embed url="https://depthsecurity.com/blog/exploitation-xml-external-entity-xxe-injection" %}
+* [https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity](https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entityhttps://depthsecurity.com/blog/exploitation-xml-external-entity-xxe-injection)
+* [https://depthsecurity.com/blog/exploitation-xml-external-entity-xxe-injection](https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entityhttps://depthsecurity.com/blog/exploitation-xml-external-entity-xxe-injection)

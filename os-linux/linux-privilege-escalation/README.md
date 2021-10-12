@@ -15,15 +15,6 @@ python3 -c 'import crypt, getpass; print(crypt.crypt(getpass.getpass()))'
 echo 'USER ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 ```
 
-## compile KE on kali
-
-```bash
-# sudo apt-get install gcc-multilib
-
-# x86
-gcc -m32 -Wl,--hash-style=both exploit.c -o exploit
-```
-
 ## setuid.c
 
 ```c

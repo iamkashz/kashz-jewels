@@ -31,3 +31,5 @@ gpg2john KEY > gpg.hash
 ```
 
 ## custom rules (from TryHackMe guide)
+
+![](../.gitbook/assets/c8d30a6b53a542bebf7db794d4e13083.png)

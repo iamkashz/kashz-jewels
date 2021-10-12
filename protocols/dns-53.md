@@ -37,4 +37,4 @@ wfuzz -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt 
 
 ## Adding key to DNS using nsupdate
 
-see nsupdate.
+[see nsupdate.](../services/nsupdate.md)

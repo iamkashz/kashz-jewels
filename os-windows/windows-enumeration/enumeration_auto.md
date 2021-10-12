@@ -6,6 +6,14 @@
 set PATH=C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;%PATH%
 ```
 
+## Check Arch, Process, Release ID
+
+```powershell
+PS> [system.environment]::Is64BitOperatingSystem
+PS> [system.environment]::Is64BitProcess
+PS> (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion" -Name ReleaseId).ReleaseId
+```
+
 ## [PowerUp.ps1](https://github.com/PowerShellEmpire/PowerTools/blob/master/PowerUp/PowerUp.ps1) | [Sherlock.ps1](https://github.com/rasta-mouse/Sherlock/blob/master/Sherlock.ps1) | [JAWS.ps1](https://github.com/411Hall/JAWS/blob/master/jaws-enum.ps1) | [enjoiz-privesc.ps1](https://github.com/enjoiz/Privesc/blob/master/privesc.ps1)
 
 {% tabs %}

