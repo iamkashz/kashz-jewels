@@ -6,12 +6,13 @@
 
 * [basic](os-linux/basic.md)
 * [linux-enumeration](os-linux/linux-enumeration/README.md)
-  * [enumeration_manual](os-linux/linux-enumeration/enumeration_manual.md)
   * [enumeration_auto](os-linux/linux-enumeration/enumeration_auto.md)
+  * [enumeration_manual](os-linux/linux-enumeration/enumeration_manual.md)
 * [linux-privilege-escalation](os-linux/linux-privilege-escalation/README.md)
   * [socat shells](os-linux/linux-privilege-escalation/socat-shells.md)
   * [linux-gcc](os-linux/linux-privilege-escalation/linux-gcc.md)
   * [sudo su styles](os-linux/linux-privilege-escalation/sudo-su-styles.md)
+  * [dirtyc0w](os-linux/linux-privilege-escalation/dirtyc0w.md)
 
 ## OS-WINDOWS
 
@@ -21,22 +22,24 @@
   * [enumeration_manual](os-windows/windows-enumeration/enumeration_manual.md)
   * [enumeration_tools](os-windows/windows-enumeration/enumeration_tools.md)
 * [windows-privilege-escalation](os-windows/windows-privilege-escalation/README.md)
-  * [cmd + powershell](os-windows/windows-privilege-escalation/cmd-+-powershell.md)
-  * [windows shells](os-windows/windows-privilege-escalation/windows-shells.md)
   * [privesc_tools](os-windows/windows-privilege-escalation/privesc_tools.md)
   * [privesc](os-windows/windows-privilege-escalation/privesc.md)
-  * [dump SAM SYSTEM](os-windows/windows-privilege-escalation/dump-sam-system.md)
   * [steal NTLM creds](os-windows/windows-privilege-escalation/steal-ntlm-creds.md)
-  * [AppLocker bypass](os-windows/windows-privilege-escalation/applocker-bypass.md)
-  * [RDP tools](os-windows/windows-privilege-escalation/rdp-tools.md)
   * [kernel exploit compilation](os-windows/windows-privilege-escalation/kernel-exploit-compilation.md)
-  * [windows-meterpreter](os-windows/windows-privilege-escalation/windows-meterpreter.md)
   * [socat shells](os-windows/windows-privilege-escalation/socat-shells.md)
   * [beef browser exploitation](os-windows/windows-privilege-escalation/beef-browser-exploitation.md)
+* [windows-post-exploitation](os-windows/windows-post-exploitation/README.md)
+  * [dump SAM SYSTEM](os-windows/windows-post-exploitation/dump-sam-system.md)
+  * [RDP tools](os-windows/windows-post-exploitation/rdp-tools.md)
+* [windows-active-directory](os-windows/windows-active-directory/README.md)
+  * [active directory](os-windows/windows-active-directory/active-directory.md)
+  * [PowerView.ps1 cmds](os-windows/windows-active-directory/powerview.ps1-cmds.md)
+* [windows-meterpreter](os-windows/windows-meterpreter.md)
 
 ## SHELLCODES
 
 * [shells](shellcodes/shells.md)
+* [windows shells](shellcodes/windows-shells.md)
 
 ## HASH
 
@@ -56,7 +59,9 @@
 * [php wrappers, LFI](shortcuts/php-wrappers-lfi.md)
 * [login bypass](shortcuts/login-bypass.md)
 * [port forwarding](shortcuts/port-forwarding.md)
+* [window AppLocker bypass](shortcuts/window-applocker-bypass.md)
 * [403 Forbidden, WAF bypass](shortcuts/403-forbidden-waf-bypass.md)
+* [kali exploit compilation](shortcuts/kali-exploit-compilation.md)
 * [curl](shortcuts/curl.md)
 * [POST upload file](shortcuts/post-upload-file.md)
 * [port knocking](shortcuts/port-knocking.md)
@@ -79,7 +84,7 @@
 * [dns :53](protocols/dns-53.md)
 * [epmd :4369](protocols/epmd-4369.md)
 * [ftp :21](protocols/ftp-21.md)
-* [ident :113/tcp](protocols/ident-113-tcp.md)
+* [ident :113](protocols/ident-113.md)
 * [imap :143 :993](protocols/imap-143-993.md)
 * [ipsec ike-vpn :500/udp](protocols/ipsec-ike-vpn-500-udp.md)
 * [irc](protocols/irc.md)
@@ -88,7 +93,7 @@
 * [rsync](protocols/rsync.md)
 * [smb :135 :139 :445](protocols/smb-135-139-445.md)
 * [smtp :25](protocols/smtp-25.md)
-* [subversion snv :3690](protocols/subversion-snv-3690.md)
+* [subversion svn :3690](protocols/subversion-svn-3690.md)
 
 ## ATTACKS
 
@@ -240,3 +245,9 @@
 * [iis](services/iis.md)
 * [ssh](services/ssh.md)
 * [windows iot core](services/windows-iot-core-1.md)
+
+## BUFFER OVERFLOW GUIDE
+
+* [methodology](buffer-overflow-guide/methodology.md)
+* [fuzzer.py](buffer-overflow-guide/fuzzer.py.md)
+* [exploit.py](buffer-overflow-guide/exploit.py.md)
