@@ -1,6 +1,7 @@
 # Table of contents
 
 * [OSCP Jewels](README.md)
+* [kashz-kali](kashz-kali.md)
 
 ## OS-LINUX
 
