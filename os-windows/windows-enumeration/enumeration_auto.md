@@ -1,9 +1,12 @@
-# enumeration_auto
+# enumeration\_auto
 
 ## Path fix
 
-```bash
+```
 set PATH=C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;%PATH%
+
+Get-ExecutionPolicy -List
+Set-ExecutionPolicy Unrestricted
 ```
 
 ## Check Arch, Process, Release ID
@@ -11,6 +14,7 @@ set PATH=C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\Syst
 ```powershell
 PS> [system.environment]::Is64BitOperatingSystem
 PS> [system.environment]::Is64BitProcess
+> echo %PROCESSOR_ARCHITECTURE%
 PS> (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion" -Name ReleaseId).ReleaseId
 ```
 

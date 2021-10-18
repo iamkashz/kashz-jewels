@@ -4,6 +4,7 @@
 
 ```bash
 START /B FILE
+Start-Process -NoNewWindow -FilePath FILE -ArgumentList "ARGS" [-Credential $creds]
 ```
 
 ## Create User
