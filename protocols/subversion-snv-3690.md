@@ -1,4 +1,4 @@
-# subversion snv :3690
+# subversion svn :3690
 
 svn is a type of version control; used to maintain current and historical version of projects.
 

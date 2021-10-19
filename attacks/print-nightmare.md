@@ -1,3 +1,7 @@
+---
+description: PrintNightmare Local / Remote Privilege Escalation
+---
+
 # print nightmare
 
 ```
