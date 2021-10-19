@@ -2,7 +2,7 @@
 
 ## DIR-ENUM | VHOST-ENUM
 
-```bash
+```
 # dir
 /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
@@ -24,7 +24,7 @@
 
 ## PASSWORDS
 
-```bash
+```
 /usr/share/john/password.lst
 /usr/share/seclists/Discovery/Web-Content/raft-small-words.txt
 /usr/share/wordlists/rockyou.txt
@@ -35,7 +35,7 @@
 
 ## USERNAMES
 
-```bash
+```
 /usr/share/wordlists/metasploit/unix_users.txt
 /usr/share/seclists/Usernames/Names/names.txt
 ```

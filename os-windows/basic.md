@@ -19,7 +19,7 @@ C:\Documents and Settings\<USER>\Desktop\
 
 ## PS styles
 
-```
+```bash
 PS> $host
 > powershell -c <cmd>
 > powershell.exe -exec bypass -Command <>
@@ -27,7 +27,7 @@ PS> $host
 
 ### Cmds
 
-```
+```bash
 # download file
 certutil.exe -urlcache [-split] -f <source> <destination>
 PS> wget <source> -OutFile <dest>
@@ -55,7 +55,7 @@ PS> Remove-Item -Path <file> [-recursive]
 
 ### PS shorthand
 
-```
+```bash
 # get child items
 PS> gci [--recurse]
 

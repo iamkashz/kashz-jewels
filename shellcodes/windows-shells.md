@@ -1,10 +1,6 @@
 # windows shells
 
-## Nishang
-
-```bash
-# most common: /usr/share/nishang/Shells/Invoke-PowerShellTcp.ps1
-```
+Nishang: `/usr/share/nishang/Shells/Invoke-PowerShellTcp.ps1`
 
 ## ASP
 

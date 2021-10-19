@@ -15,7 +15,7 @@ admin:admin
 ## Interesting Paths
 
 ```bash
-config.php
+/config.php
 ```
 
 ## Path Traversal v1.0

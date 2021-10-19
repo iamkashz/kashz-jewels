@@ -16,3 +16,8 @@ wget -m --user="" --password="" ftp://IP
 write_enable=YES
 anon_root=<PATH-WHERE-FILES-ARE-WRITTEN-TO>
 ```
+
+## Default upload dir
+```bash
+/var/ftp
+```

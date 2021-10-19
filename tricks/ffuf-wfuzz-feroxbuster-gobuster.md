@@ -15,16 +15,16 @@ gobuster vhost -u DOMAIN|IP -w WORDLIST -t 100
 ```bash
 # directory mode
 wfuzz -c -t 60 -w WORDLIST -u IP/FUZZ [-b COOKIE] [-d POST-DATA] [-H HEADER] [-z TYPE,PAYLOAD]
+-c: show output in color
+-z: alias for -z file,WORDLIST; can do -z range,1-100
 
 # vhosts mode
 wfuzz -c -w WORDLIST -u DOMAIN -H "HOST: FUZZ.DOMAIN" [--hh ignore-errors-chars]
 
--c: show output in color
 --hc: status code to ignore
 --hw: word length to ignore
 --hh: char length to ignore
 --hl: line length to ignore
--z: alias for -z file,WORDLIST; can do -z range,1-100
 ```
 
 ## ffuf

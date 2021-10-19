@@ -1,5 +1,7 @@
 # dirtyc0w
 
+Considering the number of boxes I've encountered that have used this, I've actually documented this.
+
 ```
 # affects all versions since 2.6.22
 # the vulnerability has been patched in kernel versions 4.8.3, 4.7.9, 4.4.26 and newer.

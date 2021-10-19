@@ -4,7 +4,7 @@
 
 ## Connecting to redis
 
-```
+```bash
 $ redis-cli -h <IP> [--user <USER>] [--pass <PASS>]
 [OR]
 nmap --script redis-info -sV -p 6379 <IP>
@@ -22,7 +22,7 @@ AUTH <username> <password>
 
 ## Commands
 
-```
+```bash
 > info
 > info [server | keyspace | ...]
 

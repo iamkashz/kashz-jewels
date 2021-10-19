@@ -69,10 +69,8 @@ conn CONFIG-NAME
 sudo apt install strongswan
 ```
 
-## ERROR Fix
+## Error fix (while connecting)
 
 ```bash
 sudo apt install libstrongswan-standard-plugins libstrongswan-extra-plugins
 ```
-
-##

@@ -2,7 +2,7 @@
 
 ## Recon Gitlab CE using rails
 
-```
+```bash
 # find the user:
 user = User.find(1)
 user = User.find_by(email: "admin@example.com")

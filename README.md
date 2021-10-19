@@ -12,14 +12,14 @@ I will outrightly say **all of the content available is present on the internet*
 
 Special mention to [HackTricks](https://book.hacktricks.xyz) as some of my pages directly link there for guide which explains way better.
 
-## <mark style="color:blue;">Sections</mark> <mark style="color:green;"></mark>
+## <mark style="color:blue;">Sections</mark>
 
-1. **OS Linux  | **Linux based enumeration, privilege escalation, tools etc.
-2. **OS Windows** **| **Windows based enumeration, privilege escalation, tools etc.
-3. <mark style="color:red;">**Shellcodes | **</mark><mark style="color:red;">shells galore!</mark> :partying_face:
+1. **OS Linux | **Linux based enumeration, privilege escalation, tools etc.
+2. **OS Windows | **Windows based enumeration, privilege escalation, tools etc.
+3. <mark style="color:red;">**Shellcodes | **shells galore!</mark> :partying_face:
 4. **Buffer Overflow Guide | **OSCP style walkthrough.
 5. **Hash | **hash identification and cracking tools guide.
-6. **Tricks | **quick reference for stuff, tricks etc.
+6. **Tricks | **quick reference for stuff, shortcuts etc.
 7. **Protocols | **protocol enumeration, commands etc.
 8. **Cheatsheet | **as the name says! :smile:
 9. **Attacks | **stuff that I couldn't categorize under protocols, services or cheatsheet
@@ -29,7 +29,7 @@ Special mention to [HackTricks](https://book.hacktricks.xyz) as some of my pages
 
 Hi, I'm Kashz, a gamer and security enthusiast. 
 
-## <mark style="color:red;"></mark>:warning: <mark style="color:red;">DISCLAIMER</mark> :warning:<mark style="color:red;"></mark>
+## :warning: <mark style="color:red;">DISCLAIMER</mark> :warning:
 
 My notes reflect **my understanding** and how I have used the commands/tools. I may be wrong or misunderstood something.
 

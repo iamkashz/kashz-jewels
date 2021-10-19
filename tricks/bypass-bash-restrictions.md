@@ -2,7 +2,7 @@
 
 ## ssh (most common)
 
-```
+```bash
 ssh user@IP -t "bash --noprofile"
 ssh -t user@IP bash --norc --noprofile
 ssh -t user@IP /bin/sh

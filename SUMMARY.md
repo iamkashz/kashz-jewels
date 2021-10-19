@@ -60,9 +60,10 @@
 * [share files](tricks/share-files.md)
 * [wordlists](tricks/wordlists.md)
 * [ffuf wfuzz feroxbuster gobuster](tricks/ffuf-wfuzz-feroxbuster-gobuster.md)
-* [php wrappers, LFI](shortcuts/php-wrappers-lfi.md)
-* [login bypass](shortcuts/login-bypass.md)
-* [port forwarding](shortcuts/port-forwarding.md)
+* [php wrappers, LFI](tricks/php-wrappers-lfi.md)
+* [login bypass](tricks/login-bypass.md)
+* [port forwarding](tricks/port-forwarding.md)
+* [ssh tunnel](tricks/ssh-tunnel.md)
 * [windows AppLocker bypass](tricks/windows-applocker-bypass.md)
 * [403 Forbidden, WAF bypass](tricks/403-forbidden-waf-bypass.md)
 * [kali exploit compilation](tricks/kali-exploit-compilation.md)
@@ -82,6 +83,8 @@
 * [JSON Web Token (jwt)](tricks/json-web-token-jwt.md)
 * [git](tricks/git.md)
 * [ssh params](tricks/ssh-params.md)
+* [openvpn](tricks/openvpn.md)
+* [ASP.NET server](tricks/asp.net-server.md)
 
 ## PROTOCOLS
 
@@ -104,6 +107,7 @@
 * [print nightmare](attacks/print-nightmare.md)
 * [network scripts](attacks/network-scripts.md)
 * [xml external entity XXE](attacks/xml-external-entity-xxe.md)
+* [.hta exploit](attacks/.hta-exploit.md)
 
 ## CHEATSHEET
 
@@ -249,4 +253,3 @@
 * [dolphin2 cms](services/dolphin2-cms.md)
 * [iis](services/iis.md)
 * [ssh](services/ssh.md)
-* [windows iot core](services/windows-iot-core-1.md)

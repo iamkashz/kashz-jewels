@@ -11,7 +11,8 @@ Start-Process -NoNewWindow -FilePath FILE -ArgumentList "ARGS" [-Credential $cre
 
 ```bash
 # add new user
-net user kashz iamkashz@123 /add && net localgroup administrators kashz /add
+net user kashz iamR00t#123 /add
+net localgroup administrators kashz /add
 ```
 
 ## DLL hijacking
