@@ -64,6 +64,7 @@
 * [login bypass](tricks/login-bypass.md)
 * [port forwarding](tricks/port-forwarding.md)
 * [ssh tunnel](tricks/ssh-tunnel.md)
+* [nmap](tricks/nmap.md)
 * [windows AppLocker bypass](tricks/windows-applocker-bypass.md)
 * [403 Forbidden, WAF bypass](tricks/403-forbidden-waf-bypass.md)
 * [kali exploit compilation](tricks/kali-exploit-compilation.md)

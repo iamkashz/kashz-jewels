@@ -60,3 +60,11 @@ C:\\Windows\\system.ini
 \Windows\system.ini
 \\Windows\\system.ini
 ```
+
+## [dotdotpwn](https://github.com/wireghoul/dotdotpwn)
+
+Note: works for http, ftp, tftp
+
+```bash
+dotdotpwn -h IP -m MODE -f FILE-TO-FUZZ -U USER -P PASS
+```
