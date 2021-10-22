@@ -137,6 +137,7 @@
 * [drupal](services/drupal.md)
 * [windows token exploits](services/windows-token-exploits.md)
 * [cacti](services/cacti.md)
+* [php powerbrowse](services/php-powerbrowse.md)
 * [wordpress plugin exploits](services/wordpress-plugin-exploits.md)
 * [achat](services/achat.md)
 * [adminer.php](services/adminer.php.md)
