@@ -21,6 +21,16 @@ $ impacket-wmiexec DOMAIN/USER@IP -hashes :NTLMHASH
 ```bash
 # only USER, no DOMAIN needed
 $ evil-winrm -i IP -u <USER> [-H NT-HASH | -p PASS]
+
+# custom options
+PS> menu
+[+] Dll-Loader
+[+] Donut-Loader
+[+] Invoke-Binary
+[+] Bypass-4MSI
+[+] services
+[+] upload
+[+] download
 ```
 
 ### winexe

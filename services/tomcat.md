@@ -85,3 +85,8 @@ https://www.acunetix.com/vulnerabilities/web/tomcat-path-traversal-via-reverse-p
     | https://github.com/PenTestical/CVE-2020-9484 - uses 
     | manual: https://romnenko.medium.com/apache-tomcat-deserialization-of-untrusted-data-rce-cve-2020-9484-afc9a12492c4
 ```
+
+## Tomcat JSP Upload Bypass / RCE
+
+* https://www.exploit-db.com/exploits/42966
+* https://blogs.keysight.com/blogs/tech/nwvs.entry.html/2020/06/12/deconstructing_apach-emYD.html

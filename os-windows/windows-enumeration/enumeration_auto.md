@@ -11,11 +11,17 @@ Set-ExecutionPolicy Unrestricted
 
 ## Check Arch, Process, Release ID
 
+[get OS info from version](https://docs.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-osversioninfoexa?redirectedfrom=MSDN#remarks)
+
 ```powershell
 PS> [system.environment]::Is64BitOperatingSystem
 PS> [system.environment]::Is64BitProcess
 > echo %PROCESSOR_ARCHITECTURE%
+
+PS > Get-ComputerInfo | select WindowsProductName, WindowsVersion, OsHardwareAbstractionLayer
 PS> (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion" -Name ReleaseId).ReleaseId
+PS> (Get-WmiObject -class Win32_OperatingSystem).Caption
+PS> [System.Environment]::OSVersion.Version
 ```
 
 ## [PowerUp.ps1](https://github.com/PowerShellEmpire/PowerTools/blob/master/PowerUp/PowerUp.ps1) | [Sherlock.ps1](https://github.com/rasta-mouse/Sherlock/blob/master/Sherlock.ps1) | [JAWS.ps1](https://github.com/411Hall/JAWS/blob/master/jaws-enum.ps1) | [enjoiz-privesc.ps1](https://github.com/enjoiz/Privesc/blob/master/privesc.ps1)
