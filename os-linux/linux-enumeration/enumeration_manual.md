@@ -28,6 +28,9 @@ cat /etc/sysconfig/network-scripts/<files> | grep IP
 netstat -anot | netstat -alnp | netstat -antp | netstat -tulnp
 netstat -anp tcp #freeBSD
 
+# process running on port
+lsof -i:PORT
+
 # processes
 ps fauxwww
 
