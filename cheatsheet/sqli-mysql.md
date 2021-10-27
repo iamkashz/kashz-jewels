@@ -9,6 +9,12 @@ SHOW VARIABLES LIKE "secure_file_priv";
 # where udf files are loaded from
 @@plugin_dir;
 SHOW VARIABLES LIKE 'plugin_dir';
+
+# show all vars
+SHOW variables;
+
+# show PERMS
+SHOW Grants;
 ```
 
 ## SQLi shell

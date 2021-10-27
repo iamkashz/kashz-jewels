@@ -74,6 +74,7 @@ sudo git clone https://github.com/SpiderLabs/ikeforce.git
 sudo git clone https://github.com/mchoji/winrm-brute.git
 sudo git clone https://github.com/iamkashz/ctf-scripts.git
 sudo git clone https://github.com/411Hall/JAWS.git
+sudo git clone https://github.com/PowerShellMafia/PowerSploit.git
 ```
 
 ### custom install
@@ -132,6 +133,14 @@ sudo mkdir /opt/accesschk; cd /opt/accesschk; sudo wget https://download.sysinte
 cd /opt; sudo mkdir /opt/socat;
 # socat
 sudo mkdir --parents /opt/socat/linux; cd /opt/socat/linux; sudo wget https://github.com/3ndG4me/socat/releases/download/v1.7.3.3/socatx86.bin -O socat; sudo wget https://github.com/3ndG4me/socat/releases/download/v1.7.3.3/socatx64.bin -O socat64; sudo chmod +x *; sudo mkdir /opt/socat/windows; cd /opt/socat/windows; sudo wget https://github.com/3ndG4me/socat/releases/download/v1.7.3.3/socatx86.exe -O socat.exe; sudo wget https://github.com/3ndG4me/socat/releases/download/v1.7.3.3/socatx64.exe -O socat64.exe; cd ~;
+```
+
+### sysinternals (sigcheck.exe | strings.exe | tcpview.exe)
+
+```bash
+sudo mkdir -p /opt/sysinternals/sigcheck-exe; cd /opt/sysinternals/sigcheck-exe/; sudo wget https://download.sysinternals.com/files/Sigcheck.zip; sudo unzip Sigcheck.zip; sudo rm Sigcheck.zip; cd ~;
+sudo mkdir /opt/sysinternals/strings-exe; cd /opt/sysinternals/strings-exe/; sudo wget https://download.sysinternals.com/files/Strings.zip; sudo unzip Strings.zip; sudo rm Strings.zip; cd ~;
+sudo mkdir /opt/sysinternals/tcpview-exe; cd /opt/sysinternals/tcpview-exe/; sudo wget https://download.sysinternals.com/files/TCPView.zip; sudo unzip TCPView.zip; sudo rm TCPView.zip; cd ~;
 ```
 
 ### Powershell encoded revshell
@@ -247,4 +256,7 @@ to /usr/share/enum4linux/enum4linux.pl
 [global]
 	client min protocol = NT1
 	# client min protocol = LANMAN1
+	
+# fix wfuzz Pycurl is not compiled against Openssl
+sudo apt --purge remove python3-pycurl;sudo apt install libcurl4-openssl-dev libssl-dev;sudo pip3 install pycurl wfuzz
 ```

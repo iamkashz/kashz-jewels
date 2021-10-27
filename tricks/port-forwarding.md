@@ -21,7 +21,7 @@ from="IP",command="echo 'This account can only be used for Port Forwarding'",no-
 
 ```bash
 # for allowing a connecting to your port from outside (incoming)
-ssh -N -f -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no"-R KALI-IP:KALI-PORT:localhost:TARGET-PORT -i <id_rsa> KALI-USER@KALI-IP
+ssh -N -f -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -R KALI-IP:KALI-PORT:localhost:TARGET-PORT -i <id_rsa> KALI-USER@KALI-IP
 
 # -N: not running commands
 # -f: go to background
