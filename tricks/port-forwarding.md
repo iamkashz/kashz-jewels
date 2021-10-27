@@ -39,6 +39,10 @@ chisel client <kali-ip>:8000 R:<listen-on-port>:<target-ip><target-ip-port-forwa
 ex. chisel.exe client -v 10.10.16.161:9000 R:8989:127.0.0.1:8888
 # chisel server is 10.10.16.161:9000
 # any requests to kali:8989 ==> target:8888
+
+# tunnel using chisel on kali:1080
+https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html
+chisel client <kali-ip>:8000 R:socks
 ```
 
 ## plink.exe

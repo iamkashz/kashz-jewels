@@ -14,12 +14,20 @@ Select Virtualization > Install additional packages and scripts for VMware.
 sudo mount-shared-folders
 ```
 
-### Sublime Text 3
-
-* [https://www.sublimetext.com/docs/linux_repositories.html#apt](https://www.sublimetext.com/docs/linux_repositories.html#apt)
+### [Sublime Text 3](https://www.sublimetext.com/docs/linux_repositories.html#apt)
 
 ```bash
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -; sudo apt-get install apt-transport-https; echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list; sudo apt-get update; sudo apt-get install sublime-text; cd ~;
+```
+
+### [Brave Browser](https://brave.com/linux/)
+
+```bash
+sudo apt install apt-transport-https curl
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update
+sudo apt install brave-browser
 ```
 
 ### Browser Customization
@@ -91,16 +99,16 @@ sudo gitup --add /opt
 
 ```
 # nmapAutomator
-sudo git clone https://github.com/21y4d/nmapAutomator.git
+cd /opt; sudo git clone https://github.com/21y4d/nmapAutomator.git
 sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
 
 # Autorecon
-sudo git clone https://github.com/Tib3rius/AutoRecon.git
+cd /opt; sudo git clone https://github.com/Tib3rius/AutoRecon.git
 cd /opt/AutoRecon;sudo pip3 install -r requirements.txt; sudo python3 -m pip install .
 
 # impacket
-sudo git clone https://github.com/SecureAuthCorp/impacket.git
-cd impacket; pip3 install .; python2 -m pip install .
+cd /opt; sudo git clone https://github.com/SecureAuthCorp/impacket.git
+cd impacket; pip3 install .; cd ~;
 
 # golang vars (subl ~/.zshrc)
 export GOROOT=/usr/lib/go
@@ -154,7 +162,7 @@ sudo mkdir /opt/powershell_encoded_revshell/; cd /opt/powershell_encoded_revshel
 
 ```bash
 # chisel
-curl https://i.jpillora.com/chisel! | sudo bash
+cd ~; curl https://i.jpillora.com/chisel! | sudo bash
 sudo mkdir --parents /opt/chisel/linux; cd /opt/chisel/linux; sudo wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_linux_amd64.gz; sudo wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_linux_386.gz; sudo gzip -d *; sudo mv chisel_1.7.6_linux_386 chisel; sudo mv chisel_1.7.6_linux_amd64 chisel64;
 sudo mkdir /opt/chisel/windows; cd /opt/chisel/windows; sudo wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_windows_386.gz; sudo wget https://github.com/jpillora/chisel/releases/download/v1.7.6/chisel_1.7.6_windows_amd64.gz; sudo gzip -d *; sudo mv chisel_1.7.6_windows_386 chisel.exe; sudo mv chisel_1.7.6_windows_amd64 chisel64.exe; cd ~;
 
@@ -168,7 +176,7 @@ sudo mkdir /opt/pspy; cd /opt/pspy; sudo wget https://github.com/DominicBreuker/
 
 ```bash
 # mongosh client setup
-wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -; echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list; sudo apt update; sudo apt install -y mongodb-mongosh mongodb-org-shell; mongosh --version; cd ~;
+cd ~; wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -; echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list; sudo apt update; sudo apt install -y mongodb-mongosh mongodb-org-shell; mongosh --version; cd ~;
 
 # oracle-tns
 pip3 install cx_Oracle --upgrade; sudo mkdir /opt/oracle-tns; cd /opt/oracle-tns/; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-LcrnYv40ILvFrpjKRkb%2Fsids-oracle.txt?alt=media&token=8206a9f6-af86-4a49-ac71-179ca973d836' -O sids-oracle.txt; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-Lcrmdr8nRaj1Ea6JQqm%2Fusers-oracle.txt?alt=media&token=e1dc7604-86d8-4fe6-8dcc-f8cb5167c83d' -O users-oracle.txt; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-LcrmhoNYnuxhr1Sy7A1%2Fpass-oracle.txt?alt=media&token=0879b74c-07eb-40a7-8038-e5f4b42621f3' -O pass-oracle.txt;cd ~;
@@ -200,10 +208,10 @@ sqlplus -V
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
 
 # install pyenv
-curl https://pyenv.run | bash
+cd ~; curl https://pyenv.run | bash
 
 # update .zshrc
-export PATH="/home/kashz/.pyenv/bin:/home/kashz/.pyenv/shims:$PATH"
+export PATH="/home/kashz/.pyenv/bin:/home/kashz/.pyenv/shims:/home/kashz/.local/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -212,9 +220,10 @@ pyenv install -v 2.7.18
 pyenv global 2.7.18
 
 # setup pip for py2
-wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+cd ~; wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 sudo python2 get-pip.py
-python2 -m pip install setuptools 
+python2 -m pip install setuptools
+rm get-pip.py
 
 # windows-exploit-suggester.py
 python2 -m pip install xlrd==1.2.0
@@ -227,11 +236,10 @@ pip install droopescan
 ### tmux
 
 ```bash
-sudo git clone https://github.com/iamkashz/tmux-config.git
+cd /opt; sudo git clone https://github.com/iamkashz/tmux-config.git
 ./tmux-config/install.sh
 
 # default: exo-open --launch TerminalEmulator
-sudo apt install terminator
 # Terminal Properties > Command: terminator
 ```
 
@@ -239,7 +247,7 @@ sudo apt install terminator
 
 ```bash
 # sudo apt does not install latest version
-wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+cd ~; wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 ```
 
 ### Other tasks
@@ -249,8 +257,7 @@ wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_
 cd /usr/share/wordlists; sudo gzip -d /usr/share/wordlists/rockyou.txt.gz;cd ~
 
 # enum4linux update
-https://github.com/CiscoCXSecurity/enum4linux/blob/master/enum4linux.pl
-to /usr/share/enum4linux/enum4linux.pl
+sudo wget https://raw.githubusercontent.com/CiscoCXSecurity/enum4linux/master/enum4linux.pl -O /usr/share/enum4linux/enum4linux.pl
 
 # smb /etc/samba/smb.conf
 [global]
