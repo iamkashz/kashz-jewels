@@ -7,31 +7,31 @@
 
 * [basic](os-linux/basic.md)
 * [linux-enumeration](os-linux/linux-enumeration/README.md)
-    * [enumeration\_auto](os-linux/linux-enumeration/enumeration\_auto.md)
-    * [enumeration\_manual](os-linux/linux-enumeration/enumeration\_manual.md)
+  * [enumeration\_auto](os-linux/linux-enumeration/enumeration\_auto.md)
+  * [enumeration\_manual](os-linux/linux-enumeration/enumeration\_manual.md)
 * [linux-privilege-escalation](os-linux/linux-privilege-escalation/README.md)
-    * [socat shells](os-linux/linux-privilege-escalation/socat-shells.md)
-    * [sudo su styles](os-linux/linux-privilege-escalation/sudo-su-styles.md)
-    * [dirtyc0w](os-linux/linux-privilege-escalation/dirtyc0w.md)
+  * [socat shells](os-linux/linux-privilege-escalation/socat-shells.md)
+  * [sudo su styles](os-linux/linux-privilege-escalation/sudo-su-styles.md)
+  * [dirtyc0w](os-linux/linux-privilege-escalation/dirtyc0w.md)
 
 ## OS-WINDOWS
 
 * [basic](os-windows/basic.md)
 * [windows-enumeration](os-windows/windows-enumeration/README.md)
-    * [enumeration\_auto](os-windows/windows-enumeration/enumeration\_auto.md)
-    * [enumeration\_manual](os-windows/windows-enumeration/enumeration\_manual.md)
-    * [enumeration\_tools](os-windows/windows-enumeration/enumeration\_tools.md)
+  * [enumeration\_auto](os-windows/windows-enumeration/enumeration\_auto.md)
+  * [enumeration\_manual](os-windows/windows-enumeration/enumeration\_manual.md)
+  * [enumeration\_tools](os-windows/windows-enumeration/enumeration\_tools.md)
 * [windows-privilege-escalation](os-windows/windows-privilege-escalation/README.md)
-    * [privesc\_tools](os-windows/windows-privilege-escalation/privesc\_tools.md)
-    * [steal NTLM creds](os-windows/windows-privilege-escalation/steal-ntlm-creds.md)
-    * [socat shells](os-windows/windows-privilege-escalation/socat-shells.md)
-    * [beef browser exploitation](os-windows/windows-privilege-escalation/beef-browser-exploitation.md)
+  * [privesc\_tools](os-windows/windows-privilege-escalation/privesc\_tools.md)
+  * [steal NTLM creds](os-windows/windows-privilege-escalation/steal-ntlm-creds.md)
+  * [socat shells](os-windows/windows-privilege-escalation/socat-shells.md)
+  * [beef browser exploitation](os-windows/windows-privilege-escalation/beef-browser-exploitation.md)
 * [windows-post-exploitation](os-windows/windows-post-exploitation/README.md)
-    * [dump SAM SYSTEM](os-windows/windows-post-exploitation/dump-sam-system.md)
-    * [RDP tools](os-windows/windows-post-exploitation/rdp-tools.md)
+  * [dump SAM SYSTEM](os-windows/windows-post-exploitation/dump-sam-system.md)
+  * [RDP tools](os-windows/windows-post-exploitation/rdp-tools.md)
 * [windows-active-directory](os-windows/windows-active-directory/README.md)
-    * [active directory](os-windows/windows-active-directory/active-directory.md)
-    * [PowerView.ps1 cmds](os-windows/windows-active-directory/powerview.ps1-cmds.md)
+  * [active directory](os-windows/windows-active-directory/active-directory.md)
+  * [PowerView.ps1 cmds](os-windows/windows-active-directory/powerview.ps1-cmds.md)
 * [windows-meterpreter](os-windows/windows-meterpreter.md)
 
 ## SHELLCODES
@@ -99,10 +99,8 @@
 * [ldap :389 :636 :3268 :3269](protocols/ldap-389-636-3268-3269.md)
 * [rpc](protocols/smb-135-139-445/rpc.md)
 * [smb :135 :139 :445](protocols/smb-135-139-445.md)
-    * [rpc](protocols/smb-135-139-445/rpc.md)
 * [smtp :25](protocols/smtp-25.md)
 * [subversion svn :3690](protocols/subversion-snv-3690.md)
-
 
 ## ATTACKS
 
@@ -186,7 +184,7 @@
 * [mantis bugtracker](services/mantis-bugtracker.md)
 * [monstra cms](services/monstra-cms.md)
 * [msfvenom apk](services/msfvenom-apk.md)
-* [mysql exploits](services/mysql-exploits.md)
+* [mysql exploit](services/mysql-exploits.md)
 * [nagios xi](services/nagios-xi.md)
 * [network video monitoring system](services/network-video-monitoring-system.md)
 * [nextcloud](services/nextcloud.md)
