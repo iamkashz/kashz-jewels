@@ -163,7 +163,7 @@
 * [otrs open ticket request system](services/otrs-open-ticket-request-system.md)
 * [responsive filemanager](services/responsive-filemanager.md)
 * [openNetAdmin ona](services/opennetadmin-ona.md)
-* [mysql](services/mysql.md)
+* [mysql exploits](services/mysql-exploits.md)
 * [manage engine applications manager](services/manage-engine-applications-manager.md)
 * [python2 python3](services/python2-python3.md)
 * [tmux](services/tmux.md)
