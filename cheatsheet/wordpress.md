@@ -15,6 +15,9 @@
 
 # config file
 /wp-config.php
+
+# site health leaks information about host/services etc. (authenticated)
+/wp-admin/site-health.php?tab=debug
 ```
 
 ## wpscan

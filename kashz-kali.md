@@ -1,6 +1,7 @@
 # kashz-kali
 
-On top of the base kali install, following are the custom commands I have setup for quick easy access to git-repos, tools I would need to use.
+On top of the base kali install, following are the custom commands I have setup for quick easy access to git-repos,
+tools I would need to use.
 
 ### Kali Mount Shared Directory
 
@@ -21,16 +22,20 @@ sudo mount-shared-folders
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -; sudo apt-get install apt-transport-https; echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list; sudo apt-get update; sudo apt-get install sublime-text; cd ~;
 ```
 
-### Firefox
+### Browser Customization
 
-#### Addon
+#### Firefox Addons
 
-* [https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)
-* [https://addons.mozilla.org/en-US/firefox/addon/a-cookie-manager/](https://addons.mozilla.org/en-US/firefox/addon/a-cookie-manager/)
-* [https://addons.mozilla.org/en-US/firefox/addon/auth-helper/](https://addons.mozilla.org/en-US/firefox/addon/auth-helper/)
-* [https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/](https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/)
-* [https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)
-* [https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+* [wappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)
+* [cookie manager](https://addons.mozilla.org/en-US/firefox/addon/a-cookie-manager/)
+* [cookie-editor](https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/)
+* [2FA Auth](https://addons.mozilla.org/en-US/firefox/addon/auth-helper/)
+* [foxyproxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)
+* [ublock origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+
+#### Chrome Addons
+
+* [ModHeader](https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj?hl=en)
 
 #### Bookmarks
 
@@ -160,7 +165,7 @@ wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add 
 pip3 install cx_Oracle --upgrade; sudo mkdir /opt/oracle-tns; cd /opt/oracle-tns/; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-LcrnYv40ILvFrpjKRkb%2Fsids-oracle.txt?alt=media&token=8206a9f6-af86-4a49-ac71-179ca973d836' -O sids-oracle.txt; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-Lcrmdr8nRaj1Ea6JQqm%2Fusers-oracle.txt?alt=media&token=e1dc7604-86d8-4fe6-8dcc-f8cb5167c83d' -O users-oracle.txt; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-LcrmhoNYnuxhr1Sy7A1%2Fpass-oracle.txt?alt=media&token=0879b74c-07eb-40a7-8038-e5f4b42621f3' -O pass-oracle.txt;cd ~;
 ```
 
-###  Oracle sqlPlus
+### Oracle sqlPlus
 
 ```bash
 sudo apt install oracle-instantclient-sqlplus

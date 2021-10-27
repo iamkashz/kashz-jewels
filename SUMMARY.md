@@ -83,7 +83,7 @@
 * [http request smuggling](tricks/http-request-smuggling.md)
 * [JSON Web Token (jwt)](tricks/json-web-token-jwt.md)
 * [git](tricks/git.md)
-* [ssh params](tricks/ssh-params.md)
+* [ssh](tricks/ssh.md)
 * [openvpn](tricks/openvpn.md)
 * [ASP.NET server](tricks/asp.net-server.md)
 
@@ -254,4 +254,4 @@
 * [katris](services/katris.md)
 * [dolphin2 cms](services/dolphin2-cms.md)
 * [iis](services/iis.md)
-* [ssh](services/ssh.md)
+* [ssh exploits](services/ssh-exploits.md)

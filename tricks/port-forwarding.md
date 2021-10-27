@@ -2,12 +2,30 @@
 
 ## Using ssh:
 
+### Outgoing
+
 ```bash
 # for connecting to remote port via localhost (-L) (outgoing)
-ssh -L YOUR-PORT:localhost:TARGET-PORT TARGET-USER@TARGET-IP
+ssh -L KALI-IP:KALI-PORT:localhost:TARGET-PORT TARGET-USER@TARGET-IP
+```
 
+### Incoming
+
+#### authorized_keys file
+
+```bash
+from="IP",command="echo 'This account can only be used for Port Forwarding'",no-agent-forwarding,no-X11-forwarding,no-pty <SSH-PUBLIC-key>
+```
+
+#### Command
+
+```bash
 # for allowing a connecting to your port from outside (incoming)
-ssh -R YOUR-PORT:localhost:TARGET-PORT TARGET-USER@TARGET-IP
+ssh -N -f -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no"-R KALI-IP:KALI-PORT:localhost:TARGET-PORT -i <id_rsa> KALI-USER@KALI-IP
+
+# -N: not running commands
+# -f: go to background
+# UserKnownHostsFile=/dev/null & StrictHostKeyChecking=no will not ask kali password; not safe to enter password on target.
 ```
 
 ## [chisel](https://github.com/jpillora/chisel/releases/tag/v1.7.6)
