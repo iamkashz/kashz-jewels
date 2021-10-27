@@ -1,4 +1,4 @@
-# JSON Web Token (jwt)
+# json web token (jwt)
 
 ## Creating JWTs
 

@@ -1,3 +1,3 @@
-# PGP, GPG Cheatsheet
+# pgp gpg cheatsheet
 
 {% embed url="https://devhints.io/gnupg" %}

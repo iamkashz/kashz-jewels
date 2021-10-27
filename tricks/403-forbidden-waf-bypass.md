@@ -1,4 +1,4 @@
-# 403 Forbidden, WAF bypass
+# 403 forbidden waf bypass
 
 For pages that
 

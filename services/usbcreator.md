@@ -1,4 +1,4 @@
-# USBCreator
+# usbcreator
 
 ### USBCreator Privilege Escalation
 

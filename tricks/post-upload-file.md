@@ -1,4 +1,4 @@
-# POST upload file
+# post upload file
 
 ```bash
 Content-Type: multipart/form-data; boundary=---------------------------7db268605ae
