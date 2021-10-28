@@ -250,7 +250,6 @@
 * [wordpress plugin exploits](services/wordpress-plugin-exploits.md)
 * [xampp](services/xampp.md)
 * [yaml](services/yaml.md)
-* [yum](services/yum-1.md)
 * [yum](services/yum.md)
 * [zenphoto cms](services/zenphoto-cms.md)
 * [zookeeper exhibitor](services/zookeeper-exhibitor.md)
