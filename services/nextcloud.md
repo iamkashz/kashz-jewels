@@ -15,9 +15,13 @@ admin:admin
 # language fix
 # icon-click on top, Settings > Language > English > Save
 
+# version check (authenticated)
+/cloud/index.php/settings/admin/overview
+
 # system information (auth)
 Support > Generate System Report
 
-# file manager
+# file manager (with webDAV)
 /cloud/remote.php/dav/files/admin/
+(bottom-left) > Settings > WebDAV link
 ```
