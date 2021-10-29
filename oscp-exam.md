@@ -1,4 +1,4 @@
-# OSCP Exam
+# oscp Exam
 
 ## Terminal Script for Reporting
 Save all terminal commands you ran using `script` for report reference

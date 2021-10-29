@@ -2,6 +2,7 @@
 
 * [OSCP Jewels](README.md)
 * [kashz-kali](kashz-kali.md)
+* [oscp exam](oscp-exam.md)
 
 ## OS-LINUX
 
