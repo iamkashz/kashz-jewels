@@ -1,11 +1,12 @@
-# oscp Exam
+# oscp exam
 
 ## Terminal Script for Reporting
-Save all terminal commands you ran using `script` for report reference
-```bash
 
+Save all terminal commands ran using `script` for report reference
+
+```bash
 # start terminal
-script FILENMAME
+script FILENMAME.txt
 ...
 exit
 
@@ -14,6 +15,8 @@ cat -e $(cat FILENAME)
 
 # install this subl plugin to escape ANSI codes
 https://packagecontrol.io/packages/ANSIescape
-
-
 ```
+
+## Reporting Template
+
+* https://github.com/iamkashz/reporting-template
