@@ -8,7 +8,7 @@
 4. Generate pattern 400 bytes more than crash using msf: `msf-pattern_create -l <number>`
 5. set `PAYLOAD = <generated-alue>`
 6. Run `exploit.py` and find offset
-    1. Using mona: `!mona findmsp -distance <number>`. Should show in log windows
+    1. Using mona: `!mona findmsp -distance <EIP>`. Should show in log windows
        as `EIP contains normal pattern : 0x6f43396e (offset 1978)`
     2. [OR] using msf: `msf-pattern_offset -l <number> -q <EIP>`
 7. set `OFFSET = value`, set `PAYLOAD = ""`, set `RETURN = iiii` value of 0x69696969.
@@ -34,8 +34,8 @@ Note: **ALL badChars** are needed to find the JMP instruction.
 3. Windows requires little endian style. So,
     1. if JMP instruction is  `0x12345678`.
     2. Take 2 letter from right-to-left and form return address
-    3. return address is `0x\78 \0x56 \0x34 \0x12`
-    4. set `RETN = 0x\78\0x56\0x34\0x12` in `exploit.py`
+    3. return address is `\x78\x56\x34\x12`
+    4. set `RETN = \x78\x56\x34\x12` in `exploit.py`
 
 ## Generate msfvenom Payload
 
