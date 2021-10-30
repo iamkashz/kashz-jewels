@@ -4,7 +4,7 @@
 
 ## Basic Commands
 
-```
+```bash
 # check if docker
 cat /proc/1/cgroup
 

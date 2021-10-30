@@ -17,6 +17,8 @@ tar -zcvf FILE.tar.gz DIR/
 ```bash
 unzip FILE.zip
 
+unrar x FILE.rar
+
 gzip -d FILE.gz
 gunzip FILE.gz
 

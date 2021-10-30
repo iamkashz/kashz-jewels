@@ -22,10 +22,9 @@ config.php
 
 ## 'ajax_create_folder.php' RCE
 
-v1.4.1.4
+v1.4.1.4 | https://www.exploit-db.com/exploits/18083
 
-```
-https://www.exploit-db.com/exploits/18083
+```bash
 $ php 18083.php IP PATH
 # msfvenom to stable shell
 ```

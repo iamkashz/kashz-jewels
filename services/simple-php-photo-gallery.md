@@ -15,6 +15,8 @@
 
 ## LFI + RFI v0.7 | 0.8
 
+* https://www.exploit-db.com/exploits/48424
+
 ```
 - /image.php?page=[LFI | RFI]
 ```
