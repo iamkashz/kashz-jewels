@@ -6,11 +6,15 @@ description: a welcome README page
 
 ## <mark style="color:blue;">About this book</mark>
 
-This book is an organized collection of notes that I prefer not keep searching on Google every time I come across something from the past. I started this mainly to have a wholesome documentation for my OSCP exam.
+This book is an organized collection of notes that I prefer not keep searching on Google every time I come across
+something from the past. I started this mainly to have a wholesome documentation for my OSCP exam.
 
-I will outrightly say **all of the content available is present on the internet**, I just happen to come across them while solving boxes and wanted to have it **organized** to come back to at a later date if I need it _(and I've been using the references a lot)_. That's how this book started and has grown overtime.
+I will outrightly say **all the content available is present on the internet**, I just happen to come across them while
+solving boxes and wanted to have it **organized** to come back to at a later date if I need it _(and I've been using the
+references a lot)_. That's how this book started and has grown overtime.
 
-Special mention to [HackTricks](https://book.hacktricks.xyz) as some of my pages directly link there for guide which explains way better.
+Special mention to [HackTricks](https://book.hacktricks.xyz) as some of my pages directly link there for guide which
+explains way better.
 
 ## <mark style="color:blue;">Sections</mark>
 
@@ -27,10 +31,13 @@ Special mention to [HackTricks](https://book.hacktricks.xyz) as some of my pages
 
 ## <mark style="color:blue;">About me</mark>
 
-Hi, I'm Kashz, a gamer and security enthusiast. 
+Hi, I'm Kashz, a gamer and security enthusiast. My collection of solved HTB boxes are documented at
+
+* [HackTheBox WriteUps](https://kashz.gitbook.io/hackthebox-writeups/)
 
 ## :warning: <mark style="color:red;">DISCLAIMER</mark> :warning:
 
 My notes reflect **my understanding** and how I have used the commands/tools. I may be wrong or misunderstood something.
 
-Some of my sections are very detailed, organized and others are chaos. Overtime I'll try to clean my notes. As I come across something more often, the more clean the notes will be.
+Some of my sections are very detailed, organized and others are chaos. Overtime I'll try to clean my notes. As I come
+across something more often, the more clean the notes will be.
