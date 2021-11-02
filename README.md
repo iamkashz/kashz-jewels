@@ -1,8 +1,11 @@
 ---
 description: a welcome README page
 ---
-
 # OSCP Jewels
+
+## UPDATE (11/01/2021)
+
+I am OSCP Certified. More about my experience at [my reddit post](https://www.reddit.com/r/oscp/comments/qlay94/passed_oscp_my_thoughts/)
 
 ## <mark style="color:blue;">About this book</mark>
 
