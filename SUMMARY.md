@@ -31,7 +31,8 @@
     * [dump SAM SYSTEM](os-windows/windows-post-exploitation/dump-sam-system.md)
     * [RDP tools](os-windows/windows-post-exploitation/rdp-tools.md)
 * [windows-active-directory](os-windows/windows-active-directory/README.md)
-    * [active directory](os-windows/windows-active-directory/active-directory.md)
+    * [active directory basics](os-windows/windows-active-directory/active-directory-basics.md)
+    * [kerberos basics](os-windows/windows-active-directory/kerberos-basics.md)
     * [PowerView.ps1 cmds](os-windows/windows-active-directory/powerview.ps1-cmds.md)
 * [windows-meterpreter](os-windows/windows-meterpreter.md)
 
@@ -109,6 +110,7 @@
 * [.hta exploit](attacks/.hta-exploit.md)
 * [network scripts](attacks/network-scripts.md)
 * [print nightmare](attacks/print-nightmare.md)
+* [ssrf](attacks/ssrf.md)
 * [xml external entity XXE](attacks/xml-external-entity-xxe.md)
 
 ## CHEATSHEET

@@ -1,5 +1,13 @@
 # php wrappers, LFI
 
+## [dotdotpwn](https://github.com/wireghoul/dotdotpwn)
+
+Note: preinstalled in latest kali iso. Works for `http, ftp, tftp`
+
+```bash
+dotdotpwn -h IP -m MODE -f FILE-TO-FUZZ -U USER -P PASS
+```
+
 ## Workarounds
 
 NOTE: **Read the file that is running LFI** to get more information about the code.
@@ -61,10 +69,36 @@ C:\\Windows\\system.ini
 \\Windows\\system.ini
 ```
 
-## [dotdotpwn](https://github.com/wireghoul/dotdotpwn)
+## LFI PHP Code Analysis
 
-Note: works for http, ftp, tftp
-
-```bash
-dotdotpwn -h IP -m MODE -f FILE-TO-FUZZ -U USER -P PASS
+```php
+<?PHP 
+	include($_GET["file"]);
+?>
 ```
+
+The above code block includes any value given to the file paramter.
+
+```php
+<?PHP 
+	include("downloads/". $_GET['file']); 
+?>
+```
+
+The above code block includes any value given to the file parameter as long as its in the downloads directory. To bypass
+use `../../../<>`
+
+```php
+<?PHP 
+	include("downloads/". $_GET['file'].php); 
+?>
+```
+
+The above code block includes any value given to the file parameter as long as its in the downloads directory and
+appends `.php` to the user input value. To bypass use `../../../<>` and value ending with `%00`.
+
+When there is substitution for `../`, bypass using `....//` as it will convert to `../`
+
+## RFI PHP Code Analysis
+
+Requirement for RFI to work is `allow_url_fopen` and `allow_url_include`

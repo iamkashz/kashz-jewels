@@ -1,4 +1,4 @@
-# active directory
+# kerberos basics
 
 ## Kerbrute
 
@@ -20,6 +20,7 @@ Rubeus.exe harvest /interval:30
 # pass spray = 1 password & try against all users
 Kerbrute.exe brute /password:<PASS> /noticket
 ```
+
 
 ### kerberoasting
 
