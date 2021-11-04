@@ -117,7 +117,6 @@
 
 * [docker](cheatsheet/docker.md)
 * [drupal](cheatsheet/drupal.md)
-* [git shell](cheatsheet/git-shell.md)
 * [gitlab rails](cheatsheet/gitlab-rails.md)
 * [itemir/apache2fa](cheatsheet/itemir-apache2fa.md)
 * [jinja2 flask SSTI](cheatsheet/jinja2-flask-ssti.md)

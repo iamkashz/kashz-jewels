@@ -3,5 +3,5 @@
 ## info
 
 ```bash
-sudo openvpn -auth-nocache --config FILE.ovpn
+sudo openvpn --config FILE.ovpn [--auth-nocache]
 ```

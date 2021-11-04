@@ -17,7 +17,38 @@ sudo mount-shared-folders
 ### [Sublime Text 3](https://www.sublimetext.com/docs/linux_repositories.html#apt)
 
 ```bash
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -; sudo apt-get install apt-transport-https; echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list; sudo apt-get update; sudo apt-get install sublime-text; cd ~;
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -; sudo apt-get install apt-transport-https; echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list; sudo apt update; sudo apt install -y sublime-text sublime-merge; cd ~;
+```
+
+### View hidden files in subl directory-view
+
+Sublime Text > Preferences > Settings
+
+```json
+{
+  "folder_exclude_patterns": [],
+  "file_exclude_patterns": [
+    "*.pyc",
+    "*.pyo",
+    "*.exe",
+    "*.dll",
+    "*.obj",
+    "*.o",
+    "*.a",
+    "*.lib",
+    "*.so",
+    "*.dylib",
+    "*.ncb",
+    "*.sdf",
+    "*.suo",
+    "*.pdb",
+    "*.idb",
+    ".DS_Store",
+    "*.class",
+    "*.psd",
+    "*.sublime-workspace"
+  ]
+}
 ```
 
 ### [Brave Browser](https://brave.com/linux/)
@@ -27,7 +58,8 @@ sudo apt install apt-transport-https curl
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
-sudo apt install brave-browser
+sudo apt install -y brave-browser
+
 ```
 
 ### Browser Customization
@@ -90,14 +122,17 @@ sudo git clone https://github.com/PowerShellMafia/PowerSploit.git
 ```bash
 # rlwrap feroxbuster remmina RDP xclip tree php-curl php-dom gitup exiftool html2text jq
 sudo apt install -y rlwrap feroxbuster remmina docker.io xclip redis-tools tree php-dom php-curl python3-git-repo-updater odat python3-pip golang terminator libimage-exiftool-perl html2text jq
-sudo apt install gcc-multilib g++-multilib
-sudo gem install evil-winrm
+sudo apt install -y gcc-multilib g++-multilib
+sudo gem install -y evil-winrm
 sudo gitup --add /opt
+
+# fix wfuzz Pycurl is not compiled against Openssl
+sudo apt --purge remove python3-pycurl;sudo apt install -y libcurl4-openssl-dev libssl-dev;sudo pip3 install pycurl wfuzz
 ```
 
 ### Repos (cd /opt/) - require installation
 
-```
+```bash
 # nmapAutomator
 cd /opt; sudo git clone https://github.com/21y4d/nmapAutomator.git
 sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
@@ -190,13 +225,20 @@ sudo apt install oracle-instantclient-sqlplus
 # sudo updatedb; locate libsqlplus.so
 /usr/lib/oracle/19.6/client64/lib/libsqlplus.so
 
-# update .zshrc
+# sqlplus vars (subl ~/.zshrc)
 export ORACLE_HOME=<PATH-OF-libsqlplus.so> (without filename)
 export LD_LIBRARY_PATH="$ORACLE_HOME"
 export PATH="$ORACLE_HOME:$PATH" 
 
 # test
 sqlplus -V
+```
+
+### Postman
+
+```bash
+cd ~;wget https://dl.pstmn.io/download/latest/linux64 -O /tmp/postman.tar.gz; cd /opt; sudo tar -xvf /tmp/postman.tar.gz; rm /tmp/postman.tar.gz;
+sudo ln -s /opt/Postman/app/postman /usr/local/bin/;cd ~;
 ```
 
 ### pyenv
@@ -210,7 +252,7 @@ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev li
 # install pyenv
 cd ~; curl https://pyenv.run | bash
 
-# update .zshrc
+# # pyenv vars (subl ~/.zshrc)
 export PATH="/home/kashz/.pyenv/bin:/home/kashz/.pyenv/shims:/home/kashz/.local/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
@@ -263,7 +305,4 @@ sudo wget https://raw.githubusercontent.com/CiscoCXSecurity/enum4linux/master/en
 [global]
 	client min protocol = NT1
 	# client min protocol = LANMAN1
-	
-# fix wfuzz Pycurl is not compiled against Openssl
-sudo apt --purge remove python3-pycurl;sudo apt install libcurl4-openssl-dev libssl-dev;sudo pip3 install pycurl wfuzz
 ```
