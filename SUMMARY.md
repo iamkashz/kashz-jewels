@@ -31,8 +31,8 @@
     * [dump SAM SYSTEM](os-windows/windows-post-exploitation/dump-sam-system.md)
     * [RDP tools](os-windows/windows-post-exploitation/rdp-tools.md)
 * [windows-active-directory](os-windows/windows-active-directory/README.md)
-    * [active directory basics](os-windows/windows-active-directory/active-directory-basics.md)
-    * [kerberos basics](os-windows/windows-active-directory/kerberos-basics.md)
+    * [active directory 101](os-windows/windows-active-directory/active-directory-101.md)
+    * [kerberos 101](os-windows/windows-active-directory/kerberos-101.md)
     * [PowerView.ps1 cmds](os-windows/windows-active-directory/powerview.ps1-cmds.md)
 * [windows-meterpreter](os-windows/windows-meterpreter.md)
 

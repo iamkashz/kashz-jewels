@@ -1,4 +1,4 @@
-# active directory basics
+# active directory 101
 
 ## Basics
 
