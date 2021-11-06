@@ -33,7 +33,9 @@
 * [windows-active-directory](os-windows/windows-active-directory/README.md)
     * [active directory 101](os-windows/windows-active-directory/active-directory-101.md)
     * [kerberos 101](os-windows/windows-active-directory/kerberos-101.md)
-    * [PowerView.ps1 cmds](os-windows/windows-active-directory/powerview.ps1-cmds.md)
+    * [AD enumeration](os-windows/windows-active-directory/active-directory-enumeration.md)
+    * [mimikatz](os-windows/windows-active-directory/mimikatz.md)
+    * [PowerView.ps1](os-windows/windows-active-directory/powerview.ps1.md)
 * [windows-meterpreter](os-windows/windows-meterpreter.md)
 
 ## SHELLCODES
