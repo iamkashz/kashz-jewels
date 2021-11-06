@@ -41,3 +41,4 @@ Get-NetGroup [-GroupName *admin*]
 
 * [https://hackersinterview.com/oscp/oscp-cheatsheet-powerview-commands](https://hackersinterview.com/oscp/oscp-cheatsheet-powerview-commands)
 * [https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993)
+* 
