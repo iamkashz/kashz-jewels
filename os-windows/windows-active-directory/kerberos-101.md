@@ -2,9 +2,7 @@
 
 ## Kerberos Authentication
 
-{% file src="../../.gitbook/assets/Kerberos-Auth.png" %}
-Kerberos Authentication Overview
-{% endfile %}
+![](../../.gitbook/assets/Kerberos-Auth.png)
 
 ### Enumerating Users
 
@@ -27,7 +25,8 @@ Rubeus.exe brute /password:Password1 /noticket
 
 ### kerberoasting
 
-Allows user to request service ticket (ST) for any service w/ registered SPN (service princical name) then use the ST to crack service password.
+Allows user to request service ticket (ST) for any service w/ registered SPN (service princical name) then use the ST to
+crack service password.
 
 * [Bloodhound](https://github.com/BloodHoundAD/BloodHound/releases)
 * [Invoke-Kerberoast.ps1](https://github.com/EmpireProject/Empire/blob/master/data/module\_source/credentials/Invoke-Kerberoast.ps1)
@@ -44,13 +43,17 @@ python3 GetUserSPNs.py DOMAIN/USER:PASS> -dc-ip <DOMAIN-CONTROLLER> -request
 ```
 
 * If the service account is domain admin > Golden/Silver ticket > dumping the NTDS.dit.
-* If the service account is not domain admin > log into system with creds > pivot/escalate > password spray other service and domain admin accounts
+* If the service account is not domain admin > log into system with creds > pivot/escalate > password spray other
+  service and domain admin accounts
 
 ### AS-REP Roasting | (only for users with Kerberos pre-authentication disabled)
 
 * Dumps the krbasrep5 hashes of user accounts
-* If pre-authentication is disabled you can request any authentication data for any user and the KDC will return an encrypted TGT that can be cracked offline because the KDC skips the step of validating that the user is really who they say that they are.
-* This means that the account does not need to provide valid identification before requesting a Kerberos Ticket on the specified user account.
+* If pre-authentication is disabled you can request any authentication data for any user and the KDC will return an
+  encrypted TGT that can be cracked offline because the KDC skips the step of validating that the user is really who
+  they say that they are.
+* This means that the account does not need to provide valid identification before requesting a Kerberos Ticket on the
+  specified user account.
 
 ```bash
 # using Rubeus.exe
@@ -69,7 +72,8 @@ secretsdump.py USER@DOMAIN-IP
 ### Pass-the-ticket using mimikatz
 
 * Can be used for dumping user credentials inside an AD network
-* Can dump the TGT from the LSASS memory (which stores Kerberos ticket as the gatekeeper and accept or reject the credentials provided)
+* Can dump the TGT from the LSASS memory (which stores Kerberos ticket as the gatekeeper and accept or reject the
+  credentials provided)
 * Gives a .kirbi ticket - can be used to get domain admin
 * Allows to escalate to domain admin if you dump a domain admin's ticket and then impersonate that ticket
 
@@ -96,7 +100,8 @@ kerberos::ptt TICKET
 
 NOTE:
 
-* **KRBTGT: **service account in KDC; issues all TGTs. If impersonate this account and create a golden ticket we have ability to create a service ticket for any service
+* **KRBTGT: **service account in KDC; issues all TGTs. If impersonate this account and create a golden ticket we have
+  ability to create a service ticket for any service
 * **TGT:** ticket to a service account issued by the KDC and can only access that service.
 
 #### Golden Ticket
