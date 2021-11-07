@@ -1,11 +1,21 @@
 ---
 description: a welcome README page
 ---
-# kashz jewels
 
-## UPDATE (11/01/2021)
+# :gem: kashz jewels :gem:
 
-I am OSCP Certified. More about my experience at [my reddit post](https://www.reddit.com/r/oscp/comments/qlay94/passed_oscp_my_thoughts/)
+## :bulb: UPDATE (11/01/2021) :bulb:
+
+I am OSCP Certified :trophy:. More about my experience
+at [my reddit post](https://www.reddit.com/r/oscp/comments/qlay94/passed_oscp_my_thoughts/).
+
+## <mark style="color:blue;">About me</mark>
+
+Hi, I'm Kashz, a gamer and security enthusiast. If you want to talk, Discord: **k4shz#1428**
+
+My collection of solved HTB boxes are documented at
+
+* [HackTheBox WriteUps](https://kashz.gitbook.io/hackthebox-writeups/)
 
 ## <mark style="color:blue;">About this book</mark>
 
@@ -13,8 +23,8 @@ This book is an organized collection of notes that I prefer not keep searching o
 something from the past. I started this mainly to have a wholesome documentation for my OSCP exam.
 
 I will outrightly say **all the content available is present on the internet**, I just happen to come across them while
-solving boxes and wanted to have it **organized** to come back to at a later date if I need it _(and I've been using the
-references a lot)_. That's how this book started and has grown overtime.
+solving boxes and wanted to have it **organized** to come back to at a later date if I need it. That's how this book
+started and has grown overtime.
 
 Special mention to [HackTricks](https://book.hacktricks.xyz) as some of my pages directly link there for guide which
 explains way better.
@@ -31,12 +41,6 @@ explains way better.
 8. **Cheatsheet |** as the name says! :smile:
 9. **Attacks |** stuff that I couldn't categorize under protocols, services or cheatsheet
 10. **Services |** service specific guides on credentials, config file paths, exploits etc.
-
-## <mark style="color:blue;">About me</mark>
-
-Hi, I'm Kashz, a gamer and security enthusiast. My collection of solved HTB boxes are documented at
-
-* [HackTheBox WriteUps](https://kashz.gitbook.io/hackthebox-writeups/)
 
 ## :warning: <mark style="color:red;">DISCLAIMER</mark> :warning:
 
