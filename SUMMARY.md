@@ -1,8 +1,8 @@
 # Table of contents
 
-* [OSCP Jewels](README.md)
+* [kashz jewels](README.md)
 * [kashz-kali](kashz-kali.md)
-* [oscp exam](oscp-exam.md)
+* [certification exam](certification-exam.md)
 
 ## OS-LINUX
 
