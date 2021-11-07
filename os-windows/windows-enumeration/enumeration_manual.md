@@ -48,6 +48,33 @@ PS> [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 # turn off firewall
 > netsh firewall set opmode disable
 > netsh advfirewall set allprofiles state off
+
+# using PS (run all in one go)
+Set-MpPreference -DisableRealtimeMonitoring $true
+Set-MpPreference -DisableRemovableDriveScanning $true
+Set-MpPreference -DisableArchiveScanning $true
+Set-MpPreference -DisableAutoExclusions $true
+Set-MpPreference -DisableBehaviorMonitoring $true
+Set-MpPreference -DisableBlockAtFirstSeen $true
+Set-MpPreference -DisableCatchupFullScan $true
+Set-MpPreference -DisableCatchupQuickScan $true
+Set-MpPreference -DisableEmailScanning $true
+Set-MpPreference -DisableIntrusionPreventionSystem $true
+Set-MpPreference -DisableIOAVProtection $true
+Set-MpPreference -DisablePrivacyMode $true
+Set-MpPreference -DisableRealtimeMonitoring $true
+Set-MpPreference -DisableRemovableDriveScanning $true
+Set-MpPreference -DisableRestorePoint $true
+Set-MpPreference -DisableScanningMappedNetworkDrivesForFullScan $true
+Set-MpPreference -DisableScanningNetworkFiles $true
+Set-MpPreference -DisableScriptScanning $true
+
+# enable ICMP
+netsh advfirewall firewall add rule name="ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow
+netsh advfirewall firewall add rule name="ICMP Allow incoming V6 echo request" protocol=icmpv6:8,any dir=in action=allow
+
+# disable across AD
+Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False
 ```
 
 ## Installed Applications

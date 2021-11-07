@@ -31,19 +31,20 @@ ssh -N -f -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -R KAL
 ## [chisel](https://github.com/jpillora/chisel/releases/tag/v1.7.6)
 
 ```bash
-# server
+# server on kali
 chisel server -p 8000 --reverse
 
-# client
-chisel client <kali-ip>:8000 R:<listen-on-port>:<target-ip><target-ip-port-forward>
-ex. chisel.exe client -v 10.10.16.161:9000 R:8989:127.0.0.1:8888
+# client on target
+chisel client KALI_IP:8000 R:KALI_LISTENING_PORT:TARGET_IP:TARGET_PORT_FORWARD [-v]
+ex. chisel.exe client 10.10.16.161:9000 R:8989:127.0.0.1:8888
 # chisel server is 10.10.16.161:9000
 # any requests to kali:8989 ==> target:8888
 
 # tunnel using chisel on kali:1080
-https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html
 chisel client <kali-ip>:8000 R:socks
 ```
+
+* [0xdf's guide to using chisel](https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html)
 
 ## plink.exe
 
