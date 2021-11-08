@@ -2,16 +2,16 @@
 description: a welcome README page
 ---
 
-# :gem: kashz jewels :gem:
+# kashz jewels
 
-## :bulb: UPDATE (11/01/2021) :bulb:
+## UPDATE (11/01/2021)
 
 I am OSCP Certified :trophy:. More about my experience
 at [my reddit post](https://www.reddit.com/r/oscp/comments/qlay94/passed_oscp_my_thoughts/).
 
 ## <mark style="color:blue;">About me</mark>
 
-Hi, I'm Kashz, a gamer and security enthusiast. If you want to talk, Discord: **k4shz#1428**
+Hi, I'm Kashz, a gamer and security enthusiast. You can reach me at Discord: **k4shz#1428**
 
 My collection of solved HTB boxes are documented at
 
@@ -34,13 +34,14 @@ explains way better.
 1. **OS Linux |** Linux based enumeration, privilege escalation, tools etc.
 2. **OS Windows |** Windows based enumeration, privilege escalation, tools etc.
 3. <mark style="color:red;">**Shellcodes |** shells galore!</mark> :partying_face:
-4. **Buffer Overflow Guide |** OSCP style walkthrough.
-5. **Hash |** hash identification and cracking tools guide.
-6. **Tricks |** quick reference for stuff, shortcuts etc.
-7. **Protocols |** protocol enumeration, commands etc.
-8. **Cheatsheet |** as the name says! :smile:
-9. **Attacks |** stuff that I couldn't categorize under protocols, services or cheatsheet
-10. **Services |** service specific guides on credentials, config file paths, exploits etc.
+4. **Active Directory |** AD attack-guide.
+5. **Buffer Overflow Guide |** OSCP style walkthrough.
+6. **Hash |** hash identification and cracking tools guide.
+7. <mark style="color:red;">**Tricks |** quick reference for stuff, shortcuts etc.</mark>
+8. **Protocols |** protocol enumeration, commands etc.
+9. **Cheatsheet |** as the name says! :smile:
+10. **Attacks |** stuff that I couldn't categorize under protocols, services or cheatsheet
+11. **Services |** service specific guides on credentials, config file paths, exploits etc.
 
 ## :warning: <mark style="color:red;">DISCLAIMER</mark> :warning:
 

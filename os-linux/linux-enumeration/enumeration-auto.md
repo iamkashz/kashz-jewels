@@ -1,4 +1,4 @@
-# enumeration_auto
+# enumeration auto
 
 ## [SUID3NUM](https://github.com/Anon-Exploiter/SUID3NUM)
 

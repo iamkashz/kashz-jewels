@@ -8,8 +8,8 @@
 
 * [basic](os-linux/basic.md)
 * [linux-enumeration](os-linux/linux-enumeration/README.md)
-    * [enumeration\_auto](os-linux/linux-enumeration/enumeration\_auto.md)
-    * [enumeration\_manual](os-linux/linux-enumeration/enumeration\_manual.md)
+    * [enumeration auto](os-linux/linux-enumeration/enumeration-auto.md)
+    * [enumeration manual](os-linux/linux-enumeration/enumeration-manual.md)
 * [linux-privilege-escalation](os-linux/linux-privilege-escalation/README.md)
     * [socat shells](os-linux/linux-privilege-escalation/socat-shells.md)
     * [sudo su styles](os-linux/linux-privilege-escalation/sudo-su-styles.md)
@@ -19,29 +19,31 @@
 
 * [basic](os-windows/basic.md)
 * [windows-enumeration](os-windows/windows-enumeration/README.md)
-    * [enumeration\_auto](os-windows/windows-enumeration/enumeration\_auto.md)
-    * [enumeration\_manual](os-windows/windows-enumeration/enumeration\_manual.md)
-    * [enumeration\_tools](os-windows/windows-enumeration/enumeration\_tools.md)
+    * [enumeration auto](os-windows/windows-enumeration/enumeration-auto.md)
+    * [enumeration manual](os-windows/windows-enumeration/enumeration-manual.md)
+    * [enumeration tools](os-windows/windows-enumeration/enumeration-tools.md)
 * [windows-privilege-escalation](os-windows/windows-privilege-escalation/README.md)
-    * [privesc\_tools](os-windows/windows-privilege-escalation/privesc\_tools.md)
+    * [privesc tools](os-windows/windows-privilege-escalation/privesc-tools.md)
     * [steal NTLM creds](os-windows/windows-privilege-escalation/steal-ntlm-creds.md)
     * [socat shells](os-windows/windows-privilege-escalation/socat-shells.md)
     * [beef browser exploitation](os-windows/windows-privilege-escalation/beef-browser-exploitation.md)
 * [windows-post-exploitation](os-windows/windows-post-exploitation/README.md)
     * [dump SAM SYSTEM](os-windows/windows-post-exploitation/dump-sam-system.md)
     * [RDP tools](os-windows/windows-post-exploitation/rdp-tools.md)
-* [windows-active-directory](os-windows/windows-active-directory/README.md)
-    * [active directory 101](os-windows/windows-active-directory/active-directory-101.md)
-    * [kerberos 101](os-windows/windows-active-directory/kerberos-101.md)
-    * [AD enumeration](os-windows/windows-active-directory/active-directory-enumeration.md)
-    * [mimikatz](os-windows/windows-active-directory/mimikatz.md)
-    * [PowerView.ps1](os-windows/windows-active-directory/powerview.ps1.md)
-* [windows-meterpreter](os-windows/windows-meterpreter.md)
+* [windows meterpreter](os-windows/windows-meterpreter.md)
 
 ## SHELLCODES
 
 * [shells](shellcodes/shells.md)
 * [windows shells](shellcodes/windows-shells.md)
+
+## ACTIVE-DIRECTORY
+
+* [active directory 101](active-directory/active-directory-101.md)
+* [kerberos 101](active-directory/kerberos-101.md)
+* [AD enumeration](active-directory/active-directory-enumeration.md)
+* [mimikatz](active-directory/mimikatz.md)
+* [PowerView.ps1](active-directory/powerview.ps1.md)
 
 ## BUFFER OVERFLOW GUIDE
 
@@ -51,7 +53,7 @@
 
 ## HASH
 
-* [hash-identifier](hash/hash-identifier.md)
+* [hash identifier](hash/hash-identifier.md)
 * [hashcat](hash/hashcat.md)
 * [hydra](hash/hydra.md)
 * [john the ripper](hash/john-the-ripper.md)
@@ -89,7 +91,7 @@
 * [wget](tricks/wget.md)
 * [windows AppLocker bypass](tricks/windows-applocker-bypass.md)
 * [wordlists](tricks/wordlists.md)
-* [xss-steal-cookie](tricks/xss-steal-cookie.md)
+* [xss steal cookie](tricks/xss-steal-cookie.md)
 
 ## PROTOCOLS
 

@@ -1,7 +1,5 @@
 # active directory 101
 
-## Basics
-
 Active Directory consists of
 
 1. **1 or more** Domain Controller (mainly for fault tolerance)
@@ -101,8 +99,8 @@ Default domain services:
 
 ## AD Auth
 
-* Kerberos - default auth service for AD; uses ticket-granting tickets and service tickets to
-  authenticate users and give users access to other resources across the domain.
+* Kerberos - default auth service for AD; uses ticket-granting tickets and service tickets to authenticate users and
+  give users access to other resources across the domain.
 * NTLM - default Windows auth protocol uses an encrypted challenge/response protocol
 
 ## Reference

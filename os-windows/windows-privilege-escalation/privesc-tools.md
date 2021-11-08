@@ -1,8 +1,8 @@
-# privesc_tools
+# privesc tools
 
 ## check if win-logon-creds are working
 
-Note: psexec & evil-winrm uses 5985 (powershell remote access)
+Note: psexec & evil-winrm uses port:5985 (powershell remote access)
 
 ### psexec.py | smbexec | wmiexec
 

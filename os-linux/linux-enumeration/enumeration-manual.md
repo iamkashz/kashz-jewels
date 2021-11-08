@@ -1,4 +1,4 @@
-# enumeration_manual
+# enumeration manual
 
 ## Path fix
 

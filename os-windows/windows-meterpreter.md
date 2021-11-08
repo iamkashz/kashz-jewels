@@ -1,4 +1,4 @@
-# windows-meterpreter
+# windows meterpreter
 
 ```bash
 # gives shell on box

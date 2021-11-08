@@ -1,4 +1,4 @@
-# hash-identifier
+# hash identifier
 
 ## Name-That-Hash ([Github](https://github.com/HashPals/Name-That-Hash/))
 

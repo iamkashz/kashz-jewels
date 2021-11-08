@@ -105,6 +105,12 @@ cd /opt/AutoRecon;sudo pip3 install -r requirements.txt; sudo python3 -m pip ins
 # impacket
 cd /opt; sudo git clone https://github.com/SecureAuthCorp/impacket.git
 cd impacket; pip3 install .; cd ~;
+
+# arsenal
+cd /opt; sudo git clone https://github.com/Orange-Cyberdefense/arsenal.git
+cd arsenal; python3 -m pip install -r requirements.txt; cd ~;
+echo "\n\n# arsenal alias\nalias a=/opt/arsenal/run -t -e" >> ~/.zshrc
+
 ```
 
 ### Install additional tools via APT

@@ -2,7 +2,7 @@
 
 ## Kerberos Authentication
 
-![](../../.gitbook/assets/Kerberos-Auth.png)
+![](../.gitbook/assets/Kerberos-Auth.png)
 
 ### Enumerating Users using [Kerbrute](https://github.com/ropnop/kerbrute/releases)
 
@@ -138,3 +138,4 @@ misc::skeleton
 ## References
 
 * [TryHackMe: attackingkerberos](https://tryhackme.com/room/attackingkerberos)
+* [Kerberos Authentication Image](https://www.manageengine.com/products/active-directory-audit/kb/windows-security-log-event-id-4768.html)

