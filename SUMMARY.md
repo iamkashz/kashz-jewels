@@ -51,15 +51,16 @@
 * [fuzzer.py](buffer-overflow-guide/fuzzer.py.md)
 * [methodology](buffer-overflow-guide/methodology.md)
 
-## HASH
+## HASH-n-CRACK
 
-* [hash identifier](hash/hash-identifier.md)
-* [hashcat](hash/hashcat.md)
-* [hydra](hash/hydra.md)
-* [john the ripper](hash/john-the-ripper.md)
-* [medusa](hash/medusa.md)
-* [nCrack](hash/ncrack.md)
-* [rsa](hash/rsa.md)
+* [hash identifier](hash-n-crack/hash-identifier.md)
+* [hashcat](hash-n-crack/hashcat.md)
+* [hydra](hash-n-crack/hydra.md)
+* [john the ripper](hash-n-crack/john-the-ripper.md)
+* [medusa](hash-n-crack/medusa.md)
+* [msf](hash-n-crack/msf.md)
+* [ncrack](hash-n-crack/ncrack.md)
+* [rsa](hash-n-crack/rsa.md)
 
 ## TRICKS
 
@@ -76,6 +77,7 @@
 * [http request smuggling](tricks/http-request-smuggling.md)
 * [json web token (jwt)](tricks/json-web-token-jwt.md)
 * [kali exploit compilation](tricks/kali-exploit-compilation.md)
+* [local discovery](tricks/local-discovery.md)
 * [login bypass](tricks/login-bypass.md)
 * [magic bytes](tricks/magic-bytes.md)
 * [nmap](tricks/nmap.md)
@@ -144,6 +146,7 @@
 * [comment system](services/comment-system.md)
 * [amanda](services/amanda.md)
 * [apache](services/apache.md)
+* [apache exploits](services/apache-exploits.md)
 * [apphp microblog](services/apphp-microblog.md)
 * [arj](services/arj.md)
 * [azure cloud](services/azure-cloud.md)
@@ -236,7 +239,7 @@
 * [small crm](services/small-crm.md)
 * [smartermail](services/smartermail.md)
 * [smartstore.net](services/smartstore.net.md)
-* [smb](services/smb.md)
+* [smb exploits](services/smb-exploits.md)
 * [sonatype nexus](services/sonatype-nexus.md)
 * [splunk universal forwarder](services/splunk-universal-forwarder.md)
 * [ssh exploits](services/ssh-exploits.md)

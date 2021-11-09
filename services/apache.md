@@ -20,10 +20,3 @@
 /etc/apache2/sites-available/000-default.conf
 /etc/apache2/sites-enabled/000-default.conf
 ```
-
-## Apache 1.3.x (check version)
-
-```bash
-Apache mod_ssl < 2.8.7: OpenFuck.c (https://github.com/heltonWernik/OpenLuck)
-https://kongwenbin.wordpress.com/tag/openfuck/
-```

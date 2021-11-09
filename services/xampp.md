@@ -18,10 +18,6 @@
 
 ## XAMP for Windows 1.8.1
 
-```
-# webDAV RCE
-https://github.com/ruthvikvegunta/XAMPP-WebDAV-Exploit
-
-# file write 
-https://www.exploit-db.com/exploits/28654
-```
+* webDAV RCE
+  | [https://github.com/ruthvikvegunta/XAMPP-WebDAV-Exploit](https://github.com/ruthvikvegunta/XAMPP-WebDAV-Exploit)
+* file write | [https://www.exploit-db.com/exploits/28654](https://www.exploit-db.com/exploits/28654)
