@@ -86,7 +86,7 @@ kerberos::ptt TICKET
 
 ### Golden / Silver ticket attack using mimikatz
 
-* Silver ticket => more sleaLth and discreet; only for target service
+* Silver ticket => more stealth and discreet; only for target service
 * Golden ticket => any kerberos service
 
 NOTE:
@@ -137,5 +137,5 @@ misc::skeleton
 
 ## References
 
-* [TryHackMe: attackingkerberos](https://tryhackme.com/room/attackingkerberos)
+* [TryHackMe:attackingkerberos](https://tryhackme.com/room/attackingkerberos)
 * [Kerberos Authentication Image](https://www.manageengine.com/products/active-directory-audit/kb/windows-security-log-event-id-4768.html)

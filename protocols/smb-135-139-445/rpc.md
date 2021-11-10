@@ -11,7 +11,7 @@ nmap --script rpcinfo.nse -p 111 $ip
 rpcinfo –p IP
 rpcbind -p IP
 
-# dumps the remote RPC enpoints information via epmapper.
+# dumps the remote RPC endpoints information via epmapper.
 /opt/impacket/examples/rpcdump.py @[IP | DOMAIN]
 ```
 

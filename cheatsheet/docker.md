@@ -8,7 +8,7 @@
 # check if docker
 cat /proc/1/cgroup
 
-# see all imaages
+# see all images
 docker images
 
 # see all containers

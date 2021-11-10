@@ -31,7 +31,7 @@
 <!DOCTYPE foo [<!ENTITY xxe SYSTEM "expect://id"> ]>
 ```
 
-## Additional Materal
+## Additional Material
 
 * [https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity](https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entityhttps://depthsecurity.com/blog/exploitation-xml-external-entity-xxe-injection)
 * [https://depthsecurity.com/blog/exploitation-xml-external-entity-xxe-injection](https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entityhttps://depthsecurity.com/blog/exploitation-xml-external-entity-xxe-injection)
