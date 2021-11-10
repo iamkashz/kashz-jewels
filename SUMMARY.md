@@ -176,7 +176,7 @@
 * [epmd](services/epmd.md)
 * [exim](services/exim.md)
 * [fail2ban](services/fail2ban.md)
-* [ftp](services/ftp.md)
+* [ftp exploits](services/ftp-exploits.md)
 * [fudforum](services/fudforum.md)
 * [gitlab community edition](services/gitlab-community-edition.md)
 * [gunicorn](services/gunicorn.md)

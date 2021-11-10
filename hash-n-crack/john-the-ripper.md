@@ -21,7 +21,7 @@ john --format=<format> --wordlist=<path> unshadowed.txt
 
 ```bash
 zip2john FILE.zip > zip.hash
-fcrackzip -D -p <wordlist> FILE.zip
+fcrackzip -u -D -p WORDLIST FILE.zip
 rar2john FILE.rar > rar.hash
 ssh2john.py id_rsa > ssh.hash
 gpg2john KEY > gpg.hash
@@ -30,4 +30,4 @@ pdf2john.py FILE.pdf > pdf.hash
 
 ## custom rules (from TryHackMe guide)
 
-![](../.gitbook/assets/c8d30a6b53a542bebf7db794d4e13083.png)
+![](../.gitbook/assets/john-custom-rules.png)
