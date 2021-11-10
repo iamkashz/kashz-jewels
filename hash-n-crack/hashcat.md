@@ -10,4 +10,4 @@ hashcat [-a <> ] -m <MODE> <hash-file> <dictionary-file> [-r <rule-file>] [-w <w
 hashcat -m 5600 hash /usr/share/wordlists/rockyou.txt
 ```
 
-{% embed url="https://hashcat.net/wiki/doku.php?id=example:hashes" %}
+* [https://hashcat.net/wiki/doku.php?id=example:hashes](https://hashcat.net/wiki/doku.php?id=example:hashes)

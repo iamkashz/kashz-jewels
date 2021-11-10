@@ -2,10 +2,8 @@
 
 ## Methodology
 
-```bash
-1. use hexeditor <file> to change the hex chars
-2. change magic bytes as per extension required.
-```
+1. Use hexeditor <file> to change the hex chars
+2. Change magic bytes as per extension required.
 
 ## Magic Bytes
 

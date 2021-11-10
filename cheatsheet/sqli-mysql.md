@@ -90,9 +90,11 @@ SELECT <col> FROM <table> LIMIT 1 OFFSET <n>
 
 ## mysql w/ powershell
 
+* [mcpmag.com/querying-mysql-databases.aspx/](https://mcpmag.com/articles/2016/03/02/querying-mysql-databases.aspx/)
+* **known bug
+  fix:** [adamtheautomator.com/powershell-get-credential/#Create_a_Credential_without_a_Prompt](https://adamtheautomator.com/powershell-get-credential/#Create_a_Credential_without_a_Prompt)
+
 ```bash
-https://mcpmag.com/articles/2016/03/02/querying-mysql-databases.aspx/
-fix: https://adamtheautomator.com/powershell-get-credential/#Create_a_Credential_without_a_Prompt
 wget https://github.com/adbertram/MySQL/archive/master.zip -O MySQL.zip
 
 # setup
@@ -113,4 +115,4 @@ Invoke-MySqlQuery  -Query "select @@version;"
 
 ## Error based
 
-{% embed url="https://perspectiverisk.com/mysql-sql-injection-practical-cheat-sheet/" %}
+* [perspectiverisk.com/mysql-sql-injection-practical-cheat-sheet/](https://perspectiverisk.com/mysql-sql-injection-practical-cheat-sheet/)

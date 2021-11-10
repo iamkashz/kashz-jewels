@@ -8,7 +8,7 @@ sqlplus USER/PASSWORD@IP/SID [as sysdba]
 
 ## oracle-sql commands
 
-[https://cheatography.com/dormidera/cheat-sheets/oracle-sql-injection/](https://cheatography.com/dormidera/cheat-sheets/oracle-sql-injection/)
+* [cheatography.com/dormidera/cheat-sheets/oracle-sql-injection/](https://cheatography.com/dormidera/cheat-sheets/oracle-sql-injection/)
 
 **SELECT statements MUST have a FROM clause. Use dummy table `dual`.**
 

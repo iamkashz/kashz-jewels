@@ -66,4 +66,6 @@ PS> $cred = New-Object System.Management.Automation.PSCredential($user, $pass)
 PS> $cred.GetNetworkCredential() | fl
 ```
 
-{% embed url="https://www.travisgan.com/2015/06/powershell-password-encryption.html" %}
+## Reference
+
+* [travisgan.com/powershell-password-encryption.html](https://www.travisgan.com/2015/06/powershell-password-encryption.html)

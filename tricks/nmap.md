@@ -2,7 +2,7 @@
 
 ## static binary build
 
-[Github link](https://github.com/ernw/static-toolbox/releases/tag/nmap-v7.91SVN)
+[ernw/static-toolbox/nmap-v7.91SVN](https://github.com/ernw/static-toolbox/releases/tag/nmap-v7.91SVN)
 
 ## without unzip capability
 

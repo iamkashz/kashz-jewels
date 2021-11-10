@@ -1,6 +1,8 @@
 # sqli basic
 
-## [Auth bypass list](https://github.com/iamkashz/ctf-scripts/blob/main/auth-bypass-sqli.txt)
+## Auth bypass
+
+[iamkashz/ctf-scripts/auth-bypass-sqli.txt](https://github.com/iamkashz/ctf-scripts/blob/main/auth-bypass-sqli.txt)
 
 ## Tips
 
@@ -24,7 +26,7 @@ mysqldump -u <user> -p --all-databases > dump.mysql
 
 ## sqlite3
 
-```
+```bash
 # to invoke SQLite
 sqlite3 <db.dump>
 
@@ -39,7 +41,7 @@ sqlite> PRAGMA table_info(<table-name>);
 
 ## Start Mysql on kali
 
-```
+```bash
 service mysql [status | start | stop]
 /etc/mysql/mariadb.conf.d/50-server.cnf
 

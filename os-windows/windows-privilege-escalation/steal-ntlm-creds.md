@@ -15,4 +15,4 @@ sudo responder -wrf --lm -v -I tun0
 
 ## More Ways
 
-* [https://book.hacktricks.xyz/windows/ntlm/places-to-steal-ntlm-creds](https://book.hacktricks.xyz/windows/ntlm/places-to-steal-ntlm-creds)
+* [Hacktricks.xyz/places-to-steal-ntlm-creds](https://book.hacktricks.xyz/windows/ntlm/places-to-steal-ntlm-creds)

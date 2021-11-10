@@ -16,7 +16,7 @@ AUTH <username> <password>
 
 ## Interesting Paths
 
-```
+```bash
 /etc/redis/redis.conf
 ```
 
@@ -36,5 +36,5 @@ AUTH <username> <password>
 > get <key>
 
 # config get dir
-> config get [*  | dir]
+> config get [* | dir]
 ```

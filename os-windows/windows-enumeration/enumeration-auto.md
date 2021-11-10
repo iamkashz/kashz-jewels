@@ -69,7 +69,7 @@ PS> Find-AllVulns
 
 {% endtab %} {% endtabs %}
 
-## [winPEAS ](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS)| [Seatbelt ](https://github.com/GhostPack/Seatbelt)| [SharpUp](https://github.com/GhostPack/SharpUp)
+## [winPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) | [Seatbelt](https://github.com/GhostPack/Seatbelt) | [SharpUp](https://github.com/GhostPack/SharpUp)
 
 {% tabs %} {% tab title="winPEAS" %}
 

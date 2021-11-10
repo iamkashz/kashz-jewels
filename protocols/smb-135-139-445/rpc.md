@@ -33,7 +33,7 @@ enumprinters: enum printers
 
 ## enumerate users using SIDs (windows only)
 
-```
+```bash
 # needs some user creds (smb also works)
 lookupsid.py <USER>:<PASS>@<IP>
 ```

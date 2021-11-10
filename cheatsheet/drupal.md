@@ -35,8 +35,7 @@ admin
 
 # hidden post enumeration 
 /node/<number> for 1-100
-wfuzz -c -z range,1-100 -u IP/node/FUZZ
-[--hh ignore-errors-chars]
+wfuzz -c -z range,1-100 -u IP/node/FUZZ [--hh ignore-errors-chars]
 
 # php plugin installation check
 # 403 = good, 404 = not installed

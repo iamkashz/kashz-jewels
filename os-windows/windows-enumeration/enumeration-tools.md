@@ -22,7 +22,7 @@
 
 ## wmic
 
-Enumeration Script for wmic: [wmic_info.rar](http://www.fuzzysecurity.com/tutorials/files/wmic_info.rar)
+Enumeration Script for wmic: [fuzzysecurity.com/tutorials/wmic_info.rar](http://www.fuzzysecurity.com/tutorials/files/wmic_info.rar)
 
 ## Service Cmds
 

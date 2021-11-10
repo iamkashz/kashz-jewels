@@ -79,7 +79,7 @@ Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False
 
 ## Installed Applications
 
-* [Get-RemoteProgram.ps1](https://github.com/jaapbrasser/SharedScripts/blob/master/Get-RemoteProgram/Get-RemoteProgram.ps1)
+* [jaapbrasser/SharedScripts/Get-RemoteProgram.ps1](https://github.com/jaapbrasser/SharedScripts/blob/master/Get-RemoteProgram/Get-RemoteProgram.ps1)
 
 ```bash
 > powershell.exe -exec bypass -Command "& {Import-Module .\Get-RemoteProgram.ps1; Get-RemoteProgram}"
@@ -89,7 +89,7 @@ Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False
 
 ## Scheduled Tasks
 
-* [Get-ScheduledTask.ps1](https://github.com/jaapbrasser/SharedScripts/blob/master/Get-ScheduledTask/Get-ScheduledTask.ps1)
+* [jaapbrasser/SharedScripts/Get-ScheduledTask.ps1](https://github.com/jaapbrasser/SharedScripts/blob/master/Get-ScheduledTask/Get-ScheduledTask.ps1)
 
 ```bash
 > powershell.exe -exec bypass -Command ".\Get-ScheduledTask.ps1"

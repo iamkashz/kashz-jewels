@@ -90,7 +90,7 @@ SELECT TOP 1 name FROM (SELECT TOP 9 name FROM master..syslogins ORDER BY name A
 
 ## Config File Paths
 
-* https://practicalsbs.wordpress.com/2016/07/03/sql-server-file-locations-for-default-instances/
+* [practicalsbs.wordpress.com/sql-server-file-locations-for-default-instances/](https://practicalsbs.wordpress.com/2016/07/03/sql-server-file-locations-for-default-instances/)
 
 ```bash
 \DATA\master.mdf
@@ -99,7 +99,7 @@ SELECT TOP 1 name FROM (SELECT TOP 9 name FROM master..syslogins ORDER BY name A
 
 ## Error-based
 
-Refer: [https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/](https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/)
+Refer: [perspectiverisk.com/mssql-practical-injection-cheat-sheet/](https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/)
 
 ```bash
 # encode + as %2b if doing url-based.
@@ -109,18 +109,17 @@ convert(int, @@version)--
 
 ## Full pwnage guide
 
-* [https://www.exploit-db.com/papers/12975](https://www.exploit-db.com/papers/12975)
+* [exploit-db.com/12975](https://www.exploit-db.com/papers/12975)
 
 ## .mdf extract
 
-* https://github.com/xpn/Powershell-PostExploitation
-* (known bug) https://github.com/xpn/Powershell-PostExploitation/issues/3
+* [xpn/Powershell-PostExploitation](https://github.com/xpn/Powershell-PostExploitation)
+* **known bug:** [xpn/Powershell-PostExploitation/issues/3](https://github.com/xpn/Powershell-PostExploitation/issues/3)
 
 ```bash
 # fix in code
 [System.Reflection.Assembly]::UnsafeLoadFrom($PSScriptRoot + "\OrcaMDF.RawCore.dll") | Out-Null
 [System.Reflection.Assembly]::UnsafeLoadFrom($PSScriptRoot + "\OrcaMDF.Framework.dll") | Out-NUll
-
 ```
 
-* https://blog.xpnsec.com/extracting-master-mdf-hashes/
+* [blog.xpnsec.com/extracting-master-mdf-hashes/](https://blog.xpnsec.com/extracting-master-mdf-hashes/)

@@ -261,5 +261,5 @@ sudo wget https://raw.githubusercontent.com/CiscoCXSecurity/enum4linux/master/en
 
 ## References
 
-* [https://www.kali.org/docs/general-use/using-eol-python-versions/](https://www.kali.org/docs/general-use/using-eol-python-versions/)
-* [https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/)
+* [kali.org/using-eol-python-versions/](https://www.kali.org/docs/general-use/using-eol-python-versions/)
+* [docs.mongodb.com/tutorial/install-mongodb-on-debian/](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/)

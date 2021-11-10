@@ -15,7 +15,7 @@ Hi, I'm Kashz, a gamer and security enthusiast. You can reach me at Discord: **k
 
 My collection of solved HTB boxes are documented at
 
-* [HackTheBox WriteUps](https://kashz.gitbook.io/hackthebox-writeups/)
+* [kashz.gitbook.io/hackthebox-writeups/](https://kashz.gitbook.io/hackthebox-writeups/)
 
 ## <mark style="color:blue;">About this book</mark>
 

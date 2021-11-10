@@ -48,5 +48,3 @@ ffuf -w WORDLIST_USEr:W1,WORDLIST_PASS:W2 -X POST -d "username=W1&password=W2" -
 ```bash
 feroxbuster -u IP -t 90 -x EXTENSIONS -w WORDLIST
 ```
-
-##

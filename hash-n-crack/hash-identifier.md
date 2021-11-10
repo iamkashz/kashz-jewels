@@ -2,14 +2,14 @@
 
 ## Name-That-Hash ([Github](https://github.com/HashPals/Name-That-Hash/))
 
-{% embed url="https://nth.skerritt.blog/" %}
+* [https://nth.skerritt.blog/](https://nth.skerritt.blog/)
 
 ## Hashcat Wiki
 
-{% embed url="https://hashcat.net/wiki/doku.php?id=example:hashes" %}
+* [hashcat.net/example:hashes](https://hashcat.net/wiki/doku.php?id=example:hashes)
 
 ## Other Links
 
-* https://pypi.org/project/hashID
-* https://hashes.com/en/tools/hash_identifier
-* https://gitlab.com/kalilinux/packages/hash-identifier/-/tree/kali/master
+* [https://pypi.org/project/hashID](https://pypi.org/project/hashID)
+* [https://hashes.com/en/tools/hash_identifier](https://hashes.com/en/tools/hash_identifier)
+* [https://gitlab.com/kalilinux/packages/hash-identifier/-/tree/kali/master](https://gitlab.com/kalilinux/packages/hash-identifier/-/tree/kali/master)

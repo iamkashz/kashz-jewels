@@ -33,7 +33,7 @@ copy file Z:\
 
 ## HTTP Server
 
-Alternative: [https://github.com/sc0tfree/updog](https://github.com/sc0tfree/updog)
+Alternative: [sc0tfree/updog](https://github.com/sc0tfree/updog)
 
 ```bash
 python3 -m http.server 80

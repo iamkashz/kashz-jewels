@@ -30,7 +30,7 @@ This forces the server to make request like `http://dev.kashz.com/api/user&x=.ka
 
 ## Blind SSRF
 
-Use [https://requestbin.com/](https://requestbin.com/)
+* Use [https://requestbin.com/](https://requestbin.com/)
 
 ## Protections
 

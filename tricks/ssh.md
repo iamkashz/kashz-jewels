@@ -55,4 +55,4 @@ systemctl [start|status|stop] ssh.service
 
 ## References
 
-* [Set up SSH server in Kali](https://www.lmgsecurity.com/enable-start-ssh-kali-linux/)
+* [lmgsecurity.com/enable-start-ssh-kali-linux/](https://www.lmgsecurity.com/enable-start-ssh-kali-linux/)

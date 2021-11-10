@@ -12,7 +12,7 @@ tnscmd10g status -h DOMAIN|IP [--10G]
 (ERROR=(CODE=1189) => TNS could not authenticate user; needs PASS
 ```
 
-Error Code Reference Link: [https://docs.oracle.com/database/121/ERRMG/TNS-00000.htm#ERRMG-GUID-D723D931-ECBA-4FA4-BF1B-1F4FE2EEBAD7](https://docs.oracle.com/database/121/ERRMG/TNS-00000.htm#ERRMG-GUID-D723D931-ECBA-4FA4-BF1B-1F4FE2EEBAD7)
+[Oracle Error Code Reference Link](https://docs.oracle.com/database/121/ERRMG/TNS-00000.htm#ERRMG-GUID-D723D931-ECBA-4FA4-BF1B-1F4FE2EEBAD7)
 
 ## odat-enum
 
@@ -26,7 +26,7 @@ hydra -L /opt/oracle-tns/sids-oracle.txt -s 1521 DOMAIN|IP oracle-sid
 
 # password brute-force
 # needs wordlist in format user/pass
-$ sudo odat passwordguesser -s DOMAIN|IP -p 1521 -d "SID" --accounts-file FULL-PATH-FILE [--sysdba]
+sudo odat passwordguesser -s DOMAIN|IP -p 1521 -d "SID" --accounts-file FULL-PATH-FILE [--sysdba]
 
 # /files/userpass-brute-oracle-tns.py
 # needs wordlist in format user:pass
@@ -49,4 +49,6 @@ odat dbmsadvisor -s DOMAIN|IP -p 1521 -d SID -U USER -P PASS --sysdba --putFile 
 
 ![](https://0xdf.gitlab.io/img/ODAT_main_features_v2.0.jpg)
 
-{% embed url="https://book.hacktricks.xyz/pentesting/1521-1522-1529-pentesting-oracle-listener" %}
+## Additional Material
+
+* [Hacktricks/1521-1522-1529-pentesting-oracle-listener](https://book.hacktricks.xyz/pentesting/1521-1522-1529-pentesting-oracle-listener)

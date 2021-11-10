@@ -12,8 +12,8 @@ ssh -t user@IP "bash --norc --noprofile -c '/bin/rm .bashrc'"
 
 ## References
 
-{% embed url="https://book.hacktricks.xyz/linux-unix/useful-linux-commands/bypass-bash-restrictions" %}
+* [Hacktricks.xyz/bypass-bash-restrictions](https://book.hacktricks.xyz/linux-unix/useful-linux-commands/bypass-bash-restrictions)
+* [hacknos.com/rbash-escape-rbash-restricted-shell-escape](https://www.hacknos.com/rbash-escape-rbash-restricted-shell-escape)
+* [fireshellsecurity.team/restricted-linux-shell-escaping-techniques](https://fireshellsecurity.team/restricted-linux-shell-escaping-techniques)
 
-{% embed url="https://fireshellsecurity.team/restricted-linux-shell-escaping-techniques" %}
 
-{% embed url="https://www.hacknos.com/rbash-escape-rbash-restricted-shell-escape" %}

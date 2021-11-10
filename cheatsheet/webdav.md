@@ -37,4 +37,5 @@ cadaver http://IP/PATH
 put <FILE>
 ```
 
-{% embed url="https://book.hacktricks.xyz/pentesting/pentesting-web/put-method-webdav" %}
+## References
+* [Hacktricks.xyz/put-method-webdav](https://book.hacktricks.xyz/pentesting/pentesting-web/put-method-webdav)

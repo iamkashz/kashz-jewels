@@ -21,4 +21,6 @@ user.password_confirmation = 'kashz'
 user.save
 ```
 
-{% embed url="https://gist.github.com/dnozay/188f256839d4739ca3e4" %}
+## Reference
+
+* [https://gist.github.com/dnozay/188f256839d4739ca3e4](https://gist.github.com/dnozay/188f256839d4739ca3e4)
