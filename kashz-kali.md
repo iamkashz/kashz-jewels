@@ -117,7 +117,7 @@ echo "\n\n# arsenal alias\nalias a=/opt/arsenal/run -t -e" >> ~/.zshrc
 
 ```bash
 sudo apt install -y rlwrap feroxbuster remmina docker.io xclip redis-tools tree php-dom php-curl python3-git-repo-updater odat python3-pip golang terminator libimage-exiftool-perl html2text jq gcc-multilib g++-multilib
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev libguestfs-tools
 sudo apt install -y bloodhound neo4j
 sudo gem install -y evil-winrm
 sudo gitup --add /opt
