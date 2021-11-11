@@ -9,6 +9,13 @@ $ dig version.bind CHAOS TXT @IP
 $ nmap --script dns-nsid IP
 ```
 
+## Domain check
+
+```bash
+dnsrecon -r IP/CIDR -n TARGET_IP -d ['' | DOMAIN]
+dnsrecon -r 127.0.0.1/24 -n IP -d ''
+```
+
 ## Domain Name Loopup
 
 ```bash
