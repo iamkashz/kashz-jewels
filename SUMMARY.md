@@ -81,6 +81,7 @@
 * [login bypass](tricks/login-bypass.md)
 * [magic bytes](tricks/magic-bytes.md)
 * [nmap](tricks/nmap.md)
+* [office document analysis](tricks/office-document-analysis.md)
 * [openvpn](tricks/openvpn.md)
 * [pgp gpg cheatsheet](tricks/pgp-gpg-cheatsheet.md)
 * [php wrappers, LFI](tricks/php-wrappers-lfi.md)
