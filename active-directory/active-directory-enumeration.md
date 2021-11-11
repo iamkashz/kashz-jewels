@@ -12,3 +12,11 @@
 Invoke-Bloodhound -CollectionMethod All -Domain DOMAIN -ZipFileName DOMAIN.zip
 ```
 
+## Cached Group Policy Preferences Creds
+
+Use `PowerUp.ps1`.
+
+1. File path: `C:\ProgramData\Microsoft\Group Policy\History\{UUID-DIRECTORY}}\Machine\Preferences\Groups\Groups.xml`
+2. in kali `gpp-decrypt HASH`
+
+* [hackingarticles.in/credential-dumping-group-policy-preferences-gpp/](https://www.hackingarticles.in/credential-dumping-group-policy-preferences-gpp/)
