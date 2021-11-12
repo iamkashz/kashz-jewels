@@ -41,9 +41,12 @@
 
 * [active directory 101](active-directory/active-directory-101.md)
 * [kerberos 101](active-directory/kerberos-101.md)
+* [group policy management](active-directory/group-policy-management.md)
 * [AD enumeration](active-directory/active-directory-enumeration.md)
 * [mimikatz](active-directory/mimikatz.md)
 * [PowerView.ps1](active-directory/powerview.ps1.md)
+* [responder](active-directory/responder.md)
+* [smb relay ntlmrelayx](active-directory/ntlmrelayx.md)
 
 ## BUFFER OVERFLOW GUIDE
 
@@ -272,4 +275,4 @@
 * [yum](services/yum.md)
 * [zenphoto cms](services/zenphoto-cms.md)
 * [zookeeper exhibitor](services/zookeeper-exhibitor.md)
-`
+  `

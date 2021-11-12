@@ -1,11 +1,35 @@
 # active directory 101
 
+## TLDR;
+
+1. Let's start with a domain; say **(kashz.com)**
+2. Hierarchy of domains forms a tree.
+
+* **(kashz.com)**
+    * **(writeups.kashz.com)**
+    * **(jewels.kashz.com)**
+
+3. Different trees together forms a forest.
+
+Inside a domain:
+
+1. Organization Units (OUs) - collection of objects.
+2. Objects can be any of the following:
+    1. User
+    2. Contact
+    3. Groups
+    4. Computers
+    5. Printers
+    6. Shared Folders
+
+## Long Explanation
+
 Active Directory consists of
 
 1. **1 or more** Domain Controller (mainly for fault tolerance)
 2. **1 or more** storage servers / user workstations
 
-## Domain Controller
+### Domain Controller
 
 * has the AD domain services data store installed
 * promoted to a domain controller in the forest
@@ -14,18 +38,24 @@ Active Directory consists of
 * replicate updates from other domain controllers in the forest
 * allows admin access to manage domain resources
 
-### AD DS data store
+#### AD DS data store
 
 * Contains the `NTDS.dit`
   well as password hashes for domain users
 * Stored by default in `%SystemRoot%\NTDS`
 * accessible only by the domain controller
 
-## Forest
+Default Paths
+
+* Database folder: `C:\Windows\NTDS`
+* Log files folder: `C:\Windows\NTDS`
+* SYSVOL folder: `C:\Windows\SYSVOL`
+
+### Forest
 
 Collection of one or more domain trees inside an Active Directory network. It can contain:
 
-* Trees - A hierarchy of domains in Active Directory Domain Services
+* Trees - A hierarchy of domains in Active Directory Domain Services **(collection of domains)**
 * Domains - Used to group and manage objects
 * Organizational Units (OUs) - Containers for groups, computers, users, printers and other OUs
 * Trusts - Allows users to access resources in other domains
@@ -33,11 +63,11 @@ Collection of one or more domain trees inside an Active Directory network. It ca
 * Domain Services - DNS Server, LLMNR, IPv6
 * Domain Schema - Rules for object creation
 
-## User + Groups
+### User + Groups
 
 Default DC comes with default groups and two default users: Administrator and guest.
 
-### Users
+#### Users
 
 Four main types of users:
 
@@ -46,14 +76,14 @@ Four main types of users:
 * Local Administrators - can login to local machines as administrators; cannot access the DC
 * Domain Users - Normal users who can log in to machines they have the authorization to access.
 
-### Groups
+#### Groups
 
 Allows giving permissions to users and objects by organizing them into groups.
 
 * Security Groups - specify perms for a large number of users
 * Distribution Groups - specify email distribution lists.
 
-#### Default Security Groups
+##### Default Security Groups
 
 * Domain Controllers - All domain controllers in the domain
 * Domain Guests - All domain guests
@@ -79,17 +109,20 @@ Allows giving permissions to users and objects by organizing them into groups.
 * Cloneable Domain Controllers - Members of this group that are domain controllers may be cloned.
 * RAS and IAS Servers - Servers in this group can access remote access properties of users
 
-## Trusts + Policies
+### Trusts + Policies
 
-### Trusts
+#### Trusts
 
 Specify the way that the domains inside a forest communicate to each other.
 
-### Policies
+* Directional **(A -> B)**
+* Transitive **(A -> B -> C so A -> C)**
+
+#### Policies
 
 Dictates how the server operates and what rules it will and will not follow.
 
-## AD Services
+### AD Services
 
 Default domain services:
 
@@ -97,11 +130,18 @@ Default domain services:
 * Certificate Services - allows the domain controller to create, validate, and revoke public key certificates
 * DNS, LLMNR, NBT-NS - Domain Name Services for identifying IP hostnames
 
-## AD Auth
+### AD Auth
+
+#### Windows
 
 * Kerberos - default auth service for AD; uses ticket-granting tickets and service tickets to authenticate users and
   give users access to other resources across the domain.
 * NTLM - default Windows auth protocol uses an encrypted challenge/response protocol
+
+#### Linux
+
+* RADIUS Protocl
+* LDAP
 
 ## Reference
 

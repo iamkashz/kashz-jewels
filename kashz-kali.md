@@ -96,11 +96,11 @@ sudo git clone https://github.com/PowerShellMafia/PowerSploit.git
 
 # nmapAutomator
 cd /opt; sudo git clone https://github.com/21y4d/nmapAutomator.git
-sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
+sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/; cd ~;
 
 # Autorecon
 cd /opt; sudo git clone https://github.com/Tib3rius/AutoRecon.git
-cd /opt/AutoRecon;sudo pip3 install -r requirements.txt; sudo python3 -m pip install .
+cd /opt/AutoRecon;sudo pip3 install -r requirements.txt; sudo python3 -m pip install .;cd ~;
 
 # impacket
 cd /opt; sudo git clone https://github.com/SecureAuthCorp/impacket.git
@@ -109,13 +109,18 @@ cd impacket; pip3 install .; cd ~;
 # arsenal
 cd /opt; sudo git clone https://github.com/Orange-Cyberdefense/arsenal.git
 cd arsenal; python3 -m pip install -r requirements.txt; cd ~;
-echo "\n\n# arsenal alias\nalias a=/opt/arsenal/run -t -e" >> ~/.zshrc
+echo "\n\n# arsenal alias\nalias a=/opt/arsenal/run -t -e" >> ~/.zshrc; cd ~;
 
 # gittools
-sudo git clone https://github.com/internetwache/GitTools.git
+cd /opt; sudo git clone https://github.com/internetwache/GitTools.git
 sudo ln -s /opt/GitTools/Finder/gitfinder.py /usr/local/bin
 sudo ln -s /opt/GitTools/Dumper/gitdumper.sh /usr/local/bin
 sudo ln -s /opt/GitTools/Extractor/extractor.sh /usr/local/bin/gitextractor.sh
+cd ~;
+
+# mitm6
+cd /opt; sudo git clone https://github.com/dirkjanm/mitm6.git
+cd mitm6; sudo pip3 install .;cd ~;
 
 ```
 
