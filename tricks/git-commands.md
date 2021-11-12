@@ -1,4 +1,4 @@
-# git
+# git commands
 
 NOTE: if the folder is a git-repo, there should be a `.git` folder present.
 

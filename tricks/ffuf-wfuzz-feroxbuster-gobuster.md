@@ -33,8 +33,18 @@ wfuzz -c -w WORDLIST -u DOMAIN -H "HOST: FUZZ.DOMAIN" [--hh ignore-errors-chars]
 
 ```bash
 ffuf -ic -w WORDLIST -e EXTENSION -u IP/FUZZ
+-ic ignore comments in wordlist
 -e Comma separated list of extensions. Extends FUZZ keyword.
 -H header
+-mc match status code for all requests (show only these status codes)
+-ml match lines
+-mw match words
+-ms match size
+
+-fc filter status code from response
+-fl filter lines
+-fw filter words
+-fs filter size
 
 # can define multiple wordists and use incase of user:pass
 ffuf -w WORDLIST_USEr:W1,WORDLIST_PASS:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://MACHINE_IP/

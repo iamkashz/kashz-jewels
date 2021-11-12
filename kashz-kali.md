@@ -111,6 +111,12 @@ cd /opt; sudo git clone https://github.com/Orange-Cyberdefense/arsenal.git
 cd arsenal; python3 -m pip install -r requirements.txt; cd ~;
 echo "\n\n# arsenal alias\nalias a=/opt/arsenal/run -t -e" >> ~/.zshrc
 
+# gittools
+sudo git clone https://github.com/internetwache/GitTools.git
+sudo ln -s /opt/GitTools/Finder/gitfinder.py /usr/local/bin
+sudo ln -s /opt/GitTools/Dumper/gitdumper.sh /usr/local/bin
+sudo ln -s /opt/GitTools/Extractor/extractor.sh /usr/local/bin/gitextractor.sh
+
 ```
 
 ### Install additional tools via APT

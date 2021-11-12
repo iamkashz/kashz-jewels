@@ -1,4 +1,4 @@
-# Table of contents
+`# Table of contents
 
 * [kashz jewels](README.md)
 * [kashz-kali](kashz-kali.md)
@@ -73,7 +73,8 @@
 * [curl](tricks/curl.md)
 * [ffuf wfuzz feroxbuster gobuster](tricks/ffuf-wfuzz-feroxbuster-gobuster.md)
 * [file modification](tricks/file-modification.md)
-* [git](tricks/git.md)
+* [git commands](tricks/git-commands.md)
+* [git repo analysis](tricks/git-repo-analysis.md)
 * [http request smuggling](tricks/http-request-smuggling.md)
 * [json web token (jwt)](tricks/json-web-token-jwt.md)
 * [kali exploit compilation](tricks/kali-exploit-compilation.md)
@@ -129,8 +130,9 @@
 * [jenkins](cheatsheet/jenkins.md)
 * [jinja2 flask SSTI](cheatsheet/jinja2-flask-ssti.md)
 * [redis](cheatsheet/redis.md)
-* [slqi oracle odat](cheatsheet/slqi-oracle-odat.md)
+* [sqli oracle odat](cheatsheet/sqli-oracle-odat.md)
 * [sqli basic](cheatsheet/sqli-basic.md)
+* [sqli influxql](cheatsheet/sqli-influxql.md)
 * [sqli mongo](cheatsheet/sqli-mongo.md)
 * [sqli ms-sql](cheatsheet/sqli-ms-sql.md)
 * [sqli mysql](cheatsheet/sqli-mysql.md)
@@ -270,3 +272,4 @@
 * [yum](services/yum.md)
 * [zenphoto cms](services/zenphoto-cms.md)
 * [zookeeper exhibitor](services/zookeeper-exhibitor.md)
+`
