@@ -1,10 +1,8 @@
 # shells
 
-## Python TTY (stabilizing shell)
+## TTY shell
 
-* For non py-environments, use
-    * socat
-    * static python binary
+* For non py-environments, use **socat, static python binary**.
 
 ```bash
 python -c 'import pty;pty.spawn("/bin/bash")'
@@ -15,6 +13,10 @@ stty raw -echo; fg
 export TERM=xterm-256color
 # use stty -a to figure out cols and rows
 stty rows <> columns <>
+```
+
+```bash
+/usr/bin/script -qc /bin/bash /dev/null
 ```
 
 ## BASH

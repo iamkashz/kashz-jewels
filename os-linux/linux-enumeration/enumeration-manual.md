@@ -31,6 +31,9 @@ netstat -anp tcp #freeBSD
 # process running on port
 lsof -i:PORT
 
+# extended perms
+getfacl [FILE | FOLDER]
+
 # processes
 ps fauxwww
 

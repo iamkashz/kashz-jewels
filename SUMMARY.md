@@ -71,6 +71,7 @@
 * [403 forbidden waf bypass](tricks/403-forbidden-waf-bypass.md)
 * [archive, unarchive](tricks/archive-unarchive.md)
 * [asp.net server](tricks/asp.net-server.md)
+* [awscli](tricks/awscli.md)
 * [bash scripting](tricks/bash-scripting.md)
 * [bypass bash restrictions](tricks/bypass-bash-restrictions.md)
 * [curl](tricks/curl.md)

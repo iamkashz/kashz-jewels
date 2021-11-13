@@ -13,6 +13,7 @@ curl [-X POST|PUT] [flags] URL [|html2text]
 
 # to url-encode
 --data-urlencode
+# specify -G when want to url encode and send using GET method
 
 # binary data
 --data-binary
