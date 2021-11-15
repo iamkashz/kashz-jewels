@@ -13,7 +13,7 @@ bitsadmin /transfer job <source> <dest>
 wget.vbs https://gist.github.com/sckalath/ec7af6a1786e3de6c309
 
 # SMB Server
-smbserver.py [-smb2support] drive .
+impacket-smbserver [-smb2support] drive .
 
 # on windows to copy (download)
 copy \\IP\drive\file

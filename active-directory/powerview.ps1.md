@@ -1,8 +1,8 @@
-# PowerView.ps1
+# powerview.ps1
 
 * [PowerView.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1)
 
-```powershell
+```bash
 powershell.exe -exec bypass; Import-Module PowerView.ps1
 [OR] . .\PowerView.ps1
 ```
@@ -11,30 +11,46 @@ powershell.exe -exec bypass; Import-Module PowerView.ps1
 
 ```bash
 Get-NetDomain
+Get-NetDomainController [-Domain DOMAIN]
 Get-DomainSID
 Get-DomainPolicy
-Get-NetDomainController [-Domain DOMAIN]
-# can use ping to figure out IP
+  (Get-DomainPolicy)."to-enumerate-further"
 ```
 
-## Domain Users
+## Domain Users & Computers
 
-```powershell
+```bash
 Get-NetUser | select samaccountname,userprincipalname, memberof
 Get-NetUser * -Domain DOMAIN | Select-Object -Property name,samaccountname,description,memberof,admincount,userprincipalname, serviceprincipalname, useraccountcontrol
+Get-UserProperty [-Properties FIELD]
+
+Get-NetComputer [-FullData] [| select ]
 ```
 
 ### Kerberoastable Users
 
-```powershell
+```bash
 Get-NetUser -SPN | select serviceprincipalname
 Get-DomainUser * -SPN | Get-DomainSPNTicket -OutputFormat Hashcat
 ```
 
 ## Domain Groups
 
-```powershell
-Get-NetGroup [-GroupName *admin*]
+```bash
+# can use *admin*
+Get-NetGroup [-GroupName "GROUPNAME"]
+Get-NetGroupMember [-GroupName "GROUPNAME"]
+```
+
+## SMB Shares
+
+```bash
+Invoke-ShareFinder
+```
+
+## GPO
+```bash
+Get-NetGPO [| select displayname]
 ```
 
 ## References

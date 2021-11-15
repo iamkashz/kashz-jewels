@@ -42,11 +42,13 @@
 * [active directory 101](active-directory/active-directory-101.md)
 * [kerberos 101](active-directory/kerberos-101.md)
 * [group policy management](active-directory/group-policy-management.md)
-* [AD enumeration](active-directory/active-directory-enumeration.md)
+* [powerview.ps1](active-directory/powerview.ps1.md)
+* [bloodhound](active-directory/bloodhound.md)
 * [mimikatz](active-directory/mimikatz.md)
-* [PowerView.ps1](active-directory/powerview.ps1.md)
+* [mitm6](active-directory/mitm6.md)
 * [responder](active-directory/responder.md)
 * [smb relay ntlmrelayx](active-directory/ntlmrelayx.md)
+* [zero logon exploit](active-directory/zero-logon-exploit.md)
 
 ## BUFFER OVERFLOW GUIDE
 
@@ -56,6 +58,7 @@
 
 ## HASH-n-CRACK
 
+* [crackmapexec](hash-n-crack/crackmapexec.md)
 * [hash identifier](hash-n-crack/hash-identifier.md)
 * [hashcat](hash-n-crack/hashcat.md)
 * [hydra](hash-n-crack/hydra.md)
@@ -80,6 +83,7 @@
 * [git commands](tricks/git-commands.md)
 * [git repo analysis](tricks/git-repo-analysis.md)
 * [http request smuggling](tricks/http-request-smuggling.md)
+* [impacket guide](tricks/impacket-guide.md)
 * [json web token (jwt)](tricks/json-web-token-jwt.md)
 * [kali exploit compilation](tricks/kali-exploit-compilation.md)
 * [local discovery](tricks/local-discovery.md)

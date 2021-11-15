@@ -23,7 +23,7 @@ hashdump
 
 ```bash
 load incognito
-list_tokens -g
+list_tokens [-u | -g]
 impersonate_token "<token>"
 
 # for better results

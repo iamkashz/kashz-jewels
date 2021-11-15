@@ -104,7 +104,7 @@ cd /opt/AutoRecon;sudo pip3 install -r requirements.txt; sudo python3 -m pip ins
 
 # impacket
 cd /opt; sudo git clone https://github.com/SecureAuthCorp/impacket.git
-cd impacket; pip3 install .; cd ~;
+cd impacket; pip3 install .;sudo pip3 install . cd ~;
 
 # arsenal
 cd /opt; sudo git clone https://github.com/Orange-Cyberdefense/arsenal.git

