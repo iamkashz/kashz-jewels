@@ -2,7 +2,7 @@
 
 ## Kerberos Authentication
 
-![](../.gitbook/assets/Kerberos-Auth.png)
+![](../.gitbook/assets/kerberos-auth.png)
 
 ### Enumerating Users using [Kerbrute](https://github.com/ropnop/kerbrute/releases)
 
