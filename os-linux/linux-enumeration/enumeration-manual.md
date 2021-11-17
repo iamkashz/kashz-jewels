@@ -51,8 +51,8 @@ grep -Rnw <path-to-search> -ie "<keyword>" --color=always 2>/dev/null
 # grep all files not containing certain text
 grep -L "TEXT_FILE_SHOULD_NOT_CONTAIN" [files | *.extension]
 
-# print file contents without comments (#)
-grep "^[^#;]" FILE
+# print file contents without comments (#) and removes the empty lines.
+grep -v "^[#;]" FILE | grep -v "^$" 
 ```
 
 ## SUID file check

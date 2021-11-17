@@ -2,7 +2,16 @@
 
 NOTE: needs valid SSH creds on box to pivot from.
 
-## Tunnel configuration
+## meterpreter
+
+```bash
+run autoroute -s IP/CIDR
+run autoroute -p
+[OR]
+use post/multi/manage/autoroute
+```
+
+## using ssh:
 
 ### Outgoing
 
@@ -53,4 +62,3 @@ Set up a foxyproxy configuration for browser:
 2. Proxy Type: SOCKS4
 3. Proxy IP: localhost
 4. Port: 6900
-

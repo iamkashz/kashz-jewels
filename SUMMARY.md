@@ -64,7 +64,6 @@
 * [hydra](hash-n-crack/hydra.md)
 * [john the ripper](hash-n-crack/john-the-ripper.md)
 * [medusa](hash-n-crack/medusa.md)
-* [msf](hash-n-crack/msf.md)
 * [ncrack](hash-n-crack/ncrack.md)
 * [rsa](hash-n-crack/rsa.md)
 
@@ -278,6 +277,7 @@
 * [xampp](services/xampp.md)
 * [yaml](services/yaml.md)
 * [yum](services/yum.md)
+* [zabbix](services/zabbix.md) 
 * [zenphoto cms](services/zenphoto-cms.md)
 * [zookeeper exhibitor](services/zookeeper-exhibitor.md)
   `

@@ -1,5 +1,13 @@
 # port forwarding
 
+## meterpreter:
+
+```bash
+portfwd list
+portfwd [add | delete] -l LOCAL_PORT -p TARGET_PORT -r TARGET_IP
+portfwd flush # to remove all portforwardings
+```
+
 ## Using ssh:
 
 ### Outgoing

