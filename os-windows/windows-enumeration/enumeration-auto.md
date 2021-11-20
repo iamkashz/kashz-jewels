@@ -31,10 +31,10 @@ PS> [System.Environment]::OSVersion.Version
 ```powershell
 # located at /usr/share/windows-resources/powersploit/Privesc/PowerUp.ps1
 
-> powershell.exe -exec bypass -Command "& {Import-Module .\PowerUp.ps1; Invoke-AllChecks}"
+> powershell.exe -exec bypass -Command "& {Import-Module .\PowerUp.ps1; Invoke-AllChecks -Format List}"
 [OR]
 PS> . .\PowerUp.ps1
-PS> Invoke-AllChecks
+PS> Invoke-AllChecks -Format List
 ```
 
 {% endtab %}

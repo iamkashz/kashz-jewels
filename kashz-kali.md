@@ -170,6 +170,9 @@ sudo mkdir /opt/sysinternals/tcpview-exe; cd /opt/sysinternals/tcpview-exe/; sud
 # powershell encoded revshell
 # https://gist.github.com/tothi/ab288fb523a4b32b51a53e542d40fe58
 sudo mkdir /opt/powershell_encoded_revshell/; cd /opt/powershell_encoded_revshell/; sudo wget https://gist.githubusercontent.com/tothi/ab288fb523a4b32b51a53e542d40fe58/raw/40ade3fb5e3665b82310c08d36597123c2e75ab4/mkpsrevshell.py -O powershell_encoded_revshell.py; python3 powershell_encoded_revshell.py; cd ~;
+
+# update nishang
+sudo rm -rf /usr/share/nishang; cd /usr/share; sudo git clone https://github.com/samratashok/nishang.git;cd ~
 ```
 
 ### Install Custom tools
@@ -202,6 +205,10 @@ cd ~; wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_in
 
 # pyenv
 cd ~; curl https://pyenv.run | bash
+
+# namemash.py
+sudo mkdir /opt/namemash; cd /opt/namemash; sudo wget https://gist.githubusercontent.com/superkojiman/11076951/raw/053152dba6c5cc3107ff0374ce7246306958d72c/namemash.py; sudo chmod +x namemash.py
+cd ~;
 ```
 
 ### tmux

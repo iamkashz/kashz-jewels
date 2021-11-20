@@ -3,6 +3,7 @@
 * [kashz jewels](README.md)
 * [kashz-kali](kashz-kali.md)
 * [certification exam](certification-exam.md)
+* [c2 frameworks](c2-frameworks.md)
 
 ## OS-LINUX
 
@@ -30,6 +31,8 @@
 * [windows-post-exploitation](os-windows/windows-post-exploitation/README.md)
     * [dump SAM SYSTEM](os-windows/windows-post-exploitation/dump-sam-system.md)
     * [RDP tools](os-windows/windows-post-exploitation/rdp-tools.md)
+* [windows-bypass-uac](os-windows/windows-bypass-uac/README.md)
+    * [fodhelper](os-windows/windows-bypass-uac/fodhelper.md)
 * [windows meterpreter](os-windows/windows-meterpreter.md)
 
 ## SHELLCODES
@@ -85,11 +88,12 @@
 * [impacket guide](tricks/impacket-guide.md)
 * [json web token (jwt)](tricks/json-web-token-jwt.md)
 * [kali exploit compilation](tricks/kali-exploit-compilation.md)
+* [kali multi-network adapters](tricks/kali-multi-network-adapters.md)
 * [local discovery](tricks/local-discovery.md)
 * [login bypass](tricks/login-bypass.md)
 * [magic bytes](tricks/magic-bytes.md)
 * [nmap](tricks/nmap.md)
-* [office document analysis](tricks/office-document-analysis.md)
+* [office document analysis and exploitation](tricks/office-document-analysis.md)
 * [openvpn](tricks/openvpn.md)
 * [pgp gpg cheatsheet](tricks/pgp-gpg-cheatsheet.md)
 * [php wrappers, LFI](tricks/php-wrappers-lfi.md)
@@ -277,7 +281,7 @@
 * [xampp](services/xampp.md)
 * [yaml](services/yaml.md)
 * [yum](services/yum.md)
-* [zabbix](services/zabbix.md) 
+* [zabbix](services/zabbix.md)
 * [zenphoto cms](services/zenphoto-cms.md)
 * [zookeeper exhibitor](services/zookeeper-exhibitor.md)
   `

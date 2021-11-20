@@ -11,12 +11,21 @@
 
 ```bash
 getuid
+sysinfo
+ipconfig
+arp
+route
 getsystem
 getprivs
 
 migrate <system-process>
 
 hashdump
+```
+
+## post enumeration
+```bash
+run post/windows/gather/*
 ```
 
 ## incognito | [milkdevil/incognito2](https://github.com/milkdevil/incognito2)
@@ -42,8 +51,7 @@ creds_all
 ## local exploit suggester
 
 ```bash
-use post/multi/recon/local_exploit_suggester
-set SESSION <>; run
+run post/multi/recon/local_exploit_suggester
 ```
 
 ## Persistence
