@@ -11,7 +11,7 @@ Start-Process -NoNewWindow -FilePath FILE -ArgumentList "ARGS" [-Credential $cre
 
 ```bash
 # add new user
-net user kashz iamR00t#123 /add
+net user kashz iamR00t123! /add
 net localgroup administrators kashz /add
 ```
 

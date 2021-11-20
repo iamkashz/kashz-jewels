@@ -24,7 +24,7 @@
 
 ```bash
 # do not pass url to login page.
-$ wpscan --url IP [-e FLAG] [--plugins-detection [aggressive | mixed] -t 80] [--usernames <>] [--api-token LCxrlACzmauabSxeXKdc0ORevBnsIFkcQ5hVonza2dY]
+$ wpscan --url IP [-e FLAG] [--plugins-detection [aggressive | mixed] -t 80] [--usernames <>] [--api-token XX]
 
 # -e: enumerate <>
 # [p| vp | ap]: [plgins | vulnerable plugins | all plugins]

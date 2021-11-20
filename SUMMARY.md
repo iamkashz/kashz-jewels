@@ -1,4 +1,4 @@
-`# Table of contents
+# Table of contents
 
 * [kashz jewels](README.md)
 * [kashz-kali](kashz-kali.md)

