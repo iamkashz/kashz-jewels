@@ -11,6 +11,7 @@
 /wp-content/themes/<>/404.php
 
 # plugin location
+http:///wp-content/plugins/
 /wp-content/plugins/<>/
 
 # config file

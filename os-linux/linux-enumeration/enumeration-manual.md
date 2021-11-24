@@ -8,6 +8,8 @@ export PATH=/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:$PATH
 
 ## Basic checks
 
+[Get process info using /proc](https://stackoverflow.com/questions/29105448/get-process-info-from-proc)
+
 ```bash
 # all files in current dir (recursive)
 find . -type f -ls

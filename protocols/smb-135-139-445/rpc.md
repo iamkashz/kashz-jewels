@@ -12,13 +12,18 @@ rpcinfo –p IP
 rpcbind -p IP
 
 # dumps the remote RPC endpoints information via epmapper.
-/opt/impacket/examples/rpcdump.py @[IP | DOMAIN]
+impacket-rpcdump @[IP | DOMAIN]
 ```
 
 ## rpclient
 
+* [Plundering Windows Account Info via **
+  Authenticated** SMB Sessions](https://www.sans.org/blog/plundering-windows-account-info-via-authenticated-smb-sessions/)
+
 ```bash
-rpcclient -U ['' | USER | DOMAIN\USER] IP
+rpcclient -U ['' | USER%PASS | DOMAIN\USER%PASS] IP [-N]
+# -N: no password
+
 srvinfo: server information => os.version, samba-version.
 
 querydominfo
