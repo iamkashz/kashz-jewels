@@ -5,19 +5,22 @@
 ```bash
 portfwd list
 portfwd [add | delete] -l LOCAL_PORT -p TARGET_PORT -r TARGET_IP
-portfwd flush # to remove all portforwardings
+portfwd flush # to remove all port-forwarding
 ```
 
 ## Using ssh:
 
-### Outgoing
+* `-f`: background shell, to give shell back
+* `-N`: only setup connect, no commands are to be run
+
+### Forward connections (outgoing)
 
 ```bash
 # for connecting to remote port via localhost (-L) (outgoing)
 ssh -L KALI-IP:KALI-PORT:localhost:TARGET-PORT TARGET-USER@TARGET-IP
 ```
 
-### Incoming
+### Reverse connections (incoming)
 
 #### authorized_keys file
 
@@ -29,7 +32,7 @@ from="IP",command="echo 'This account can only be used for Port Forwarding'",no-
 
 ```bash
 # for allowing a connecting to your port from outside (incoming)
-ssh -N -f -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -R KALI-IP:KALI-PORT:localhost:TARGET-PORT -i <id_rsa> KALI-USER@KALI-IP
+ssh -fN -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -R KALI-IP:KALI-PORT:localhost:TARGET-PORT -i <id_rsa> KALI-USER@KALI-IP
 
 # -N: not running commands
 # -f: go to background
@@ -37,6 +40,8 @@ ssh -N -f -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -R KAL
 ```
 
 ## [chisel](https://github.com/jpillora/chisel/releases/tag/v1.7.6)
+
+### Remote Port Forward
 
 ```bash
 # server on kali
@@ -47,9 +52,16 @@ chisel client KALI_IP:8000 R:KALI_LISTENING_PORT:TARGET_IP:TARGET_PORT_FORWARD [
 ex. chisel.exe client 10.10.16.161:9000 R:8989:127.0.0.1:8888
 # chisel server is 10.10.16.161:9000
 # any requests to kali:8989 ==> target:8888
+```
 
-# tunnel using chisel on kali:1080
-chisel client <kali-ip>:8000 R:socks
+### Local Port Forward
+
+```bash
+# server on target
+chisel server -p 8000
+
+# client on kali
+chisel client TARGET_IP:8000 KALI_PORT:TARGET_IP:TARGET_PORT [-v]
 ```
 
 * [0xdf's guide to using chisel](https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html)
@@ -58,20 +70,20 @@ chisel client <kali-ip>:8000 R:socks
 
 ```bash
 # /usr/share/windows-binaries/plink.exe
-plink.exe kashz@<IP> -R <remote-port>:localhost:<local-port>
+plink.exe kashz@IP -R <remote-port>:localhost:<local-port>
 ```
 
-## socat re-route inside kali
+## socat
 
 ```bash
-# listen on 3306 from tun0 IP and route to localhost:3306
-$ socat TCP-LISTEN:3306,fork,bind=10.10.16.161 TCP:127.0.0.1:3306
+# listen on PORT1,bind to IP1 and route to IP2:PORT2
+socat tcp-l:PORT1,fork,reuseaddr,bind=IP1 tcp:IP2:PORT2
 ```
 
 ## Socket Check:
 
 ```bash
-ss <flag>
+ss FLAG
 ```
 
 | flag | description              |

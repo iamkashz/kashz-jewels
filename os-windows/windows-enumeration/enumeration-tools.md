@@ -3,7 +3,7 @@
 ## Accesschk.exe
 
 ```bash
-> accesschk.exe /accepteula -flag <name>
+> accesschk.exe /accepteula -flag [FLAG]
 # -u: suppress errors | -q: quiet; no banner | -v: verbose
 
 # -w: write access objects only
@@ -15,32 +15,34 @@
 ## icacls
 
 ```bash
-> icacls <FILE/DIR> [<flags>]
+> icacls [FILE|DIR] [FLAG]
 # /T - traverse all dir and files within the folder
-# /grant <USER>:<PERM>
+# /grant USER:PERM
+# /setowner USER
 ```
 
 ## wmic
 
-Enumeration Script for wmic: [fuzzysecurity.com/tutorials/wmic_info.rar](http://www.fuzzysecurity.com/tutorials/files/wmic_info.rar)
+Enumeration Script for
+wmic: [fuzzysecurity.com/tutorials/wmic_info.rar](http://www.fuzzysecurity.com/tutorials/files/wmic_info.rar)
 
 ## Service Cmds
 
 ```bash
 # configuration of service
-> sc.exe qc <service>
+> sc.exe qc SERVICE
 
 # status of service
-> sc.exe query <service>
+> sc.exe query SERVICE
 
 # modify config
-> sc.exe config <service> <key>= <value>
+> sc.exe config SERVICE <key>= <value>
 
 # start / stop / restart
-> net [start/stop] <service>
-> sc [start/stop] <service>
-PS> Restart-Service -Name <service>
+> net [start/stop] SERVICE
+> sc [start/stop] SERVICE
+PS> Restart-Service -Name SERVICE
 
 # is exe running with admin?
-> tasklist /V | findstr <.exe>
+> tasklist /V | findstr FILE.exe
 ```

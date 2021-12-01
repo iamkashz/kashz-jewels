@@ -102,6 +102,7 @@
 * [post upload file](tricks/post-upload-file.md)
 * [share files](tricks/share-files.md)
 * [ssh tunnel](tricks/ssh-tunnel.md)
+* [subnet scan](tricks/subnet-scan.md)
 * [ssh](tricks/ssh.md)
 * [wget](tricks/wget.md)
 * [windows AppLocker bypass](tricks/windows-applocker-bypass.md)

