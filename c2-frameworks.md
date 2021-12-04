@@ -1,5 +1,30 @@
 # c2 frameworks
 
+## Powershell-Empire
+
+### Install
+
+```bash
+sudo apt install powershell-empire starkiller
+```
+
+### Running
+
+```
+# config file
+/usr/share/powershell-empire/empire/client/config.yaml
+
+# start server
+sudo powershell-empire server
+
+# start client
+powershell-empire client
+connect HOSTNAME --username=USER --password=PASS
+
+# gui version
+starkiller
+```
+
 ## Covenant
 
 ### Install

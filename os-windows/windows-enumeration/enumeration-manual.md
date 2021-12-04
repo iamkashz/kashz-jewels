@@ -39,6 +39,9 @@ PS> [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 ## Firewall
 
 ```bash
+# open a PORT
+netsh advfirewall firewall add rule name="NAME" dir=in action=allow protocol=tcp localport=PORT
+
 > sc query windefend
 > netsh firewall show state
 > netsh firewall show config

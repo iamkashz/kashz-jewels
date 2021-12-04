@@ -5,10 +5,13 @@ NOTE: needs valid SSH creds on box to pivot from.
 ## meterpreter
 
 ```bash
-run autoroute -s IP/CIDR
-run autoroute -p
+# to print existing routes 
+autoroute -p
+
+run autoroute [-s IP/CIDR]
 [OR]
 use post/multi/manage/autoroute
+# use auxiliary/server/socks_proxy for global 
 ```
 
 ## using ssh:

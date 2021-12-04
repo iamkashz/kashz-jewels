@@ -48,7 +48,7 @@ ffuf -ic -w WORDLIST -e EXTENSION -u IP/FUZZ
 -fs filter size
 
 # can define multiple wordists and use incase of user:pass
-ffuf -w WORDLIST_USEr:W1,WORDLIST_PASS:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://MACHINE_IP/
+ffuf -w WORDLIST_USER:W1,WORDLIST_PASS:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://MACHINE_IP/login -fc 200
 
 # will use POST request
 -d  'data'

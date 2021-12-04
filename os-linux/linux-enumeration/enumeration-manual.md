@@ -87,4 +87,5 @@ getcap -r / 2>/dev/null
 ```bash
 # centos
 firewall-cmd --zone=public --add-port PORT/tcp
+# check: ss -tulwn | grep PORT4
 ```
