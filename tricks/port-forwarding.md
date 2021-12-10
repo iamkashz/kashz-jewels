@@ -1,6 +1,6 @@
 # port forwarding
 
-## meterpreter:
+## meterpreter port forwarding:
 
 ```bash
 portfwd list
@@ -8,7 +8,7 @@ portfwd [add | delete] -l LOCAL_PORT -p TARGET_PORT -r TARGET_IP
 portfwd flush # to remove all port-forwarding
 ```
 
-## Using ssh:
+## ssh port forwarding:
 
 * `-f`: background shell, to give shell back
 * `-N`: only setup connect, no commands are to be run
@@ -39,7 +39,7 @@ ssh -fN -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -R KALI-
 # UserKnownHostsFile=/dev/null & StrictHostKeyChecking=no will not ask kali password; not safe to enter password on target.
 ```
 
-## [chisel](https://github.com/jpillora/chisel/releases/tag/v1.7.6)
+## chisel port forwarding
 
 ### Remote Port Forward
 
@@ -73,7 +73,7 @@ chisel client TARGET_IP:8000 KALI_PORT:TARGET_IP:TARGET_PORT [-v]
 plink.exe kashz@IP -R <remote-port>:localhost:<local-port>
 ```
 
-## socat
+## socat port forwarding
 
 ```bash
 # listen on PORT1,bind to IP1 and route to IP2:PORT2

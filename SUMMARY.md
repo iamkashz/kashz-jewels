@@ -9,30 +9,30 @@
 
 * [basic](os-linux/basic.md)
 * [linux-enumeration](os-linux/linux-enumeration/README.md)
-  * [enumeration auto](os-linux/linux-enumeration/enumeration-auto.md)
-  * [enumeration manual](os-linux/linux-enumeration/enumeration-manual.md)
+    * [enumeration auto](os-linux/linux-enumeration/enumeration-auto.md)
+    * [enumeration manual](os-linux/linux-enumeration/enumeration-manual.md)
 * [linux-privilege-escalation](os-linux/linux-privilege-escalation/README.md)
-  * [socat shells](os-linux/linux-privilege-escalation/socat-shells.md)
-  * [sudo su styles](os-linux/linux-privilege-escalation/sudo-su-styles.md)
-  * [dirtyc0w](os-linux/linux-privilege-escalation/dirtyc0w.md)
+    * [socat shells](os-linux/linux-privilege-escalation/socat-shells.md)
+    * [sudo su styles](os-linux/linux-privilege-escalation/sudo-su-styles.md)
+    * [dirtyc0w](os-linux/linux-privilege-escalation/dirtyc0w.md)
 
 ## OS-WINDOWS
 
 * [basic](os-windows/basic.md)
 * [windows-enumeration](os-windows/windows-enumeration/README.md)
-  * [enumeration auto](os-windows/windows-enumeration/enumeration-auto.md)
-  * [enumeration manual](os-windows/windows-enumeration/enumeration-manual.md)
-  * [enumeration tools](os-windows/windows-enumeration/enumeration-tools.md)
+    * [enumeration auto](os-windows/windows-enumeration/enumeration-auto.md)
+    * [enumeration manual](os-windows/windows-enumeration/enumeration-manual.md)
+    * [enumeration tools](os-windows/windows-enumeration/enumeration-tools.md)
 * [windows-privilege-escalation](os-windows/windows-privilege-escalation/README.md)
-  * [privesc tools](os-windows/windows-privilege-escalation/privesc-tools.md)
-  * [steal NTLM creds](os-windows/windows-privilege-escalation/steal-ntlm-creds.md)
-  * [socat shells](os-windows/windows-privilege-escalation/socat-shells.md)
-  * [beef browser exploitation](os-windows/windows-privilege-escalation/beef-browser-exploitation.md)
+    * [privesc tools](os-windows/windows-privilege-escalation/privesc-tools.md)
+    * [steal NTLM creds](os-windows/windows-privilege-escalation/steal-ntlm-creds.md)
+    * [socat shells](os-windows/windows-privilege-escalation/socat-shells.md)
+    * [beef browser exploitation](os-windows/windows-privilege-escalation/beef-browser-exploitation.md)
 * [windows-post-exploitation](os-windows/windows-post-exploitation/README.md)
-  * [dump SAM SYSTEM](os-windows/windows-post-exploitation/dump-sam-system.md)
-  * [RDP tools](os-windows/windows-post-exploitation/rdp-tools.md)
+    * [dump SAM SYSTEM](os-windows/windows-post-exploitation/dump-sam-system.md)
+    * [RDP tools](os-windows/windows-post-exploitation/rdp-tools.md)
 * [windows-bypass-uac](os-windows/windows-bypass-uac/README.md)
-  * [fodhelper](os-windows/windows-bypass-uac/fodhelper.md)
+    * [fodhelper](os-windows/windows-bypass-uac/fodhelper.md)
 * [windows meterpreter](os-windows/windows-meterpreter.md)
 
 ## SHELLCODES
@@ -52,6 +52,10 @@
 * [responder](active-directory/responder.md)
 * [smb relay ntlmrelayx](active-directory/ntlmrelayx.md)
 * [zero logon exploit](active-directory/zero-logon-exploit.md)
+
+## OSINT
+
+* [osint](osint/osint.md)
 
 ## BUFFER OVERFLOW GUIDE
 
@@ -105,6 +109,7 @@
 * [subnet scan](tricks/subnet-scan.md)
 * [ssh](tricks/ssh.md)
 * [wget](tricks/wget.md)
+* [wifi](tricks/wifi.md)
 * [windows AppLocker bypass](tricks/windows-applocker-bypass.md)
 * [wordlists](tricks/wordlists.md)
 * [xss steal cookie](tricks/xss-steal-cookie.md)

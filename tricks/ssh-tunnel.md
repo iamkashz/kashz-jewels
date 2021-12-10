@@ -2,7 +2,7 @@
 
 NOTE: needs valid SSH creds on box to pivot from.
 
-## meterpreter
+## meterpreter tunnel
 
 ```bash
 # to print existing routes 
@@ -14,7 +14,7 @@ use post/multi/manage/autoroute
 # use auxiliary/server/socks_proxy for global 
 ```
 
-## using ssh:
+## ssh tunnel:
 
 ### Forward tunnel (outgoing)
 
@@ -65,9 +65,9 @@ Set up a foxyproxy configuration for browser:
 3. Proxy IP: localhost
 4. Port: 6900
 
-## chisel
+## chisel tunnel
 
-### Reverse Proxy
+### Reverse socks proxy
 
 NOTE: configure proxychains using `socks5 IP PORT`.
 
@@ -80,7 +80,7 @@ chisel server -p 8000 --reverse
 chisel client KALI_IP:8000 R:socks
 ```
 
-### Forward Proxy
+### Forward socks proxy
 
 ```bash
 # server on target
@@ -90,7 +90,7 @@ chisel server -p 8000 --socks5
 chisel client TARGET_IP:8000 TUNNEL_PORT:socks
 ```
 
-## sshuttle
+## sshuttle tunnel
 
 * **REQUIREMENTS:**
     * Works only on linux targets
