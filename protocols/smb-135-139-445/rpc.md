@@ -25,20 +25,32 @@ rpcclient -U ['' | USER%PASS | DOMAIN\USER%PASS] IP [-N]
 # -N: no password
 
 srvinfo: server information => os.version, samba-version.
+netshareenum: enumerate shares
 
-querydominfo
-enumdomusers: enum DOM users
-enumalsgroups domain: ?
+# basic info
+querydominfo: domain info
+enumdomusers: enum domain users
+enumdomgroups: enum domain groups
+dsr_enumtrustdom: enumerate trusted domains
 
-lookupnames USER: looks up USER if exists
-queryuser USER: Get more information about user
+# query group info and membership
+querygroup 0xGROUP
+querygrupmem 0xGROUP
 
-enumprinters: enum printers
+# query specific user by RID
+queryuser USER
+lookupnames USER (if user exists)
+
+# password policy
+querydompwinfo
+
+enumdrivers
+enumprinters
 ```
 
 ## enumerate users using SIDs (windows only)
 
 ```bash
 # needs some user creds (smb also works)
-lookupsid.py <USER>:<PASS>@<IP>
+impacket-lookupsid USER:PASS@IP
 ```

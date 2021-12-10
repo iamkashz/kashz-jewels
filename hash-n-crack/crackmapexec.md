@@ -32,3 +32,10 @@ crackmapexec PROTOCOL IP[/CIDR] [--port PORT] [-d DOMAIN] -u USER|USER.txt -p PA
 * method of commmand execution: `--exec-method [smbexec|atexec|mmcexec|wmiexec]`
 * specific command for cmd: `-x COMMAND`
 * specific command for powershell: `-X COMMAND`
+
+## SMB
+
+```bash
+# to get password policy
+crackmapexec smb IP -u '' -p '' --pass-pol
+```

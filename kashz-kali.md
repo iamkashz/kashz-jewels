@@ -8,13 +8,11 @@ tools I would need to use.
 ```bash
 kali-tweaks
 Select Virtualization > Install additional packages and scripts for VMware.
-# should be setup
-
-# to mount
+# should be setup to mount
 sudo mount-shared-folders
 ```
 
-### [Sublime Text 3](https://www.sublimetext.com/docs/linux_repositories.html#apt)
+### Sublime Text
 
 ```bash
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -;
@@ -34,7 +32,7 @@ Sublime Text > Preferences > Settings
 }
 ```
 
-### [Brave Browser](https://brave.com/linux/)
+### Brave Browser
 
 ```bash
 sudo apt install apt-transport-https curl
@@ -71,6 +69,7 @@ sudo git clone https://github.com/ivan-sincek/php-reverse-shell
 sudo git clone https://github.com/Cryilllic/Active-Directory-Wordlists
 sudo git clone https://github.com/dyne/file-extension-list
 sudo git clone https://github.com/stealthcopter/deepce.git
+sudo git clone https://github.com/samratashok/nishang.git
 sudo git clone https://github.com/Anon-Exploiter/SUID3NUM.git
 sudo git clone https://github.com/cddmp/enum4linux-ng.git
 sudo git clone https://github.com/bitsadmin/wesng.git
@@ -93,6 +92,7 @@ sudo git clone https://github.com/mchoji/winrm-brute.git
 sudo git clone https://github.com/iamkashz/ctf-scripts.git
 sudo git clone https://github.com/411Hall/JAWS.git
 sudo git clone https://github.com/PowerShellMafia/PowerSploit.git
+sudo git clone https://github.com/fox-it/BloodHound.py.git
 
 # nmapAutomator
 cd /opt; sudo git clone https://github.com/21y4d/nmapAutomator.git
@@ -100,11 +100,12 @@ sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/; cd ~;
 
 # Autorecon
 cd /opt; sudo git clone https://github.com/Tib3rius/AutoRecon.git
-cd /opt/AutoRecon;sudo pip3 install -r requirements.txt; sudo python3 -m pip install .;cd ~;
+cd /opt/AutoRecon;sudo python3 -m pip install -r requirements.txt; sudo python3 -m pip install .;cd ~;
 
 # impacket
+sudo apt install python3-pip
 cd /opt; sudo git clone https://github.com/SecureAuthCorp/impacket.git
-cd impacket; pip3 install .;sudo pip3 install . cd ~;
+cd impacket; python3 -m pip install .;sudo python3 -m pip install . cd ~;
 
 # arsenal
 cd /opt; sudo git clone https://github.com/Orange-Cyberdefense/arsenal.git
@@ -121,20 +122,19 @@ cd ~;
 # mitm6
 cd /opt; sudo git clone https://github.com/dirkjanm/mitm6.git
 cd mitm6; sudo pip3 install .;cd ~;
-
 ```
 
 ### Install additional tools via APT
 
 ```bash
-sudo apt install -y rlwrap feroxbuster remmina docker.io xclip redis-tools tree php-dom php-curl python3-git-repo-updater odat python3-pip golang terminator libimage-exiftool-perl html2text jq gcc-multilib g++-multilib
+sudo apt install -y rlwrap feroxbuster remmina docker.io xclip redis-tools tree php-curl python3-git-repo-updater odat golang terminator libimage-exiftool-perl html2text jq gcc-multilib g++-multilib
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev libguestfs-tools gccgo-go
 sudo apt install -y bloodhound neo4j
 sudo gem install -y evil-winrm
 sudo gitup --add /opt
 
 # fix wfuzz; Pycurl is not compiled against Openssl
-sudo apt --purge remove python3-pycurl;sudo apt install -y libcurl4-openssl-dev libssl-dev;sudo pip3 install pycurl wfuzz
+sudo apt --purge remove python3-pycurl;sudo apt install -y libcurl4-openssl-dev libssl-dev;sudo python3 -m pip install pycurl wfuzz
 ```
 
 ### windows-stuff
@@ -170,9 +170,6 @@ sudo mkdir /opt/sysinternals/tcpview-exe; cd /opt/sysinternals/tcpview-exe/; sud
 # powershell encoded revshell
 # https://gist.github.com/tothi/ab288fb523a4b32b51a53e542d40fe58
 sudo mkdir /opt/powershell_encoded_revshell/; cd /opt/powershell_encoded_revshell/; sudo wget https://gist.githubusercontent.com/tothi/ab288fb523a4b32b51a53e542d40fe58/raw/40ade3fb5e3665b82310c08d36597123c2e75ab4/mkpsrevshell.py -O powershell_encoded_revshell.py; python3 powershell_encoded_revshell.py; cd ~;
-
-# update nishang
-sudo rm -rf /usr/share/nishang; cd /usr/share; sudo git clone https://github.com/samratashok/nishang.git;cd ~
 ```
 
 ### Install Custom tools
@@ -193,7 +190,7 @@ cd ~; wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-ke
 sudo apt install oracle-instantclient-sqlplus
 
 # oracle tns (odat)
-pip3 install cx_Oracle --upgrade; sudo mkdir /opt/oracle-tns; cd /opt/oracle-tns/; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-LcrnYv40ILvFrpjKRkb%2Fsids-oracle.txt?alt=media&token=8206a9f6-af86-4a49-ac71-179ca973d836' -O sids-oracle.txt; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-Lcrmdr8nRaj1Ea6JQqm%2Fusers-oracle.txt?alt=media&token=e1dc7604-86d8-4fe6-8dcc-f8cb5167c83d' -O users-oracle.txt; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-LcrmhoNYnuxhr1Sy7A1%2Fpass-oracle.txt?alt=media&token=0879b74c-07eb-40a7-8038-e5f4b42621f3' -O pass-oracle.txt;cd ~;
+python3 -m pip install cx_Oracle --upgrade; sudo mkdir /opt/oracle-tns; cd /opt/oracle-tns/; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-LcrnYv40ILvFrpjKRkb%2Fsids-oracle.txt?alt=media&token=8206a9f6-af86-4a49-ac71-179ca973d836' -O sids-oracle.txt; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-Lcrmdr8nRaj1Ea6JQqm%2Fusers-oracle.txt?alt=media&token=e1dc7604-86d8-4fe6-8dcc-f8cb5167c83d' -O users-oracle.txt; sudo wget 'https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-LcreDSG0Hi8mv8n8DIw%2F-LcrmhoNYnuxhr1Sy7A1%2Fpass-oracle.txt?alt=media&token=0879b74c-07eb-40a7-8038-e5f4b42621f3' -O pass-oracle.txt;cd ~;
 
 # postman
 cd ~;wget https://dl.pstmn.io/download/latest/linux64 -O /tmp/postman.tar.gz;
@@ -216,8 +213,7 @@ cd ~;
 ```bash
 cd /opt; sudo git clone https://github.com/iamkashz/tmux-config.git
 ./tmux-config/install.sh
-
-# use terminator sa shell
+# use terminator shell
 ```
 
 ### Update PATH (subl ~/.zshrc)
@@ -241,7 +237,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)" 
 ```
 
-### pyenv python2
+### python2 pyenv
 
 ```bash
 pyenv install -v 2.7.18
@@ -253,6 +249,8 @@ cd ~; wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 sudo python2 get-pip.py
 python2 -m pip install setuptools
 rm get-pip.py
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 
 # windows-exploit-suggester.py
 python2 -m pip install xlrd==1.2.0
@@ -262,7 +260,7 @@ pip install --upgrade pip
 pip install droopescan
 ```
 
-### custom tasks
+### Custom tasks
 
 ```bash
 # rockyou extract
@@ -275,6 +273,26 @@ sudo wget https://raw.githubusercontent.com/CiscoCXSecurity/enum4linux/master/en
 [global]
 	client min protocol = NT1
 	# client min protocol = LANMAN1
+```
+
+### Bloodhound
+
+```bash
+python2 -m pip install dnspython ldap3 impacket
+cd /opt/BloodHound.py; pip install .; cd ~;
+```
+
+### evil-winrm fix readline
+
+```bash
+sudo apt install libreadline-dev
+$RUBY_VERSION = $(ruby --version | cut -d 'p' -f 1 | cut -d ' ' -f 2)
+cd /tmp;
+wget "https://ftp.ruby-lang.org/pub/ruby/2.7/ruby-$RUBY_VERSION.tar.gz"
+tar -xf ruby-$RUBY_VERSION.tar.gz
+cd /tmp/$RUBY_VERSION/ext/readline; ruby ./extconf.rb; make
+sudo cp /usr/lib/x86_64-linux-gnu/ruby/$RUBY_VERSION/readline.so /usr/lib/x86_64-linux-gnu/ruby/$RUBY_VERSION/readline.so.bk
+sudo cp -f readline.so /usr/lib/x86_64-linux-gnu/ruby/$RUBY_VERSION/readline.so
 ```
 
 ## References

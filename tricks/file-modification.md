@@ -5,6 +5,7 @@
 [Cheatsheet](https://cheatography.com/davechild/cheat-sheets/regular-expressions/)
 
 ```bash
+.* : match everything.
 (\s){2,}: 2 or more spaces
 ```
 

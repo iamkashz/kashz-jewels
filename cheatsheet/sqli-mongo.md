@@ -1,4 +1,4 @@
-# sqli mongo
+~~# sqli mongo
 
 **NOTE:** `mongo` and `mongosh` both are mongo shells. `mongo` has been deprecated.
 
@@ -20,27 +20,29 @@ mongo[sh] --host IP -u USER -p PASS [DATABASE]
 ## \[mongo | mongosh] client commands
 
 ```bash
-# databases
+# databases (creates if not existing)
 show dbs
-use <db>
+use DATABASE
 
 # collections
 show collections
+db.getCollectionNames()
+db.createCollection("COLLECTION_NAME")
 
 # documents / records
-db.<collection>.find({})
+# operators: $eq $ne $gt $where $exists $regex
+db.COLLECTION_NAME.find({})
+db.COLLECTION_NAME.find({key:"VALUE"})
+db.COLLECTION_NAME.find({key: {"OPERATOR": "VALUE"}})
 
 # insert record
-db.<collection>.insertOne({key: "value"})
+db.COLLECTION_NAME.insertOne({key: "value"})
 # deprecated method 
-db.<collection>.insert({key: "value"})
+db.COLLECTION_NAME.insert({key: "value"})
 
 # update record
-db.users.updateOne({key1: 'value1'},{$set: {KEY-FOR-WHICH-VALUE-IS-TO-BE-UPDATED: 'NEW-VALUE FOR KEY'}})
-# the record to be updated is found using this filter criteria {key1: 'value1'}
-# the value is updated for the key specified {KEY-FOR-WHICH-VALUE-IS-TO-BE-UPDATED: 'NEW-VALUE FOR KEY'}
-# deprecated method 
-db.users.update({FILTER-CRITERIA},{$set:{UPDATE-KEY-VALUE}})
+db.users.updateOne({key1: "old-VALUE"},{$set: {key1: "new-VALUE"}})
+ db.users.update({FILTER-CRITERIA},{$set:{UPDATE-KEY-VALUE}})
 ```
 
 ## login-brute
@@ -63,4 +65,4 @@ python exploit.py
 
 ## Additional Reading
 
-* [Hacktricks.xyz/nosql-injection](https://book.hacktricks.xyz/pentesting-web/nosql-injection)
+* [Hacktricks.xyz/nosql-injection](https://book.hacktricks.xyz/pentesting-web/nosql-injection)~~

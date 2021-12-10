@@ -37,11 +37,12 @@ SHOW Grants;
 --
 /* <blah> */
 
-# other ways
+# concatenation
 # 0x3a separates the field with a ':'
-concat(col_1)
+concat(col_1,col_2)
 concat(col_1,0x3a,col_2)
 concat(0x28,col_1,0x3a,col_2,0x29)
+col_1|| '~' || col_2
 
 # hostname
 @@hostname

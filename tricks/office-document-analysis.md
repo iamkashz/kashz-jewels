@@ -30,3 +30,19 @@ PS> . .\Out-Word.ps1
 PS> Out-HTA -Payload "PS_ENCODED_PAYLOAD" -Outputfile FILLE.doc
 # file will be saved in Documents
 ```
+
+## Microsoft Exchange Email
+
+* [dafthack/MailSniper](https://github.com/dafthack/MailSniper)
+
+## MFA check
+
+* [dafthack/MFASweep](https://github.com/dafthack/MFASweep)
+
+## office365
+
+* [blacklanternsecurity/TREVORspray](https://github.com/blacklanternsecurity/TREVORspray)
+
+## OWA office webApp
+
+* search on metasploit

