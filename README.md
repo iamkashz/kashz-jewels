@@ -35,13 +35,14 @@ explains way better.
 2. **OS Windows |** Windows based enumeration, privilege escalation, tools etc.
 3. <mark style="color:red;">**Shellcodes |** shells galore!</mark> :partying_face:
 4. **Active Directory |** AD attack-guide.
-5. **Buffer Overflow Guide |** OSCP style walkthrough.
-6. **Hash |** hash identification and cracking tools guide.
-7. <mark style="color:red;">**Tricks |** quick reference for stuff, shortcuts etc.</mark>
-8. **Protocols |** protocol enumeration, commands etc.
-9. **Cheatsheet |** as the name says! :smile:
-10. **Attacks |** stuff that I couldn't categorize under protocols, services or cheatsheet
-11. **Services |** service specific guides on credentials, config file paths, exploits etc.
+5. **OSINT |** open-source intelligence.
+6. **Buffer Overflow Guide |** OSCP style walkthrough.
+7. **Hash |** hash identification and cracking tools guide.
+8. <mark style="color:red;">**Tricks |** quick reference for stuff, shortcuts etc.</mark>
+9. **Protocols |** protocol enumeration, commands etc.
+10. **Cheatsheet |** as the name says! :smile:
+11. **Attacks |** stuff that I couldn't categorize under protocols, services or cheatsheet
+12. **Services |** service specific guides on credentials, config file paths, exploits etc.
 
 ## :warning: <mark style="color:red;">DISCLAIMER</mark> :warning:
 

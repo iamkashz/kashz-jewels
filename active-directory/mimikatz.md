@@ -1,6 +1,10 @@
 # mimikatz
 
-* [PowerShellMafia/PowerSploit/Exfiltration/Invoke-Mimikatz.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Invoke-Mimikatz.ps1)
+* [nishang/Gather/Invoke-Mimikatz.ps1](https://github.com/samratashok/nishang/blob/master/Gather/Invoke-Mimikatz.ps1)
+
+```bash
+.\mimikatz 'COMMAND' exit
+```
 
 ## check
 

@@ -11,11 +11,11 @@
 
 ```bash
 # run powershell -ep bypass;. .\SharpHound.ps1
-Invoke-Bloodhound -CollectionMethod All -Domain DOMAIN -ZipFileName DOMAIN.zip [-LDAPUser USER -LDAPPass PASS]
+Invoke-Bloodhound -CollectionMethod All -Domain DOMAIN -ZipFileName DOMAIN.zip [-LDAPUser USER -LDAPPass PASS] [-CollectAllProperties]
 ```
 
 ### bloodhound-python
 
 ```bash
-bloodhound-python -c all --zip -u USER -p PASS -d DOMAIN -ns IP
+bloodhound-python -c all --zip -u USER -p PASS -d DOMAIN -ns IP [-dc DOMAIN_CONTROLLER] [-gc GLOBAL_CATALOG_IP]
 ```
