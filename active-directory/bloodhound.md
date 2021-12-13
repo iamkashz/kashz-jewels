@@ -7,11 +7,14 @@
 
 ## Usage
 
-### SharpHound.ps1
+### SharpHound.ps1 | SharpHound.exe
 
 ```bash
-# run powershell -ep bypass;. .\SharpHound.ps1
-Invoke-Bloodhound -CollectionMethod All -Domain DOMAIN -ZipFileName DOMAIN.zip [-LDAPUser USER -LDAPPass PASS] [-CollectAllProperties]
+# run powershell -ep bypass;
+. .\SharpHound.ps1
+Invoke-Bloodhound -CollectionMethod All -Domain DOMAIN -ZipFileName DOMAIN.zip -LDAPUser USER -LDAPPass PASS [-CollectAllProperties]
+
+.\SharpHound.exe -c All -d DOMAIN --zipfilename DOMAIN.zip --ldapusername USER --ldappassword PASS [--collectallproperties]
 ```
 
 ### bloodhound-python

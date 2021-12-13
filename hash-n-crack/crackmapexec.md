@@ -6,6 +6,7 @@ Supports smb, ldap, ssh, winrm, mssql
 crackmapexec PROTOCOL IP[/CIDR] [--port PORT] [-d DOMAIN] -u USER|USER.txt -p PASS|PASS.txt [-H HASH|HASH.txt]
 --share SHARE
 --local-auth: authenticate locally to each target
+--continue-on-success
 ```
 
 ## Credential Gathering flags
