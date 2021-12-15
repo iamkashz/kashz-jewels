@@ -1,11 +1,13 @@
-# powerview.ps1
+# ad module
 
-* [PowerView.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1)
-* [PowerView Wiki](https://powersploit.readthedocs.io/en/latest/)
+* [samratashok/ADModule](https://github.com/samratashok/ADModule)
 
 ```bash
-powershell.exe -exec bypass; Import-Module PowerView.ps1
-[OR] . .\PowerView.ps1
+Import-Module Import-Module Microsoft.ActiveDirectory.Management.dll -Verbose
+Import-Module ActiveDirectory.psd1
+Get-Command -Module ActiveDirectory
+
+[OR] . .\Import-ActiveDirectory.ps1
 ```
 
 ## Domain information

@@ -9,14 +9,6 @@ description: a welcome README page
 I am OSCP Certified :trophy:. More about my experience
 at [my reddit post](https://www.reddit.com/r/oscp/comments/qlay94/passed_oscp_my_thoughts/).
 
-## <mark style="color:blue;">About me</mark>
-
-Hi, I'm Kashz, a gamer and security enthusiast. You can reach me at Discord: **k4shz#1428**
-
-My collection of solved HTB boxes are documented at
-
-* [kashz.gitbook.io/hackthebox-writeups/](https://kashz.gitbook.io/hackthebox-writeups/)
-
 ## <mark style="color:blue;">About this book</mark>
 
 This book is an organized collection of notes that I prefer not keep searching on Google every time I come across
@@ -33,8 +25,8 @@ explains way better.
 
 1. **OS Linux |** Linux based enumeration, privilege escalation, tools etc.
 2. **OS Windows |** Windows based enumeration, privilege escalation, tools etc.
-3. <mark style="color:red;">**Shellcodes |** shells galore!</mark> :partying_face:
-4. **Active Directory |** AD attack-guide.
+3. <mark style="color:green;">**Shellcodes |** shells galore!</mark> :partying_face:
+4. <mark style="color:red;">**Active Directory |** AD attack-guide</mark>
 5. **OSINT |** open-source intelligence.
 6. **Buffer Overflow Guide |** OSCP style walkthrough.
 7. **Hash |** hash identification and cracking tools guide.

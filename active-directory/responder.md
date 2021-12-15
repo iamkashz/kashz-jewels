@@ -6,7 +6,7 @@
 /etc/responder/Responder.conf
 ```
 
-## LLMNR hashes capture
+## capture LLMNR hashes 
 
 ```bash
 sudo responder -I INTERACE -rdw [-v]

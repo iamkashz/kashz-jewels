@@ -1,6 +1,7 @@
 # Table of contents
 
 * [kashz jewels](README.md)
+* [about kashz](about-kashz.md)
 * [kashz-kali](kashz-kali.md)
 * [certification exam](certification-exam.md)
 * [c2 frameworks](c2-frameworks.md)
@@ -44,14 +45,20 @@
 
 * [active directory 101](active-directory/active-directory-101.md)
 * [kerberos 101](active-directory/kerberos-101.md)
-* [group policy management](active-directory/group-policy-management.md)
+* [asrep roasting](active-directory/asrep-roasting.md)
+* [kerberoasting](active-directory/kerberoasting.md)
 * [powerview.ps1](active-directory/powerview.ps1.md)
+* [ad module](active-directory/ad-module.md)
 * [bloodhound](active-directory/bloodhound.md)
-* [mimikatz](active-directory/mimikatz.md)
+* [golden silver passing ticket](active-directory/golden-silver-passing-ticket.md)
+* [group policy management](active-directory/group-policy-management.md)
+* [dcsync](active-directory/dcsync.md)
+* [kerberos backdoor](active-directory/kerberos-backdoor.md)
 * [mitm6](active-directory/mitm6.md)
-* [responder](active-directory/responder.md)
 * [smb relay ntlmrelayx](active-directory/ntlmrelayx.md)
+* [responder](active-directory/responder.md)
 * [zero logon exploit](active-directory/zero-logon-exploit.md)
+* [untested tools](active-directory/untested-tools.md)
 
 ## OSINT
 
@@ -89,7 +96,6 @@
 * [git commands](tricks/git-commands.md)
 * [git repo analysis](tricks/git-repo-analysis.md)
 * [http request smuggling](tricks/http-request-smuggling.md)
-* [impacket guide](tricks/impacket-guide.md)
 * [json web token (jwt)](tricks/json-web-token-jwt.md)
 * [kali exploit compilation](tricks/kali-exploit-compilation.md)
 * [kali multi-network adapters](tricks/kali-multi-network-adapters.md)
@@ -143,9 +149,11 @@
 * [docker](cheatsheet/docker.md)
 * [drupal](cheatsheet/drupal.md)
 * [gitlab rails](cheatsheet/gitlab-rails.md)
+* [impacket guide](cheatsheet/impacket-guide.md)
 * [itemir/apache2fa](cheatsheet/itemir-apache2fa.md)
 * [jenkins](cheatsheet/jenkins.md)
 * [jinja2 flask template injection](cheatsheet/jinja2-flask-ssti.md)
+* [mimikatz](cheatsheet/mimikatz.md)
 * [redis](cheatsheet/redis.md)
 * [sqli oracle odat](cheatsheet/sqli-oracle-odat.md)
 * [sqli basic](cheatsheet/sqli-basic.md)

@@ -1,4 +1,4 @@
-# Certification exam
+# certification exam
 
 ## Terminal Script for Reporting
 
