@@ -2,9 +2,11 @@
 
 * [kashz jewels](README.md)
 * [about kashz](about-kashz.md)
-* [kashz-kali](kashz-kali.md)
+* [oscp exam review](oscp-exam-review.md)
+* [pnpt exam review](pnpt-exam-review.md)
 * [certification exam](certification-exam.md)
 * [c2 frameworks](c2-frameworks.md)
+* [kashz-kali](kashz-kali.md)
 
 ## OS-LINUX
 
@@ -154,6 +156,7 @@
 * [jenkins](cheatsheet/jenkins.md)
 * [jinja2 flask template injection](cheatsheet/jinja2-flask-ssti.md)
 * [mimikatz](cheatsheet/mimikatz.md)
+* [powershell](cheatsheet/powershell.md)
 * [redis](cheatsheet/redis.md)
 * [sqli oracle odat](cheatsheet/sqli-oracle-odat.md)
 * [sqli basic](cheatsheet/sqli-basic.md)
