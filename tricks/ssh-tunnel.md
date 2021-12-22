@@ -11,7 +11,7 @@ autoroute -p
 run autoroute [-s IP/CIDR]
 [OR]
 use post/multi/manage/autoroute
-# use auxiliary/server/socks_proxy for global 
+# use auxiliary/server/socks_proxy
 ```
 
 ## ssh tunnel:

@@ -2,7 +2,9 @@
 
 > Exam date: 10/30/2021 (Passed)
 
-## Post Exam Review
+> > NOTE: this review is not as per the new 2021 OSCP exam changes.
+
+### Post Exam Review
 
 This post talks about **my approach** and maybe if it helps any of you!. I did consolidate my notes and shared it down
 if it helps.
