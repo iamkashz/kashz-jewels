@@ -3,7 +3,14 @@
 ## Get-Help
 
 ```bash
-Get-Help *COMMAND [-Verb Start|Stop|XXX ][-Full] [-Examples] [-Parameter *] [| more]
+Get-Help *COMMAND [-Verb VERB] [-Full] [-Examples] [-Parameter *] [| more]
+```
+
+## Import-Module
+
+```bash
+Import-Module .\FILE [-Verbose]
+Get-Command -Module MODULE_NAME
 ```
 
 ## Output Formatting

@@ -41,13 +41,17 @@ sqlite> PRAGMA table_info(<table-name>);
 
 ## Start Mysql on kali
 
+* [remote access mysql](https://linuxize.com/post/mysql-remote-access/)
+
 ```bash
 service mysql [status | start | stop]
+
+# config file, set bindIP if needed
 /etc/mysql/mariadb.conf.d/50-server.cnf
 
-CREATE USER 'kashz'@'localhost' IDENTIFIED BY 'kali1';
-GRANT ALL ON *.* TO 'kashz'@'localhost';
-flush privileges;
+CREATE USER 'kashz'@'%' IDENTIFIED BY 'kashz';
+GRANT ALL ON *.* TO 'kashz'@'%' IDENTIFIED BY 'kashz';
+FLUSH PRIVILEGES;
 
 # listen on 3306 from tun0 IP and route to 3306 via localhost
 $ socat TCP-LISTEN:3306,fork,bind=10.10.16.161 TCP:127.0.0.1:3306
