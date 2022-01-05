@@ -13,11 +13,13 @@ description: a welcome README page
 ## <mark style="color:blue;">About this book</mark>
 
 This book is an organized collection of notes that I prefer not keep searching on Google every time I come across
-something from the past. I started this mainly to have a wholesome documentation for my OSCP exam.
+something from the past. I started this mainly to have a wholesome documentation for **(my OSCP exam and) solving
+CTF-challenges whether on HackTheBox or in competitions.** I'm looking to join a CTF team and actively solve challenges.
+**If you're looking for a team member, DM on discord.**
 
-I will outrightly say **all the content available is present on the internet**, I just happen to come across them while
-solving boxes and wanted to have it **organized** to come back to at a later date if I need it. That's how this book
-started and has grown overtime.
+Honestly, **all the content available here is present on the internet just not organized like this**, I just happen to
+come across them while solving boxes and wanted to have it **organized** to come back to at a later date if I need it.
+That's how this book started and has grown overtime.
 
 Special mention to [HackTricks](https://book.hacktricks.xyz) as some of my pages directly link there for guide which
 explains way better.
