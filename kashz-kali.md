@@ -1,7 +1,22 @@
+---
+description: >-
+  It's been quite some time since I've updated this part of my setup and I'm
+  looking to get back into the weeds of offensive security.
+---
+
 # kashz-kali
 
-On top of the base kali install, following are the custom commands I have setup for quick easy access to git-repos,
-tools I would need to use.
+### 2025 Updates
+
+Most folks are using Apple Silicon Macbooks and emulating `linux/amd64` binaries have been a pain in general. The following links are how I've been able to run them
+
+1. [https://www.kali.org/docs/arm/x86-on-arm/](https://www.kali.org/docs/arm/x86-on-arm/)
+2. [https://unix.stackexchange.com/a/667728](https://unix.stackexchange.com/a/667728)
+3. for Docker: [https://hub.docker.com/r/tonistiigi/binfmt](https://hub.docker.com/r/tonistiigi/binfmt)
+
+***
+
+On top of the base kali install, following are the custom commands I have setup for quick easy access to git-repos, tools I would need to use.
 
 ### Kali Mount Shared Directory
 
@@ -217,7 +232,7 @@ cd /opt; sudo git clone https://github.com/iamkashz/tmux-config.git
 # use terminator shell
 ```
 
-### Update PATH (subl ~/.zshrc)
+### Update PATH (subl \~/.zshrc)
 
 ```bash
 # golang vars
