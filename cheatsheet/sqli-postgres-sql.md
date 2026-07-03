@@ -3,7 +3,7 @@
 ## Connect
 
 ```bash
-psql -h IP -p PORT -U <user> [-c query-to-execute]
+psql -h IP -p PORT -U <user> [-d DATABASE] [-c query-to-execute]
 ```
 
 ## Default creds
