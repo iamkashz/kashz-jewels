@@ -68,7 +68,6 @@ current_database()
 \dt+
 \d+ <table>
 
-# cols
-
-# nth row
+# data in tables
+SELECT * FROM <TABLE>;
 ```
